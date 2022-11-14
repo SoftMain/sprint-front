@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    width: 360px;
+    height: 132px;
+    border: solid;
+}
+
+
+
+.logo {
+    width: 120px;
+    height: 120px;
+    flex: none;
+    background-color: aquamarine;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+
+.main {
+    flex-direction: column;
+}
