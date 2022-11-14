@@ -5,8 +5,6 @@
     border: solid;
 }
 
-
-
 .logo {
     width: 120px;
     height: 120px;
@@ -15,10 +13,12 @@
 }
 
 .description {
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
-
-
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
 }
 
 .main {
