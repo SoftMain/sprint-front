@@ -38,29 +38,32 @@
 
 .btn-primary {
   background: #2C68E7;
-  color: white;
+  color: white !important;
 }
 
 .btn-primary:hover {
   background: #466EAF;
-  color: white;
+  color: white !important;
 }
 
 .btn-primary:active {
   background: #1E3A8A;
-  color: white;
+  color: white !important;
 }
 
 .btn-outline-primary {
   border: 2px solid #2C68E7;
+  color: black !important;
 }
 
 .btn-outline-primary:hover {
   border: 2px solid #466EAF;
+  color: black !important;
 }
 
 .btn-outline-primary:active {
   border: 2px solid #1E3A8A;
+  color: black !important;
 }
 
 .btn:hover {
