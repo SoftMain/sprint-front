@@ -1,0 +1,122 @@
+@charset "UTF-8";
+.footer {
+  /* Шрифт/Цвет фона */
+  background: #1E3A8A;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 160px;
+  max-width: 1440px;
+  height: 236px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.upper {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0px;
+  width: 1120px;
+  height: 100px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.logo {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 163px;
+  height: 36px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.logo-heading {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.about__list {
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  width: 297px;
+  height: 36px;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.about__item {
+  /* identical to box height, or 125% */
+  text-align: center;
+  /* Footer/White */
+  color: #FFFFFF;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.about-link:active,
+.about-link:hover,
+.about-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.under {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 32px 0px 64px;
+  width: 100%;
+  height: 136px;
+  /* Footer/White */
+  border-top: 1px solid #FFFFFF;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.company {
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.contacts {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}/*# sourceMappingURL=footer.css.map */
