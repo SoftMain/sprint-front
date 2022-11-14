@@ -168,8 +168,9 @@ ul{
 .about-link:active,
 .about-link:hover,
 .about-link {
-        text-decoration:none;
-        color: #FFFFFF;
+    text-decoration:none;
+    color: #FFFFFF;
+}
 .under{
     box-sizing: border-box;
     /* Auto layout */
@@ -239,9 +240,6 @@ ul{
     justify-content: center;
     align-items: center;
     padding: 0px;
-
     width: 24px;
     height: 24px;
-    
-    
 }
