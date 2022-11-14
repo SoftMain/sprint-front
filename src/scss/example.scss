@@ -62,12 +62,12 @@ $border-size: 2px;
     color: white;
 }
 
-.btn-primary-hover {
+.btn-primary:hover {
     background: $blue-yonder;
     color: white;
 }
 
-.btn-primary-active {
+.btn-primary:active {
     background: $dark-blue;
     color: white;
 }
@@ -76,10 +76,18 @@ $border-size: 2px;
     border: $border-size solid $royal-blue;
 }
 
-.btn-outline-primary-hover {
+.btn-outline-primary:hover {
     border: $border-size solid $blue-yonder;
 }
 
-.btn-outline-primary-active {
+.btn-outline-primary:active {
     border: $border-size solid $dark-blue;
+}
+
+.btn:hover {
+    color: #727272;
+}
+
+.btn:active {
+    color: #B3B3B3;
 }

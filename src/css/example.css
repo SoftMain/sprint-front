@@ -41,12 +41,12 @@
   color: white;
 }
 
-.btn-primary-hover {
+.btn-primary:hover {
   background: #466EAF;
   color: white;
 }
 
-.btn-primary-active {
+.btn-primary:active {
   background: #1E3A8A;
   color: white;
 }
@@ -55,12 +55,20 @@
   border: 2px solid #2C68E7;
 }
 
-.btn-outline-primary-hover {
+.btn-outline-primary:hover {
   border: 2px solid #466EAF;
 }
 
-.btn-outline-primary-active {
+.btn-outline-primary:active {
   border: 2px solid #1E3A8A;
+}
+
+.btn:hover {
+  color: #727272;
+}
+
+.btn:active {
+  color: #B3B3B3;
 }
 
 /*# sourceMappingURL=example.css.map */
