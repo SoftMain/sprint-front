@@ -1,8 +1,8 @@
 body{
     padding: 0px;
-    margin: 0pt;
+    margin: 0px;
 }
-.footer {
+footer {
     /* Шрифт/Цвет фона */
     background: #1E3A8A;
     color: #FFFFFF;
@@ -15,20 +15,11 @@ body{
     /* Auto layout */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0px 160px;
-    
-
-    //width: 100vh;
+    align-items: center;
+    width: 100%;
     
 
     /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
 }
 .bevel {
     
@@ -46,13 +37,9 @@ body{
     align-items: center;
     padding: 32px 0px;
 
-    max-width: 1120px;
+    width: 1120px;
     //height: 100px;
     /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
 }
 .logo {
     /* Auto layout */
@@ -202,10 +189,6 @@ body{
     /* Footer/White */
     border-top: 1px solid #FFFFFF;
     /* Inside auto layout */
-    // flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
 }
 .company {
     width: 976px;
