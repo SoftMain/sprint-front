@@ -26,6 +26,13 @@ body {
   flex-grow: 0;
 }
 
+.bevel {
+  background: #1E3A8A;
+  padding: 60px 40px;
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+}
+
 .upper {
   /* Auto layout */
   display: flex;
