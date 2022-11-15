@@ -1,20 +1,49 @@
-.container {
-    margin: 0 auto;
-    padding: 0; 
+* {
+    padding: 0;
+    margin: 0;
 }
 
 header {
-    max-width: 100%;
-    width: 1440px;
+
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header-content {
+    width: 1120px;
     display: flex;
 }
 
-.right-nav-bar {
-    list-style-type: none
+.left-nav-logo {
+
 }
 
-.right-nav-bar {
+.header-title {
+
+}
+
+.left-nav-button {
+
+}
+
+.search-form {
+    
+}
+
+.right-nav-list {
     display: flex;
+    list-style: none
+}
+
+.nav-list-item {
+    
+}
+
+.nav-link {
+    text-decoration: none;  
 }
 
 #search-button {
