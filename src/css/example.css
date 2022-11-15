@@ -1,3 +1,22 @@
-:root {
-    
+.container {
+    margin: 0 auto;
+    padding: 0; 
+}
+
+header {
+    max-width: 100%;
+    width: 1440px;
+    display: flex;
+}
+
+.right-nav-bar {
+    list-style-type: none
+}
+
+.right-nav-bar {
+    display: flex;
+}
+
+.left-nav-bar {
+    display: flex;
 }
