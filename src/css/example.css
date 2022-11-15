@@ -17,6 +17,6 @@ header {
     display: flex;
 }
 
-.left-nav-bar {
-    display: flex;
+#search-button {
+    border: none;
 }
