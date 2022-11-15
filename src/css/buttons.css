@@ -74,4 +74,8 @@
   color: #B3B3B3;
 }
 
-/*# sourceMappingURL=example.css.map */
+.btn-icon-left-margin {
+  flex-direction: row-reverse !important;
+}
+
+/*# sourceMappingURL=buttons.css.map */

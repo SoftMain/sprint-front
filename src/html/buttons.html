@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="src\css\buttons.css">
+    <link rel="stylesheet" href="..\css\buttons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
     <style>
         div {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
         }
     </style>
@@ -49,6 +50,17 @@
     <div>
         <a class="btn btn-sm">small button</a>
     </div>
+    <div>
+        <a class="btn btn-sm btn-primary"> <!--Icon right-->
+            primary button
+            <svg class="fluent_checkmark-starburst-16-regular 63px check_error"></svg>
+        </a>
+        <a class="btn btn-sm btn-primary btn-icon-left-margin"> <!--Icon left-->
+            primary button
+            <svg class="fluent_checkmark-starburst-16-regular 34px check_error"></svg>
+        </a>
+    </div>
+    <script src="../js/icons.js"></script>
 
 </body>
 

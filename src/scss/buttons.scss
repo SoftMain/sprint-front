@@ -94,3 +94,7 @@ $border-size: 2px;
 .btn:active {
     color: #B3B3B3;
 }
+
+.btn-icon-left-margin {
+    flex-direction: row-reverse !important;
+}
