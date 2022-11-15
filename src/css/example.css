@@ -1,26 +1,118 @@
-.container {
-    display: flex;
-    width: 360px;
-    height: 132px;
-    border: solid;
+.category {
+    /* height: 438px; */
+    height: 490px;
+
+    width: 780px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    /* row-gap: 10px; */
+
 }
 
-.logo {
-    width: 120px;
-    height: 120px;
-    flex: none;
-    background-color: aquamarine;
+
+
+.container {
+    display: flex;
+    margin: 16px 0px 0px 0px;
+    margin-left: 20px;
+    width: 360px;
+    height: 132px;
+    border: solid gray;
+    border-width: 1px;
+    margin-right: 8px;
+    border-radius: 10px;
 }
+
+.logo img {
+    width: 116px;
+    height: 116px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-block-end: 8px;
+    border-radius: 4px;
+    flex: none;
+    /* background-color: aquamarine; */
+}
+
+.title {
+    width: 220px;
+    display: inline-flex;
+    /* margin: 0 0 4px 0; */
+    justify-content: space-between;
+    /* margin-top: 2px; */
+    /* flex-flow: row;
+    align-items: stretch; */
+}
+
+.btnr {
+    width: 16px;
+    height: 16px;
+    line-height: 28px;
+}
+
+
 
 .description {
     white-space: normal;
     overflow: hidden;
+    width: 220px;
+    height: 83px;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+}
+
+.name {
+    line-height: 28px;
+    width: 204px;
+    height: 28px;
 }
 
 .main {
     flex-direction: column;
+    margin-top: 8px;
+    margin-left: 8px;
+    width: 220px;
+    height: 115px;
+}
+
+
+.navigation li a {
+    display: block;
+    background: white;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    line-height: 40px;
+    width: 359px;
+    height: 40px;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation li a:hover {
+
+    background: rgba(2, 39, 252, 0.425);
+    border-radius: 5px;
+
+}
+
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+
+}
+
+
+.navigation li {
+    padding-left: 0;
+    background: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 8 14"><path fill="%23666666" d="M0.37,12.638l5.726-5.565L0.531,1.347C0.252,1.059,0.261,0.601,0.547,0.321 c0.289-0.279,0.746-0.272,1.026,0.016l6.062,6.24c0,0.002,0.006,0.004,0.008,0.006c0.068,0.07,0.119,0.156,0.156,0.244 C7.902,7.088,7.846,7.399,7.631,7.61c-0.002,0.004-0.006,0.004-0.01,0.006l-6.238,6.063c-0.143,0.141-0.331,0.209-0.514,0.205 c-0.187-0.006-0.372-0.078-0.511-0.221C0.076,13.376,0.083,12.919,0.37,12.638" /></svg>') no-repeat scroll 0% 50% /.65em .65em transparent;
 }
