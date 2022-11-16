@@ -1,0 +1,116 @@
+@charset "UTF-8";
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+footer {
+  /* Шрифт/Цвет фона */
+  background: #1E3A8A;
+  color: #FFFFFF;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.bevel {
+  background: #1E3A8A;
+  padding: 60px 40px;
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+}
+
+.upper {
+  /* Auto layout */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0px;
+  width: 1120px;
+}
+
+.logo {
+  /* Auto layout */
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 163px;
+  height: 36px;
+  /* Inside auto layout */
+}
+
+.logo-heading {
+  font-weight: 500px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.about__list {
+  /* Auto layout */
+  display: flex;
+  margin: 0px;
+  width: 100%;
+  height: 36px;
+}
+
+.about__item1 {
+  display: flex;
+  padding: 8px 12px;
+  gap: 6px;
+  /* Inside auto layout */
+}
+
+.about__item2 {
+  display: flex;
+  padding: 8px 12px;
+  /* Inside auto layout */
+}
+
+.about__item3 {
+  display: flex;
+  padding: 8px 12px;
+  /* Inside auto layout */
+}
+
+.about-link:active,
+.about-link:hover,
+.about-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.under {
+  box-sizing: border-box;
+  /* Auto layout */
+  display: flex;
+  align-items: center;
+  padding: 32px 0px 64px;
+  max-width: 1120px;
+  height: 136px;
+  /* Footer/White */
+  border-top: 1px solid #FFFFFF;
+  /* Inside auto layout */
+}
+
+/* Inside auto layout */
+.company__text {
+  margin: 0px;
+}
+
+.contacts__list {
+  display: flex;
+  gap: 16px;
+  /* Inside auto layout */
+}
+
+.contacts__item {
+  display: flex;
+}/*# sourceMappingURL=footer.css.map */
