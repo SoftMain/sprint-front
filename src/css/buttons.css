@@ -4,7 +4,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   /* Text layout */
   text-align: center;
   font-family: "Roboto";
@@ -77,6 +80,4 @@
 
 .btn-icon-left-margin {
   flex-direction: row-reverse !important;
-}
-
-/*# sourceMappingURL=buttons.css.map */
+}/*# sourceMappingURL=buttons.css.map */
