@@ -1,36 +1,76 @@
-.category {
-    /* height: 438px; */
-    height: 490px;
+.popularproduct {
+    display: flex;
+    width: 1120px;
+    height: 530px;
+    flex-direction: column;
+}
 
-    width: 780px;
+.infotext {
+    text-align: center;
+    line-height: 38px;
+}
+
+.navmenu {
+    margin-right: 20px;
+}
+
+@media (max-width: 736px) {
+    .container:nth-child(n+4) {
+        display: none;
+    }
+}
+
+.blockcategory {
+    display: flex;
+}
+
+
+.category {
+    height: 455px;
+    width: 740px;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
 
-    /* row-gap: 10px; */
+    /* overflow: hidden; */
 
 }
 
+.container:nth-child(1) {
+    margin: 0px 0 0 0;
+}
 
+.container:nth-child(4) {
+    margin: 0px 0 0 0;
+    margin-right: 0px;
+}
+
+.container:nth-child(5) {
+    margin-right: 0px;
+}
+
+.container:nth-child(6) {
+    margin-right: 0px;
+}
 
 .container {
     display: flex;
-    margin: 16px 0px 0px 0px;
-    margin-left: 20px;
+    margin: 16px 20px 0px 0px;
+    /* top | right | bottom | left */
     width: 360px;
     height: 132px;
     border: solid gray;
     border-width: 1px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
     border-radius: 10px;
 }
+
+
 
 .logo img {
     width: 116px;
     height: 116px;
-    margin-top: 8px;
-    margin-left: 8px;
-    margin-block-end: 8px;
+    margin: 8px 8px 8px 8px;
     border-radius: 4px;
     flex: none;
     /* background-color: aquamarine; */
@@ -39,11 +79,7 @@
 .title {
     width: 220px;
     display: inline-flex;
-    /* margin: 0 0 4px 0; */
     justify-content: space-between;
-    /* margin-top: 2px; */
-    /* flex-flow: row;
-    align-items: stretch; */
 }
 
 .btnr {
@@ -57,8 +93,10 @@
 .description {
     white-space: normal;
     overflow: hidden;
+    /* width: 220px;
+    height: 83px; */
     width: 220px;
-    height: 83px;
+
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -69,15 +107,27 @@
     line-height: 28px;
     width: 204px;
     height: 28px;
+    margin-bottom: 4px;
 }
 
 .main {
     flex-direction: column;
-    margin-top: 8px;
-    margin-left: 8px;
+    margin-right: 8px;
     width: 220px;
     height: 115px;
 }
+
+.navmenu {
+    width: 359px;
+    height: 352px;
+    margin-top: 30px;
+}
+
+.infotext {
+    width: 1120px;
+    height: 38px;
+}
+
 
 ul {
     list-style: none;
@@ -95,6 +145,7 @@ ul {
     display: inline-block;
     width: 24px;
 }
+
 .navigation li a {
     display: block;
     background: white;
@@ -108,8 +159,6 @@ ul {
 }
 
 .navigation li a:hover {
-
-
     border-radius: 5px;
     background: rgba(2, 39, 252, 0.425);
 }
