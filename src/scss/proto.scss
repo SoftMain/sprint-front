@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background:rgb(235, 234, 234);
+}
+
 .container{
     width: 1120px;
     margin: 0 auto;
@@ -162,6 +166,116 @@
                 margin-top: 8px;
                 width: 272px;
                 height: 80px;
+            }
+        }
+    }
+}
+
+.partners{
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    &__logos{
+        margin-top: 10px;
+        width: 550px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-logo{
+            margin-top: 32px;
+            width: 170px;
+            height: 80px;
+        }
+    }
+    &__comment{
+        width: 550px;
+        &-slider{
+            width: 265px;
+            display: flex;
+            justify-content: space-between;
+            *{
+                width: 28px;
+                height: 8px;
+            }
+        }
+        &-card{
+            margin-top: 32px;
+            padding: 30px;
+            width: 550px;
+            height: 172px;
+            .partners__comment-wrapper{
+                width: 228px;
+                display: flex;
+                justify-content: space-between;
+                .partners__comment-img{
+                    width: 64px;
+                    height: 64px;
+                }
+                .partners__comment-text{
+                    .header{
+                        width: 148px;
+                        height: 32px;
+                    }
+                    .sub__header{
+                        width: 63px;
+                        height: 16px;
+                    }
+
+                }
+            }
+            p{
+                margin-top: 8px;
+                width: 490px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+
+.footer{
+    margin-top: 146px;
+    &__top{
+        padding: 32px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        &-logo{
+            width: 163px;
+            height: 36px;
+        }
+        &-links{
+            width: 297px;
+            display: flex;
+            justify-content: space-between;
+            *{
+                width: 65px;
+                height: 36px;
+            }
+        }
+    }
+    .hr{
+        height: 1px;
+        width: 100%;
+    }
+    &__bottom{
+        padding-top: 32px;
+        padding-bottom: 64px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-text{
+            width: 890px;
+            height: 40px;
+        }
+        &-socials{
+            width: 144px;
+            height: 24px;
+            display:flex;
+            justify-content: space-between;
+            *{
+                width: 24px;
+                height: 24px;
             }
         }
     }
