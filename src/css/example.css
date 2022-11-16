@@ -5,35 +5,75 @@
 
 /*banner*/
 .container {
-    max-width: 1366px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    padding: 50px 35px;
+    margin-right: 40px;
+
+    line-height: 1.4em;
+    letter-spacing: 0em;
+
 }
 
 .banner {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1000px;
+    height: 312px;
+    width: 1120px;
+    border-radius: 12px;
     background: linear-gradient(#3B82F6, #2755A1);
-    min-height: 768px;
+
+    margin-bottom: 50px;
+    margin-left: 150px;
+
 }
+
 
 .banner_title {
     color: white;
-    font-weight: normal;
-    font-weight: 500px;
-    font-size: 80px;
+    padding: 30px 40px;
+    font-weight: 420px;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: 'Roboto';
+
 }
 
 .btn_banner {
-    width: fit-content;
-    height: 56px;
-    padding: 0 80px;
-    border: none;
-    cursor: pointer;
-    background: #5A98D0;
+    width: 153px;
+    height: 52px;
+    margin-top: 30px;
+    margin-left: 40px;
+    background: #466EAF;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 18px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
-.banner_img {}
+.banner_text {
+    Font-style: Light;
+    Font-size: 18px;
+    Line-height: 24px;
+    font-style: normal;
+    font-family: "Roboto";
+    font-weight: 300px;
+
+    color: #FFFFFF;
+    padding: 1px 40px;
+
+}
+
+.banner_img {
+    width: 320px;
+    height: 475px;
+    margin-left: 500px;
+
+}
