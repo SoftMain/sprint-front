@@ -133,3 +133,37 @@
     }
 }
 
+.info{
+    margin-top: 88px;
+    &__h2{
+        width: 310px;
+        height: 47px;
+        margin: 0 auto;
+    }
+    &__blocks{
+        margin-top: 46px;
+        display: flex;
+        justify-content: space-between;
+        &-block{
+            padding: 8px;
+            box-sizing: border-box;
+            width: 360px;
+            display: flex;
+            justify-content: space-between;
+            .img{
+                width: 64px;
+                height: 64px;
+            }
+            .info-title{
+                width: 272px;
+                height: 28px;
+            }
+            .info-text{
+                margin-top: 8px;
+                width: 272px;
+                height: 80px;
+            }
+        }
+    }
+}
+
