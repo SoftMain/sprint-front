@@ -23,15 +23,14 @@ header {}
 }
 
 .left-nav-logo {
-    padding-top: 5px;
+    padding-top: 21px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .header-title {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 18px;
+    padding-right: 40px;
 
 }
 
@@ -44,10 +43,35 @@ header {}
 }
 
 .left-nav-button {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 16px;
+    padding-left: 34px;
+}
 
+.left-nav-button-pref {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 139px;
+    height: 40px;
+    background: #2C68E7;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.left-nav-but-vector {
+    padding-left: 12px;
+    left: 15.62%;
+    right: 15.62%;
+    top: 29.3%;
+    bottom: 29.3%;
+    fill:  white;
 }
 
 .search-form {
