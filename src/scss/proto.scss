@@ -80,5 +80,39 @@
     }
 }
 
+.categories{
+    margin-top: 128px;
+    &__h3{
+        width: 442px;
+        height: 38px;
+        margin: 0 auto;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__pages{
+        *{
+            margin-top: 8px;
+            width: 359px;
+            height: 40px;
+        }
+        &:first-child{
+            margin: 0;
+        }
+    }
+    &__products{
+        max-width: 740px;
+        height: 428px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        *{
+            width: 360px;
+            height: 132px;
+        }
+    }
+}
+
 
 
