@@ -21,6 +21,7 @@ $border-size: 2px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    user-select: none;
 
     /* Text layout */
     text-align: center;
