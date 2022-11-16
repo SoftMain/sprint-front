@@ -1,0 +1,211 @@
+@charset "UTF-8";
+.heading_styles_1 {
+  font-size: var(--sizeH1);
+  line-height: var(--heightH1);
+}
+.heading_styles_1 .regular {
+  font-weight: var(--regular);
+}
+.heading_styles_1 .medium {
+  font-weight: var(--medium);
+}
+.heading_styles_1 .semiBold {
+  font-weight: var(--semiBold);
+}
+.heading_styles_1 .bold {
+  font-weight: var(--bold);
+}
+
+.heading_styles_2 {
+  font-size: var(--sizeH2);
+  line-height: var(--heightH2);
+}
+.heading_styles_2 .regular {
+  font-weight: var(--regular);
+}
+.heading_styles_2 .medium {
+  font-weight: var(--medium);
+}
+.heading_styles_2 .semiBold {
+  font-weight: var(--semiBold);
+}
+.heading_styles_2 .bold {
+  font-weight: var(--bold);
+}
+
+.heading_styles_3 {
+  font-size: var(--sizeH3);
+  line-height: var(--heightH3);
+}
+.heading_styles_3 .regular {
+  font-weight: var(--regular);
+}
+.heading_styles_3 .medium {
+  font-weight: var(--medium);
+}
+.heading_styles_3 .semiBold {
+  font-weight: var(--semiBold);
+}
+.heading_styles_3 .bold {
+  font-weight: var(--bold);
+}
+
+.heading_styles_4 {
+  font-size: var(--sizeH4);
+  line-height: var(--heightH4);
+}
+.heading_styles_4 .regular {
+  font-weight: var(--regular);
+}
+.heading_styles_4 .medium {
+  font-weight: var(--medium);
+}
+.heading_styles_4 .semiBold {
+  font-weight: var(--semiBold);
+}
+.heading_styles_4 .bold {
+  font-weight: var(--bold);
+}
+
+.heading_styles_5 {
+  font-size: var(--sizeH5);
+  line-height: var(--heightH5);
+}
+.heading_styles_5 .regular {
+  font-weight: var(--regular);
+}
+.heading_styles_5 .medium {
+  font-weight: var(--medium);
+}
+.heading_styles_5 .semiBold {
+  font-weight: var(--semiBold);
+}
+.heading_styles_5 .bold {
+  font-weight: var(--bold);
+}
+
+.heading_styles_6 {
+  font-size: var(--sizeH6);
+  line-height: var(--heightH6);
+}
+.heading_styles_6 .regular {
+  font-weight: var(--regular);
+}
+.heading_styles_6 .medium {
+  font-weight: var(--medium);
+}
+.heading_styles_6 .semiBold {
+  font-weight: var(--semiBold);
+}
+.heading_styles_6 .bold {
+  font-weight: var(--bold);
+}
+
+.body_styles {
+  height: 537px;
+  margin-top: 64px;
+}
+
+.body_styles_1 {
+  font-size: var(--sizeLarge);
+  line-height: var(--heightLarge);
+}
+.body_styles_1 .light {
+  font-weight: var(--light);
+}
+.body_styles_1 .regular {
+  font-weight: var(--regular);
+}
+.body_styles_1 .medium {
+  font-weight: var(--medium);
+}
+
+.body_styles_2 {
+  font-size: var(--sizeBase);
+  line-height: var(--heightBase);
+}
+.body_styles_2 .light {
+  font-weight: var(--light);
+}
+.body_styles_2 .regular {
+  font-weight: var(--regular);
+}
+.body_styles_2 .medium {
+  font-weight: var(--medium);
+}
+
+.body_styles_3 {
+  font-size: var(--sizeSmall);
+  line-height: var(--heightSmall);
+}
+.body_styles_3 .light {
+  font-weight: var(--light);
+}
+.body_styles_3 .regular {
+  font-weight: var(--regular);
+}
+.body_styles_3 .medium {
+  font-weight: var(--medium);
+}
+
+.body_styles_4 {
+  font-size: var(--sizeXSmall);
+  line-height: var(--heightXSmall);
+}
+.body_styles_4 .light {
+  font-weight: var(--light);
+}
+.body_styles_4 .regular {
+  font-weight: var(--regular);
+}
+.body_styles_4 .medium {
+  font-weight: var(--medium);
+}
+
+.body_styles_5 {
+  font-size: var(--sizeLarge);
+  line-height: var(--heightLarge);
+  letter-spacing: var(--overline);
+}
+.body_styles_5 .light {
+  font-weight: var(--light);
+}
+.body_styles_5 .regular {
+  font-weight: var(--regular);
+}
+.body_styles_5 .medium {
+  font-weight: var(--medium);
+}
+
+:root {
+  /*font weight*/
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semiBold: 600;
+  --bold: 700;
+  /*overline*/
+  --overline: 0.1em;
+  /*Для текста*/
+  --sizeLarge: 18px;
+  --sizeBase: 16px;
+  --sizeSmall: 14px;
+  --sizeXSmall: 12px;
+  --heightLarge: 24px;
+  --heightBase: 20px;
+  --heightSmall: 16px;
+  --heightXSmall: 16px;
+  /*Для заголовков*/
+  --sizeH1: 48px;
+  --sizeH2: 36px;
+  --sizeH3: 30px;
+  --sizeH4: 24px;
+  --sizeH5: 20px;
+  --sizeH6: 18px;
+  --heightH1: 48px;
+  --heightH2: 40px;
+  --heightH3: 36px;
+  --heightH4: 32px;
+  --heightH5: 28px;
+  --heightH6: 24px;
+}/*# sourceMappingURL=typographyText.css.map */
