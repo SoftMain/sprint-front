@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*banner*/
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    background: linear-gradient(#3B82F6, #2755A1);
+    min-height: 768px;
+}
+
+.banner_title {
+    color: white;
+    font-weight: normal;
+    font-weight: 500px;
+    font-size: 80px;
+}
+
+.btn_banner {
+    width: fit-content;
+    height: 56px;
+    padding: 0 80px;
+    border: none;
+    cursor: pointer;
+    background: #5A98D0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.banner_img {}
