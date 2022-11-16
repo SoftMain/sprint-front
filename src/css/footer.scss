@@ -19,7 +19,7 @@ footer {
     width: 100%;
     
 
-    /* Inside auto layout */
+    
 }
 .bevel {
     
@@ -32,19 +32,18 @@ footer {
 .upper{
    /* Auto layout */
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 32px 0px;
 
     width: 1120px;
     //height: 100px;
-    /* Inside auto layout */
 }
 .logo {
     /* Auto layout */
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 8px;
@@ -52,135 +51,124 @@ footer {
     width: 163px;
     height: 36px;
     /* Inside auto layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    // flex: none;
+    // order: 0;
+    // flex-grow: 0;
 }
 .logo-heading {
     font-weight: 500px;
     font-size: 30px;
     line-height: 36px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin: 0px;
+    // display: flex;
+    // align-items: center;
+    // text-align: center;
+    // margin: 0px;
 }
-.about {
-   
-}
-
 
 .about__list {
-    list-style: none;
-    list-style-type: none;
+    // list-style: none;
+    // list-style-type: none;
     /* Auto layout */
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
+    // flex-direction: row;
+    // align-items: flex-start;
+    // padding: 0px;
     margin: 0px;
-    text-align: center;
+    // text-align: center;
 
     width: 100%;
     height: 36px;
 
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    
+}
 
-}
-.about__list a {
-    // text-decoration: none;
-}
 .about__item1 {
-    list-style-type: none;
+    // list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
     padding: 8px 12px;
     gap: 6px;
 
     // width: 121px;
-    //height: 36px;
+    // height: 36px;
 
-    border-radius: 6px;
+    // border-radius: 6px;
 
     /* Inside auto layout */
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    // flex: none;
+    // order: 0;
+    // flex-grow: 0;
         
 }
 .about__item2 {
-    list-style-type: none;
+    // list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
     padding: 8px 12px;
-    gap: 6px;
+    // gap: 6px;
 
     // width: 111px;
-    //height: 36px;
+    // height: 36px;
 
-    border-radius: 6px;
+    // border-radius: 6px;
 
     /* Inside auto layout */
 
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+    // flex: none;
+    // order: 1;
+    // flex-grow: 0;
 }
 .about__item3 {
-    list-style-type: none;
+    // list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
     padding: 8px 12px;
-    gap: 6px;
+    // gap: 6px;
 
     // width: 65px;
-    //height: 36px;
+    // height: 36px;
 
-    border-radius: 6px;
+    // border-radius: 6px;
+
     /* Inside auto layout */
-    flex: none;
-    order: 2;
-    flex-grow: 0;
+    // flex: none;
+    // order: 2;
+    // flex-grow: 0;
 }
 .about-link:active,
 .about-link:hover,
-.about-link1 {
+.about-link {
     color: #FFFFFF;
     text-decoration:none;
-    width: 97px;
-    height: 20px;
+    // width: 97px;
+    // height: 20px;
    
 }
-.about-link2 {
-    color: #FFFFFF;
-    text-decoration:none;
-    width: 87px;
-    height: 20px;
-}
-.about-link3 {
-    color: #FFFFFF;
-    text-decoration:none;
-    width: 41px;
-    height: 20px;
-}
-.about-link:active,
-.about-link:hover,
+// .about-link2 {
+//     color: #FFFFFF;
+//     text-decoration:none;
+//     // width: 87px;
+//     // height: 20px;
+// }
+// .about-link3 {
+//     color: #FFFFFF;
+//     text-decoration:none;
+//     width: 41px;
+//     height: 20px;
+// }
 
 .under{
     box-sizing: border-box;
     /* Auto layout */
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     align-items: center;
     padding: 32px 0px 64px;
     
@@ -190,59 +178,58 @@ footer {
     border-top: 1px solid #FFFFFF;
     /* Inside auto layout */
 }
-.company {
-    width: 976px;
-    height: 40px;
+// .company {
+    // width: 976px;
+    // height: 40px;
     
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
 
     /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-}
+    // flex: none;
+    // order: 0;
+    // flex-grow: 1;
+// }
 .company__text {
     margin: 0px;
 }
-.contacts {
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
+// .contacts {
+//     /* Auto layout */
+//     display: flex;
+//     // flex-direction: row;
+//     // align-items: flex-start;
+//     // padding: 0px;
+//     // gap: 16px;// - возможно понадобиться
 
-    width: 144px;
-    //height: 24px;
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
+//     width: 144px;
+//     //height: 24px;
+//     /* Inside auto layout */
+//     // flex: none;
+//     // order: 1;
+//     // flex-grow: 0;
+// }
 .contacts__list {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    margin: 0px;
+    // flex-direction: row;
+    // align-items: flex-start;
+    // padding: 0px;
+    // margin: 0px;
     gap: 16px;
 
-    width: 144px;
-    height: 24px;
+    // width: 144px;
+    // height: 24px;
     /* Inside auto layout */
 
     
-
+  
 }
 .contacts__item {
-    list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 24px;
-    height: 24px;
+    // list-style-type: none;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    // padding: 0px;
+    // width: 24px;
+    // height: 24px;
 }
