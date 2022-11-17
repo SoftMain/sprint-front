@@ -8,14 +8,14 @@ for (let icon of icons) {
     icon.style.cssText = `
         width: ${icon.classList[1]};
         height: ${icon.classList[1]};                                                       
-        background: url(../img/icons/${icon.classList[0]}.svg) center center/cover no-repeat;
+        background: url(./img/icons/${icon.classList[0]}.svg) center center/cover no-repeat;
         `;
   } else {
     //если второго параметра нет или на его месте какой-то пользовательский класс, то размеры шаблонные
     icon.style.cssText = `
         width: 24px;
         height: 24px;
-        background: url(../img/icons/${icon.classList[0]}.svg) center center/cover no-repeat;
+        background: url(./img/icons/${icon.classList[0]}.svg) center center/cover no-repeat;
         `;
   }
 }
