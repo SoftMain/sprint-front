@@ -1,9 +1,6 @@
 body {
   font-family: "Roboto";
   font-style: normal;
-  margin-left: 112px;
-  width: 1440px;
-  height: 1615px;
 }
 
 h5 {
@@ -66,4 +63,4 @@ h5 {
   align-items: flex-start;
   justify-content: space-between;
   height: 100px;
-}/*# sourceMappingURL=Typography.css.map */
+}/*# sourceMappingURL=typography.css.map */

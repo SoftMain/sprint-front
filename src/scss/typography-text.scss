@@ -1,8 +1,10 @@
   .text {
     color: #999999;
   }
+
   .hstyles {
     width: 100%;
+
     .regular {
       font-weight: var(--regular);
     }
@@ -19,13 +21,13 @@
       font-weight: var(--bold);
     }
 
-    h1{
+    h1 {
       font-size: var(--sizeH1);
       line-height: var(--heightH1);
       color: black;
     }
 
-    h2{
+    h2 {
       font-size: var(--sizeH2);
       line-height: var(--heightH2);
     }
@@ -67,10 +69,12 @@
     .medium {
       font-weight: var(--medium);
     }
+
     .large {
       font-size: var(--sizeLarge);
       line-height: var(--heightLarge);
     }
+
     .base {
       font-size: var(--sizeBase);
       line-height: var(--heightBase);
@@ -93,6 +97,7 @@
       text-transform: uppercase;
     }
   }
+
   :root {
     /*font weight*/
     --light: 300;
