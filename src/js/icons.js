@@ -3,7 +3,7 @@ let reg_exp = /^(\d{2}px)$/; //регулярное выражение
 
 for (let icon of icons) {
   //перебираем по каждому svg
-  let css = `width: ${icon.classList[1]};height: ${icon.classList[1]};background: url(../img/icons/${icon.classList[0]}.svg) center center/cover no-repeat;`;
+  let css = `width: ${icon.classList[1]};height: ${icon.classList[1]};background: url(img/icons/${icon.classList[0]}.svg) center center/cover no-repeat;`;
   
   if (icon.classList[1] && reg_exp.test(icon.classList[1])) {
     switch(icon.classList[1]){
@@ -32,7 +32,7 @@ for (let icon of icons) {
         icon.style.cssText = `
         width: 24px;
         height: 24px;
-        background: url(../img/icons/error.svg) center center/cover no-repeat;
+        background: url(img/icons/error.svg) center center/cover no-repeat;
         `;
       }
       
@@ -43,7 +43,7 @@ for (let icon of icons) {
     icon.style.cssText = `
         width: 24px;
         height: 24px;
-        background: url(../img/icons/${icon.classList[0]}.svg) center center/cover no-repeat;
+        background: url(img/icons/${icon.classList[0]}.svg) center center/cover no-repeat;
         `;
   }
 }
