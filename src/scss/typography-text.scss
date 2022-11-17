@@ -1,28 +1,8 @@
-  .heading_styles_1 {
-    font-size: var(--sizeH1);
-    line-height: var(--heightH1);
-
-    .regular {
-      font-weight: var(--regular);
-    }
-
-    .medium {
-      font-weight: var(--medium);
-    }
-
-    .semiBold {
-      font-weight: var(--semiBold);
-    }
-
-    .bold {
-      font-weight: var(--bold);
-    }
+  .text {
+    color: #999999;
   }
-
-  .heading_styles_2 {
-    font-size: var(--sizeH2);
-    line-height: var(--heightH2);
-
+  .hstyles {
+    width: 100%;
     .regular {
       font-weight: var(--regular);
     }
@@ -38,100 +18,43 @@
     .bold {
       font-weight: var(--bold);
     }
-  }
 
-  .heading_styles_3 {
-    font-size: var(--sizeH3);
-    line-height: var(--heightH3);
-
-    .regular {
-      font-weight: var(--regular);
+    h1{
+      font-size: var(--sizeH1);
+      line-height: var(--heightH1);
+      color: black;
     }
 
-    .medium {
-      font-weight: var(--medium);
+    h2{
+      font-size: var(--sizeH2);
+      line-height: var(--heightH2);
     }
 
-    .semiBold {
-      font-weight: var(--semiBold);
+    h3 {
+      font-size: var(--sizeH3);
+      line-height: var(--heightH3);
     }
 
-    .bold {
-      font-weight: var(--bold);
-    }
-  }
-
-  .heading_styles_4 {
-    font-size: var(--sizeH4);
-    line-height: var(--heightH4);
-
-    .regular {
-      font-weight: var(--regular);
+    h4 {
+      font-size: var(--sizeH4);
+      line-height: var(--heightH4);
     }
 
-    .medium {
-      font-weight: var(--medium);
+    h5 {
+      font-size: var(--sizeH5);
+      line-height: var(--heightH5);
+      color: #000000;
     }
 
-    .semiBold {
-      font-weight: var(--semiBold);
-    }
-
-    .bold {
-      font-weight: var(--bold);
-    }
-  }
-
-  .heading_styles_5 {
-    font-size: var(--sizeH5);
-    line-height: var(--heightH5);
-
-    .regular {
-      font-weight: var(--regular);
-    }
-
-    .medium {
-      font-weight: var(--medium);
-    }
-
-    .semiBold {
-      font-weight: var(--semiBold);
-    }
-
-    .bold {
-      font-weight: var(--bold);
-    }
-  }
-
-  .heading_styles_6 {
-    font-size: var(--sizeH6);
-    line-height: var(--heightH6);
-
-    .regular {
-      font-weight: var(--regular);
-    }
-
-    .medium {
-      font-weight: var(--medium);
-    }
-
-    .semiBold {
-      font-weight: var(--semiBold);
-    }
-
-    .bold {
-      font-weight: var(--bold);
+    h6 {
+      font-size: var(--sizeH6);
+      line-height: var(--heightH6);
     }
   }
 
   .body_styles {
     height: 537px;
     margin-top: 64px;
-  }
-
-  .body_styles_1 {
-    font-size: var(--sizeLarge);
-    line-height: var(--heightLarge);
 
     .light {
       font-weight: var(--light);
@@ -144,77 +67,32 @@
     .medium {
       font-weight: var(--medium);
     }
-  }
-
-  .body_styles_2 {
-    font-size: var(--sizeBase);
-    line-height: var(--heightBase);
-
-    .light {
-      font-weight: var(--light);
+    .large {
+      font-size: var(--sizeLarge);
+      line-height: var(--heightLarge);
+    }
+    .base {
+      font-size: var(--sizeBase);
+      line-height: var(--heightBase);
     }
 
-    .regular {
-      font-weight: var(--regular);
+    .small {
+      font-size: var(--sizeSmall);
+      line-height: var(--heightSmall);
     }
 
-    .medium {
-      font-weight: var(--medium);
-    }
-  }
-
-  .body_styles_3 {
-    font-size: var(--sizeSmall);
-    line-height: var(--heightSmall);
-
-    .light {
-      font-weight: var(--light);
+    .xsmall {
+      font-size: var(--sizeXSmall);
+      line-height: var(--heightXSmall);
     }
 
-    .regular {
-      font-weight: var(--regular);
-    }
-
-    .medium {
-      font-weight: var(--medium);
+    .overline {
+      font-size: var(--sizeXSmall);
+      line-height: var(--heightXSmall);
+      letter-spacing: var(--overline);
+      text-transform: uppercase;
     }
   }
-
-  .body_styles_4 {
-    font-size: var(--sizeXSmall);
-    line-height: var(--heightXSmall);
-
-    .light {
-      font-weight: var(--light);
-    }
-
-    .regular {
-      font-weight: var(--regular);
-    }
-
-    .medium {
-      font-weight: var(--medium);
-    }
-  }
-
-  .body_styles_5 {
-    font-size: var(--sizeLarge);
-    line-height: var(--heightLarge);
-    letter-spacing: var(--overline);
-
-    .light {
-      font-weight: var(--light);
-    }
-
-    .regular {
-      font-weight: var(--regular);
-    }
-
-    .medium {
-      font-weight: var(--medium);
-    }
-  }
-
   :root {
     /*font weight*/
     --light: 300;

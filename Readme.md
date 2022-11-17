@@ -1,6 +1,6 @@
 ## TODO
-- [ ] Align the icons with the text in the block as in the figma design
-- [ ] Rename "infoblock" to something understandable
+- [x] Align the icons with the text in the block as in the figma design
+- [x] Rename "infoblock" to something understandable (Renamed to self-promotion-block)
 
 ## Note
-I copy icons.js from buttons branche and download icons from figma
+kachan: У иконок в infoblock пропали цвета

@@ -6,8 +6,17 @@ body {
   height: 1615px;
 }
 
+h5 {
+  width: 100%;
+  height: 36px;
+  color: #000000;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 .under_line {
-  width: 1216px;
+  width: 100%;
   height: 1px;
   background: #b0b0b0;
 }
@@ -17,37 +26,7 @@ body {
   flex-direction: column;
 }
 
-.heading_styles_1 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.heading_styles_2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.heading_styles_3 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.heading_styles_4 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.heading_styles_5 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
-.heading_styles_6 {
+.hstyles {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -58,32 +37,33 @@ body {
   margin-top: 64px;
 }
 
-.body_styles_1 {
+.large {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.body_styles_2 {
+.base {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.body_styles_3 {
+.small {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.body_styles_4 {
+.xsmall {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-.body_styles_5 {
+.overline {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}/*# sourceMappingURL=typography.css.map */
+  height: 100px;
+}/*# sourceMappingURL=Typography.css.map */
