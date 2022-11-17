@@ -16,7 +16,7 @@
 
 .frame {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* TODO: add changing row to column in screen portrait mode */
     align-items: flex-start;
     padding: 0px;
     gap: 20px;
@@ -30,10 +30,11 @@
     align-items: flex-start;
     padding: 8px;
     gap: 8px;
-    width: 100%; /* sets the blocks to the same widt    h */
+    width: 100%; /* sets the blocks to the same width */
 }
 
 .frame article h5 {
+    margin: 0%;
     font-weight: 500;
     font-size: 20px;
     line-height: 28px;
