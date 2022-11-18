@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "Roboto";
     font-style: normal;
 }
 
-.container{
+.container {
     width: 1120px;
     margin: 0 auto;
 }
 
 @import 'data/proto.scss',
 'data/buttons.scss',
-'data/footer.scss',
 'data/self-promotion-block.scss',
-'data/typography-text.scss',
-'data/Typography.scss'
+'data/category.scss',
+'data/reviews.scss',
+'data/header.scss'
+// 'data/footer.scss',
+// 'data/typography-text.scss',
+// 'data/Typography.scss'
