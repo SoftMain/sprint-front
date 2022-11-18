@@ -1,4 +1,18 @@
-.banner {
+.partnersblocks {
+    width: 1120px;
+    height: 346px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.partnersblocks-partners {
+    width: 570px;
+    height: 346px;
+}
+
+.partnersblocks-partners-banner {
     display: grid;
     grid-template-rows: repeat(3, 80px);
     grid-template-columns: repeat(3, 170px);
@@ -6,13 +20,37 @@
     grid-column-gap: 20px;
     width: 550px;
     height: 304px;
+    margin-right: 20px;
+    margin-top: 42px;
 }
 
-.logo {
+.partnersblocks-partners-banner-logo {
     background-color: aqua;
 }
 
-.review {
+.partnerreviews {
+    width: 550px;
+    height: 346px;
+    flex-direction: column;
+}
+
+.partnerreviews-slider {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 265px;
+    height: 8px;
+}
+
+.partnerreviews-slider-switcher {
+    width: 28px;
+    height: 8px;
+    background: #B4CEFA;
+    border-radius: 4px;
+}
+
+
+
+.comment {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,9 +59,10 @@
     /* height: 172px; */
     border: 1px solid #B3B3B3;
     border-radius: 12px;
+    margin-top: 32px;
 }
 
-.reviewer {
+.comment-reviewer {
     display: inline-flex;
     width: 490px;
     height: 64px;
@@ -31,11 +70,7 @@
     margin-top: 30px;
 }
 
-.data {
-    flex-direction: column;
-}
-
-.avatar {
+.comment-reviewer-avatar {
     background: rebeccapurple;
     width: 64px;
     height: 64px;
@@ -43,22 +78,11 @@
     margin-right: 16px;
 }
 
-.slider {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 265px;
-    height: 8px;
+.comment-reviewer-data {
+    flex-direction: column;
 }
 
-.switcher {
-    width: 28px;
-    height: 8px;
-    background: #B4CEFA;
-    border-radius: 4px;
-}
-
-
-.reviewerinfo {
+.comment-reviewerinfo {
     width: 490px;
     margin-bottom: 30px;
     max-height: 306px;
