@@ -1,10 +1,7 @@
-body{
-    padding: 0px;
-    margin: 0px;
-}
+
 footer {
     /* Шрифт/Цвет фона */
-    background: #1E3A8A;
+    // background: #1E3A8A;
     color: #FFFFFF;
     font-family: 'Roboto';
     font-style: normal;
@@ -21,11 +18,20 @@ footer {
 
     
 }
+.footer__background {
+    background: #1E3A8A;
+    width:  100%;
+}
+
+.container {
+
+}
 .bevel {
     
     background: #1E3A8A;
+    width:  100%;
     
-    padding: 60px 40px;
+    padding: 60px 0px;
     clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
     
 }
@@ -215,6 +221,8 @@ footer {
     // padding: 0px;
     // margin: 0px;
     gap: 16px;
+
+    padding-left: 5%;
 
     // width: 144px;
     // height: 24px;
