@@ -2,100 +2,80 @@
     color: #999999;
   }
 
-  .position {
-    width: 100%;
-
-    .regular {
-      font-weight: var(--regular);
-    }
-
-    .medium {
-      font-weight: var(--medium);
-    }
-
-    .semiBold {
-      font-weight: var(--semiBold);
-    }
-
-    .bold {
-      font-weight: var(--bold);
-    }
-
-    h1 {
-      font-size: var(--sizeH1);
-      line-height: var(--heightH1);
-      color: black;
-    }
-
-    h2 {
-      font-size: var(--sizeH2);
-      line-height: var(--heightH2);
-    }
-
-    h3 {
-      font-size: var(--sizeH3);
-      line-height: var(--heightH3);
-    }
-
-    h4 {
-      font-size: var(--sizeH4);
-      line-height: var(--heightH4);
-    }
-
-    h5 {
-      font-size: var(--sizeH5);
-      line-height: var(--heightH5);
-      color: #000000;
-    }
-
-    h6 {
-      font-size: var(--sizeH6);
-      line-height: var(--heightH6);
-    }
+  //font-weight
+  .regular {
+    font-weight: var(--regular);
   }
 
-  .body_styles {
-    height: 537px;
-    margin-top: 64px;
+  .medium {
+    font-weight: var(--medium);
+  }
 
-    .light {
-      font-weight: var(--light);
-    }
+  .semiBold {
+    font-weight: var(--semiBold);
+  }
 
-    .regular {
-      font-weight: var(--regular);
-    }
+  .bold {
+    font-weight: var(--bold);
+  }
+//Размеры заголовков
+  h1 {
+    font-size: var(--sizeH1);
+    line-height: var(--heightH1);
+    color: black;
+  }
 
-    .medium {
-      font-weight: var(--medium);
-    }
+  h2 {
+    font-size: var(--sizeH2);
+    line-height: var(--heightH2);
+  }
 
-    .large {
-      font-size: var(--sizeLarge);
-      line-height: var(--heightLarge);
-    }
+  h3 {
+    font-size: var(--sizeH3);
+    line-height: var(--heightH3);
+  }
 
-    .base {
-      font-size: var(--sizeBase);
-      line-height: var(--heightBase);
-    }
+  h4 {
+    font-size: var(--sizeH4);
+    line-height: var(--heightH4);
+  }
 
-    .small {
-      font-size: var(--sizeSmall);
-      line-height: var(--heightSmall);
-    }
+  h5 {
+    font-size: var(--sizeH5);
+    line-height: var(--heightH5);
+    color: #000000;
+  }
 
-    .xsmall {
-      font-size: var(--sizeXSmall);
-      line-height: var(--heightXSmall);
-    }
+  h6 {
+    font-size: var(--sizeH6);
+    line-height: var(--heightH6);
+  }
+//Размеры текста
+  .text-large {
+    font-size: var(--sizeLarge);
+    line-height: var(--heightLarge);
+  }
 
-    .overline {
-      font-size: var(--sizeXSmall);
-      line-height: var(--heightXSmall);
-      letter-spacing: var(--overline);
-      text-transform: uppercase;
-    }
+  .text-base {
+    font-size: var(--sizeBase);
+    line-height: var(--heightBase);
+  }
+
+  .text-small {
+    font-size: var(--sizeSmall);
+    line-height: var(--heightSmall);
+  }
+
+  .text-xsmall {
+    font-size: var(--sizeXSmall);
+    line-height: var(--heightXSmall);
+  }
+
+  .text-overline {
+    font-size: var(--sizeXSmall);
+    line-height: var(--heightXSmall);
+    letter-spacing: var(--overline);
+    text-transform: uppercase;
   }
 
   :root {
