@@ -24,13 +24,13 @@ body {
     margin: 0 auto
 }
 
-.proto__block {
+/* .proto__block {
     background-color: gray
 }
 
 .proto__elem {
     background-color: #000
-}
+} */
 
 .nav {
     padding: 16px 0;
