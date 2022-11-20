@@ -1,0 +1,35 @@
+.self-promotion-block {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 32px;
+    align-items: center;
+}
+
+.self-promotion-block__header {
+    font-weight: 500;
+}
+
+.self-promotion-block__frame {
+    display: flex;
+    flex-direction: row; /* TODO: add changing row to column in screen portrait mode */
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.self-promotion-block__content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+    width: 100%; /* sets the blocks to the same width */
+}
+
+/*
+.self-promotion-block__content-text {
+    text-align: justify;
+    
+}*/
