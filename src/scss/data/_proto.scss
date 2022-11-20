@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 
 body{
     background:rgb(235, 234, 234);
@@ -53,7 +50,7 @@ body{
 }
 
 .main{
-    margin-top: 87px;
+    padding-top: 87px;
     display: flex;
     justify-content: space-between;
     &__text{
@@ -84,7 +81,7 @@ body{
 }
 
 .categories{
-    margin-top: 128px;
+    padding-top: 128px;
     &__h3{
         width: 442px;
         height: 38px;
@@ -138,7 +135,7 @@ body{
 }
 
 .info{
-    margin-top: 88px;
+    padding-top: 88px;
     &__h2{
         width: 310px;
         height: 47px;
@@ -172,7 +169,7 @@ body{
 }
 
 .partners{
-    margin-top: 64px;
+    padding-top: 64px;
     display: flex;
     justify-content: space-between;
     &__logos{
