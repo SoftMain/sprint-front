@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/proto.min.css">
-    <link rel="stylesheet" href="./css/buttons.css">
-    <link rel="stylesheet" href="./css/typography.css">
-    <link rel="stylesheet" href="./css/self-promotion-block.css">
-    <link rel="stylesheet" href="./css/category.css">
-    <link rel="stylesheet" href="./css/reviews.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
 </head>
 
@@ -19,14 +14,29 @@
         <div class="container">
             <nav class="nav proto__block">
                 <div class="nav__wrapper">
-                    <div class="nav__wrapper-logo proto__elem"></div>
-                    <div class="nav__wrapper-categories proto__elem"></div>
+                    <div class="nav__wrapper-logo proto__elem">
+                        <svg class="logo32 32px"></svg>
+
+                        <a id="main-link" href="">SoftMain</a>
+                    </div>
+
+                    <div class="nav__wrapper-categories proto__elem">
+                        <a class="btn btn-primary">Категории
+                            <svg class="caret-down 20px"></svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="nav__search proto__elem"></div>
+                <div class="nav__search proto__elem">
+                    <form action="#" method="get">
+                        <input class="search-area" type="search" name="search" placeholder="Поиск по сайту"
+                            required-placeholder="">
+                    </form>
+                    <svg class="search 20px search-img"></svg>
+                </div>
                 <div class="nav__links">
-                    <div class="nav__links-link proto__elem">Lorem.</div>
-                    <div class="nav__links-link proto__elem">Lorem.</div>
-                    <div class="nav__links-link proto__elem">Lorem.</div>
+                    <div class="nav__links-link proto__elem"><a class="btn">Интеграторы</a></div>
+                    <div class="nav__links-link proto__elem"><a class="btn">Компаниям</a></div>
+                    <div class="nav__links-link proto__elem"><a class="btn">О нас</a></div>
                 </div>
             </nav>
         </div>
@@ -248,7 +258,7 @@
                 <div class="frame">
                     <article>
                         <div>
-                            <svg class="search-content 64px check_error"></svg>
+                            <svg class="search-content 64px"></svg>
                         </div>
                         <div>
                             <H5>Упростите поиск</H5>
@@ -263,7 +273,7 @@
 
                     <article>
                         <div>
-                            <svg class="mark-email-read-rounded 64px check_error"></svg>
+                            <svg class="mark-email-read 64px"></svg>
                         </div>
                         <div>
                             <H5>Быстрое решение</H5>
@@ -275,7 +285,7 @@
 
                     <article>
                         <div>
-                            <svg class="pointer 64px check_error"></svg>
+                            <svg class="pointer 64px"></svg>
                         </div>
                         <div>
                             <H5>Сделайте выбор</H5>
@@ -341,30 +351,47 @@
 
     </section>
     <footer>
-        <div class="container">
-            <div class="footer proto__block">
-                <div class="footer__top">
-                    <div class="footer__top-logo proto__elem"></div>
-                    <div class="footer__top-links">
-                        <div class="proto__elem"></div>
-                        <div class="proto__elem"></div>
-                        <div class="proto__elem"></div>
+        <div class="bevel"></div>
+        <div class="footer__background">
+            <div class="container">
+                <div class="upper">
+                    <div class="logo">
+                        <svg class="logo32 32px"> </svg>
+                        <h3 class="logo-heading">SoftMain</h3>
+                    </div>
+                    <div class="about">
+                        <ul class="about__list">
+                            <li class="about__item1"><a href="#" class="about-link">Интеграторы</a> </li>
+                            <li class="about__item2"><a href="#" class="about-link">Компаниям</a> </li>
+                            <li class="about__item3"><a href="#" class="about-link">О нас</a> </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="hr proto__elem"></div>
-                <div class="footer__bottom">
-                    <p class="footer__bottom-text proto__elem"></p>
-                    <div class="footer__bottom-socials">
-                        <div class="proto__elem"></div>
-                        <div class="proto__elem"></div>
-                        <div class="proto__elem"></div>
-                        <div class="proto__elem"></div>
-                    </div>
+
+                <div class="under">
+                    <p class="company__text">
+                        © 2022 SoftMain. Все права на материалы, представленные на нашем сайте, принадлежат их законным
+                        владельцам и <wbr>
+                            предназначены только для ознакомления.
+                    </p>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <svg class="social-telegram 20px"> </svg>
+                        </li>
+                        <li class="contacts__item">
+                            <svg class="social-discord 20px"></svg>
+                        </li>
+                        <li class="contacts__item">
+                            <svg class="social-vk 20px"></svg>
+                        </li>
+                        <li class="contacts__item">
+                            <svg class="social-youtube 20px"></svg>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
     <script src="./js/icons.js"></script>
 </body>
-
 </html>
