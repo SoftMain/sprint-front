@@ -4,27 +4,22 @@
     padding: 0px;
     gap: 32px;
     align-items: center;
-    font-family: 'Roboto';
-    font-style: normal;
 }
 
-.self-promotion-block h3 {
+.self-promotion-block__header {
     font-weight: 500;
-    font-size: 30px;
-    line-height: 36px;
 }
 
-.frame {
+.self-promotion-block__frame {
     display: flex;
     flex-direction: row; /* TODO: add changing row to column in screen portrait mode */
     align-items: flex-start;
     padding: 0px;
     gap: 20px;
     align-self: stretch;
-    flex: none;
 }
 
-.frame article {
+.self-promotion-block__content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -33,15 +28,8 @@
     width: 100%; /* sets the blocks to the same width */
 }
 
-.frame article h5 {
-    margin: 0%;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-}
-
-.frame article p {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
-}
+/*
+.self-promotion-block__content-text {
+    text-align: justify;
+    
+}*/
