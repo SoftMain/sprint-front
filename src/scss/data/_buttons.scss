@@ -16,6 +16,7 @@ $sm-btn-gap: 6px;
 $border-size: 2px;
 
 .btn {
+    box-sizing: border-box;
     /* Auto layout */
     display: inline-flex;
     flex-direction: row;
@@ -59,16 +60,19 @@ $border-size: 2px;
 }
 
 .btn-primary {
+    border: $border-size solid $royal-blue;
     background: $royal-blue;
     color: white !important;
 }
 
 .btn-primary:hover {
+    border: $border-size solid $blue-yonder;
     background: $blue-yonder;
     color: white !important;
 }
 
 .btn-primary:active {
+    border: $border-size solid $dark-blue;
     background: $dark-blue;
     color: white !important;
 }
