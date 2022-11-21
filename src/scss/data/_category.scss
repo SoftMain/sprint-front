@@ -139,7 +139,8 @@
 
 .blockcategory-navmenu-navigation li {
   // display: block;
-  background: url(/src/img/icons/antivirus.svg) no-repeat left transparent;
+  // background: url(/src/img/icons/antivirus.svg) no-repeat left transparent;
+
   list-style: none;
   margin: 0;
   padding-left: 28px;
@@ -175,6 +176,7 @@
   border: solid gray;
   border-width: 1px;
   border-radius: 10px;
+  background-color: white;
 }
 
 .category-container-logo img {
