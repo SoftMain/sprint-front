@@ -51,6 +51,7 @@ body{
 
 .main{
     padding-top: 87px;
+    padding-bottom: 128px;
     display: flex;
     justify-content: space-between;
     &__text{
@@ -81,7 +82,6 @@ body{
 }
 
 .categories{
-    padding-top: 128px;
     &__h3{
         width: 442px;
         height: 38px;
