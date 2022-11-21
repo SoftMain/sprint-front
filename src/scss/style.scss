@@ -1,4 +1,7 @@
-@import 'data/fonts.scss';
+@import 'data/colors.scss',
+'data/typography.scss',
+'data/fonts.scss';
+
 
 * {
     margin: 0;
@@ -24,11 +27,8 @@ body{
 'data/header.scss',
 'data/footer.scss',
 'data/banner.scss',
-'data/colors.scss',
-'data/typography.scss',
 'data/main.scss',
 'data/background.scss';
 
-.div::before{
-    color:#000;
-}
+
+@import 'product-main.scss'
