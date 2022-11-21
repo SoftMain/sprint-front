@@ -30,6 +30,5 @@ body{
 'data/main.scss',
 'data/background.scss';
 
-.div::before{
-    color:#000;
-}
+
+@import 'product-main.scss'
