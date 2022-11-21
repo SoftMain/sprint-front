@@ -1,14 +1,5 @@
 
 
-body{
-    background:rgb(235, 234, 234);
-}
-
-.container{
-    width: 1120px;
-    margin: 0 auto;
-}
-
 // .proto__block{
 //     background-color: grey;
 // }
@@ -51,6 +42,7 @@ body{
 
 .main{
     padding-top: 87px;
+    padding-bottom: 128px;
     display: flex;
     justify-content: space-between;
     &__text{
@@ -75,13 +67,13 @@ body{
         }
     }
     &__img{
+        position: relative;
         width: 507px;
         height: 443px;
     }
 }
 
 .categories{
-    padding-top: 128px;
     &__h3{
         width: 442px;
         height: 38px;

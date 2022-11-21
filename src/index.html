@@ -9,20 +9,20 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="main">
     <header id="header">
         <div class="container">
             <nav class="nav proto__block">
                 <div class="nav__wrapper">
                     <div class="nav__wrapper-logo proto__elem">
-                        <svg class="logo32 32px"></svg>
+                        <span class="icon-logo32 32px"></span>
 
                         <a id="main-link" href="">SoftMain</a>
                     </div>
 
                     <div class="nav__wrapper-categories proto__elem">
                         <a class="btn btn-primary">Категории
-                            <svg class="caret-down 20px"></svg>
+                            <span class="icon-caret-down 20px"></span>
                         </a>
                     </div>
                 </div>
@@ -31,7 +31,7 @@
                         <input class="search-area" type="search" name="search" placeholder="Поиск по сайту"
                             required-placeholder="">
                     </form>
-                    <svg class="search 20px search-img"></svg>
+                    <span class="icon-search 20px search-img"></span>
                 </div>
                 <div class="nav__links">
                     <div class="nav__links-link proto__elem"><a class="btn">Интеграторы</a></div>
@@ -41,7 +41,7 @@
             </nav>
         </div>
     </header>
-    <main id="main-main">
+    <main>
         <div class="container">
             <div class="main proto__block">
                 <div class="main__text">
@@ -61,15 +61,16 @@
                     </div>
                 </div>
                 <div class="main__img proto__elem">
-                    <img src="../src/img/OBJECTS.png" alt="">
+                    <img class="main__img-pic" src="../src/img/OBJECTS.png" alt="">
+                    <img class="main__img-bg" src="img/background/main_bg.svg" alt="">
                 </div>
             </div>
         </div>
     </main>
-    <section id="categories">
-        <div class="mainproducts">
+    <section>
+        <div class="container">
             <div class="mainproducts-infotext">
-                <div class="p">Самые популярные категории</div>
+                <h3>Самые популярные категории</h3>
             </div>
 
 
@@ -77,13 +78,28 @@
 
                 <div class="blockcategory-navmenu">
                     <ul class="blockcategory-navmenu-navigation">
-                        <li class="defender"><a href="#">Антивирусы</a></li>
-                        <li class="browsers"><a href="#">Браузеры</a></li>
-                        <li class="conferences"><a href="#">Видеоконференции</a></li>
-                        <li class="grapheditor"><a href="#">Графические редакторы</a></li>
-                        <li class="messenger"><a href="#">Мессенджеры</a></li>
-                        <li class="opersys"><a href="#">Операционные системы</a></li>
-                        <li class="tasktracker"><a href="#">Таск-трекеры</a></li>
+                        <li class="defender"><span class="icon-antivirus 20px"></span>
+                            <h6><a href="#">Антивирусы</a></h6>
+                        </li>
+                        <li class="browsers"><span class="icon-browser 20px"></span>
+                            <h6><a href="#">Браузеры</a></h6>
+                        </li>
+                        <li class="conferences"><span class="icon-video-conference 20px"></span>
+                            <h6><a href="#">Видеоконференции</a></h6>
+                        </li>
+                        <li class="grapheditor"><span class="icon-designers 20px"></span>
+                            <h6><a href="#">Графические
+                                    редакторы</a></h6>
+                        </li>
+                        <li class="messenger"><span class="icon-messageres 20px"></span>
+                            <h6><a href="#">Мессенджеры</a></h6>
+                        </li>
+                        <li class="opersys"><span class="icon-os 20px"></span>
+                            <h6><a href="#">Операционные системы</a></h6>
+                        </li>
+                        <li class="tasktracker"><span class="icon-task-tracker 20px"></span>
+                            <h6><a href="#">Таск-трекеры</a></h6>
+                        </li>
                     </ul>
                 </div>
                 <div class="category">
@@ -92,12 +108,14 @@
                         </div>
                         <div class="category-container-main">
                             <div class="category-container-main-title">
-                                <div class="category-container-main-title-name">Lunacy</div>
+                                <div class="category-container-main-title-name">
+                                    <h6>Lunacy</h6>
+                                </div>
                                 <div class="category-container-main-title-button">
-                                    <svg class="chevron-r 16px"></svg>
+                                    <span class="icon-chevron-r 16px"></span>
                                 </div>
                             </div>
-                            <div class="category-container-main-description">
+                            <div class="category-container-main-description base">
                                 Бесплатный софт для дизайнеров с искусственным интеллектом и встроенной графикой
 
                             </div>
@@ -108,8 +126,11 @@
                         </div>
                         <div class="category-container-main">
                             <div class="category-container-main-title">
-                                <div class="category-container-main-title-name">AliveColors</div>
-                                <div class="category-container-main-title-button"><svg class="chevron-r 16px"></svg>
+                                <div class="category-container-main-title-name">
+                                    <h6>AliveColors</h6>
+                                </div>
+                                <div class="category-container-main-title-button"><span
+                                        class="icon-chevron-r 16px"></span>
                                 </div>
                             </div>
                             <div class="category-container-main-description">
@@ -122,8 +143,11 @@
                         </div>
                         <div class="category-container-main">
                             <div class="category-container-main-title">
-                                <div class="category-container-main-title-name">Supa</div>
-                                <div class="category-container-main-title-button"><svg class="chevron-r 16px"></svg>
+                                <div class="category-container-main-title-name">
+                                    <h6>Supa</h6>
+                                </div>
+                                <div class="category-container-main-title-button"><span
+                                        class="icon-chevron-r 16px"></span>
                                 </div>
                             </div>
                             <div class="category-container-main-description">
@@ -137,8 +161,11 @@
                         </div>
                         <div class="category-container-main">
                             <div class="category-container-main-title">
-                                <div class="category-container-main-title-name">ФотоМАСТЕР</div>
-                                <div class="category-container-main-title-button"><svg class="chevron-r 16px"></svg>
+                                <div class="category-container-main-title-name">
+                                    <h6>ФотоМАСТЕР</h6>
+                                </div>
+                                <div class="category-container-main-title-button"><span
+                                        class="icon-chevron-r 16px"></span>
                                 </div>
                             </div>
                             <div class="category-container-main-description">
@@ -151,8 +178,11 @@
                         </div>
                         <div class="category-container-main">
                             <div class="category-container-main-title">
-                                <div class="category-container-main-title-name">Supa</div>
-                                <div class="category-container-main-title-button"><svg class="chevron-r 16px"></svg>
+                                <div class="category-container-main-title-name">
+                                    <h6>Supa</h6>
+                                </div>
+                                <div class="category-container-main-title-button"><span
+                                        class="icon-chevron-r 16px"></span>
                                 </div>
                             </div>
                             <div class="category-container-main-description">
@@ -166,8 +196,11 @@
                         </div>
                         <div class="category-container-main">
                             <div class="category-container-main-title">
-                                <div class="category-container-main-title-name">ФотоМАСТЕР</div>
-                                <div class="category-container-main-title-button"><svg class="chevron-r 16px wh"></svg>
+                                <div class="category-container-main-title-name">
+                                    <h6>ФотоМАСТЕР</h6>
+                                </div>
+                                <div class="category-container-main-title-button"><span
+                                        class="icon-chevron-r 16px"></span>
                                 </div>
                             </div>
                             <div class="category-container-main-description">
@@ -179,17 +212,32 @@
             </div>
         </div>
     </section>
-    <section id="banner">
+    <section>
         <div class="container">
             <div class="banner">
-                <img class="banner_img" src="./img/Group.png" alt="banner_background">
-                <h2 class="banner_title">Хотите добавить свое <br> ПО на сайт?</h2>
-                <p class="banner_text">Заполните форму для добавления вашего <br>программного обеспечения.</p>
-                <button class="btn_banner">Добавить ПО</button>
+                <div class="banner__content">
+                    <div class="banner__text-content">
+                        <div class="banner__h2">
+                            <h2 class="text-medium">Хотите добавить свое <br> ПО на сайт?</h2>
+                        </div>
+                        <div class="banner__text">
+                            <p class="text-large --light">Заполните форму для добавления вашего <br>программного
+                                обеспечения.</p>
+                        </div>
+                    </div>
+
+                    <div class="banner_button">
+                        <a class="btn btn-primary btn-lg text-large">Добавить ПО</a>
+                    </div>
+                </div>
+
+                <div class="banner__image">
+                    <img class="banner_img" src="./img/Group.png" alt="banner_background">
+                </div>
             </div>
         </div>
     </section>
-    <section id="info__partners">
+    <section>
         <div class="container">
             <div class="self-promotion-block">
                 <div class="self-promotion-block__header">
@@ -198,7 +246,7 @@
                 <div class="self-promotion-block__frame">
                     <article class="self-promotion-block__content">
                         <div class="self-promotion-block__content-icon">
-                            <svg class="search-content 64px"></svg>
+                            <span class="icon-search-content 64px"></span>
                         </div>
                         <div class="self-promotion-block__content-text">
                             <H5>Упростите поиск</H5>
@@ -213,7 +261,7 @@
 
                     <article class="self-promotion-block__content">
                         <div class="self-promotion-block__content-icon">
-                            <svg class="mark-email-read 64px"></svg>
+                            <span class="icon-mark-email-read 64px"></span>
                         </div>
                         <div class="self-promotion-block__content-text">
                             <H5>Быстрое решение</H5>
@@ -225,7 +273,7 @@
 
                     <article class="self-promotion-block__content">
                         <div class="self-promotion-block__content-icon">
-                            <svg class="pointer 64px"></svg>
+                            <span class="icon-pointer 64px"></span>
                         </div>
                         <div class="self-promotion-block__content-text">
                             <H5>Сделайте выбор</H5>
@@ -236,63 +284,67 @@
                             </p>
                         </div>
                 </div>
-        <div class="container">
-            <div class="partnersblocks">
+                <div class="container">
+                    <div class="partnersblocks">
 
-                <div class="partnersblocks-partners">
-                    <div class="partnersblocks-partners-banner">
-                        <div class="partnersblocks-partners-banner-logo"><img src="./img/patnerslogo/yandex.svg">
+                        <div class="partnersblocks-partners">
+                            <div class="partnersblocks-partners-banner">
+                                <div class="partnersblocks-partners-banner-logo yandex">
+                                </div>
+                                <div class="partnersblocks-partners-banner-logo ozon">
+                                </div>
+                                <div class="partnersblocks-partners-banner-logo wildberries"></div>
+                                <div class="partnersblocks-partners-banner-logo vk">
+                                </div>
+                                <div class="partnersblocks-partners-banner-logo rosteh">
+                                </div>
+                                <div class="partnersblocks-partners-banner-logo rostelekom">
+                                </div>
+                                <div class="partnersblocks-partners-banner-logo econom">
+                                </div>
+                                <div class="partnersblocks-partners-banner-logo otr">
+                                </div>
+                                <div class="partnersblocks-partners-banner-logo sber">
+                                </div>
+                            </div>
                         </div>
-                        <div class="partnersblocks-partners-banner-logo"><img
-                                src="/src/img/patnerslogo/wildberries.svg">
-                        </div>
-                        <div class="partnersblocks-partners-banner-logo"><img src="/src/img/patnerslogo/yandex.svg">
-                        </div>
-                        <div class="partnersblocks-partners-banner-logo"><img src="/src/img/patnerslogo/vk.svg"></div>
-                        <div class="partnersblocks-partners-banner-logo"><img src="/src/img/patnerslogo/rosteh.svg">
-                        </div>
-                        <div class="partnersblocks-partners-banner-logo"><img src="/src/img/patnerslogo/rostelekom.svg">
-                        </div>
-                        <div class="partnersblocks-partners-banner-logo"><img src="/src/img/patnerslogo/econom.svg">
-                        </div>
-                        <div class="partnersblocks-partners-banner-logo"><img src="/src/img/patnerslogo/otr.svg"></div>
-                        <div class="partnersblocks-partners-banner-logo"><img src="/src/img/patnerslogo/sber.svg"></div>
-                    </div>
-                </div>
 
-                <div class="partnerreviews">
-                    <div class="partnerreviews-slider">
-                        <div class="partnerreviews-slider-switcher"></div>
-                        <div class="partnerreviews-slider-switcher"></div>
-                        <div class="partnerreviews-slider-switcher"></div>
-                        <div class="partnerreviews-slider-switcher"></div>
-                        <div class="partnerreviews-slider-switcher"></div>
-                        <div class="partnerreviews-slider-switcher"></div>
-                    </div>
-
-                    <div class="comment wh">
-                        <div class="comment-reviewer">
-                            <div class="comment-reviewer-avatar"></div>
-                            <div class="comment-reviewer-data">
-                                <div class="comment-reviewer-data-nick">Иван Фурсов</div>
-                                <div class="comment-reviewer-data-post">Сбербанк</div>
+                        <div class="partnerreviews">
+                            <div class="partnerreviews-slider">
+                                <div class="partnerreviews-slider-switcher"></div>
+                                <div class="partnerreviews-slider-switcher"></div>
+                                <div class="partnerreviews-slider-switcher"></div>
+                                <div class="partnerreviews-slider-switcher"></div>
+                                <div class="partnerreviews-slider-switcher"></div>
+                                <div class="partnerreviews-slider-switcher"></div>
                             </div>
 
+                            <div class="comment wh">
+                                <div class="comment-reviewer">
+                                    <div class="comment-reviewer-avatar"></div>
+                                    <div class="comment-reviewer-data">
+                                        <div class="comment-reviewer-data-nick">
+                                            <h4>Иван Фурсов</h4>
+                                        </div>
+                                        <div class="comment-reviewer-data-post text-small">Сбербанк</div>
+                                    </div>
+
+                                </div>
+                                <div class="comment-reviewerinfo">Благодарю сайт «SoftMain» за понимание,
+                                    профессионализм и
+                                    высокое качество работы.</div>
+                            </div>
                         </div>
-                        <div class="comment-reviewerinfo">Благодарю сайт «SoftMain» за понимание, профессионализм и
-                            высокое качество работы.</div>
                     </div>
-                </div>
-            </div>
 
     </section>
-    <footer id="footer">
+    <footer>
         <div class="bevel"></div>
         <div class="footer__background">
             <div class="container">
                 <div class="upper">
                     <div class="logo">
-                        <svg class="logo32 32px"> </svg>
+                        <span class="icon-logo32 32px"> </span>
                         <h3 class="logo-heading">SoftMain</h3>
                     </div>
                     <div class="about">
@@ -312,16 +364,16 @@
                     </p>
                     <ul class="contacts__list">
                         <li class="contacts__item">
-                            <svg class="social-telegram 20px"> </svg>
+                            <span class="icon-social-telegram 20px"> </span>
                         </li>
                         <li class="contacts__item">
-                            <svg class="social-discord 20px"></svg>
+                            <span class="icon-social-discord 20px"></span>
                         </li>
                         <li class="contacts__item">
-                            <svg class="social-vk 20px"></svg>
+                            <span class="icon-social-vk 20px"></span>
                         </li>
                         <li class="contacts__item">
-                            <svg class="social-youtube 20px"></svg>
+                            <span class="icon-social-youtube 20px"></span>
                         </li>
                     </ul>
                 </div>

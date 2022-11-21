@@ -5,15 +5,17 @@
 }
 
 .main__text-btns {
-  width: 380px;
+  width: 360px;
 }
 
-.main-btn1 {
-  border-radius: 12px;
+.main__img-bg{
+  position: absolute;
+  z-index: -1;
+  top: -176px;
+  left: -120px;
 }
 
-.main-btn2 {
-  border-radius: 12px;
-  width: 166px;
-  height: 48px;
+.main__img-pic{
+  position: absolute;
+  right: -52px;
 }
