@@ -1,52 +1,53 @@
 .banner {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 312px;
+    flex-direction: row;
     border-radius: 12px;
+    justify-content: space-between;
     background: linear-gradient(#3B82F6, #2755A1);
-    margin-bottom: 50px;
-}
+    padding: 0px;
+    margin-bottom: 88px;
+    margin-top: 137px;
 
+    &__h2 {
+        color: white;
+    }
 
-.banner_title {
-    color: white;
-    padding: 30px 40px;
-    font-weight: 420px;
-    font-size: 36px;
-    line-height: 40px;
-    font-family: 'Roboto';
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 32px;
+    }
 
-}
+    &__text__content {
+        display: flex;
+    }
 
-// .btn_banner {
-//     width: 153px;
-//     height: 52px;
-//     margin-top: 30px;
-//     margin-left: 40px;
-//     background: #466EAF;
-//     font-weight: 400;
-//     font-size: 18px;
-//     letter-spacing: 0.04em;
-//     color: #FFFFFF;
-//     border: none;
-//     border-radius: 12px;
-//     cursor: pointer;
-// }
+    &__image {
+        display: flex;
+    }
 
-.banner_text {
-    font-size: 18px;
+    &__text {
+        font-size: 18px;
     color: #FFFFFF;
-    padding: 10px 40px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-}
+    }
 
-.banner_img {
-    width: 688px;
-    height: 314px;
-    display: flex;
-    flex-flow: wrap;
-    order: 2;
-    padding-bottom: 150px;
+    &__button {
+        padding-left: 40px;
+        padding-top: 52px;
+    }
+
+    &__button a {
+        background: #3B82F6 !important;
+    }
+
+    &__button:hover a {
+        background: #2C68E7 !important;
+    }
+
+    &__button:active a {
+        background: #1E3A8A !important;
+    }
 }
