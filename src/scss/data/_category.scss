@@ -137,20 +137,31 @@
 }
 
 
-.blockcategory-navmenu-navigation li {
-  // display: block;
-  // background: url(/src/img/icons/antivirus.svg) no-repeat left transparent;
-
-  list-style: none;
+.blockcategory-navmenu-navigation li a {
+  display: block;
   margin: 0;
-  padding-left: 28px;
+  // padding-left: 28px;
+  margin-left: 8px;
   width: 332px;
-  vertical-align: middle;
+}
+
+.blockcategory-navmenu-navigation li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  color: #2755A1;
+  padding-left: 32px;
+}
+
+
+.blockcategory-navmenu-navigation li:hover {
+  border-radius: 5px;
+  color: white;
+  background: #2C68E7
 }
 
 .blockcategory-navmenu-navigation li a:hover {
-  border-radius: 5px;
-  background: rgba(2, 39, 252, 0.425);
+  color: white;
 }
 
 .category {
@@ -211,9 +222,13 @@
 .category-container-main-title-button {
   width: 16px;
   height: 16px;
-  line-height: 22px;
+  line-height: 16px;
+  color: white;
   background: #2755A1;
   border-radius: 8px;
+  // align-items: center;
+  box-sizing: border-box;
+  padding-left: 1px;
   margin-top: 12px;
 }
 
@@ -226,6 +241,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+  color: #727272;
 }
 
 /* @media (max-width: 736px) {
