@@ -792,54 +792,48 @@ footer {
 
 .banner {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 312px;
+  flex-direction: row;
   border-radius: 12px;
+  justify-content: space-between;
   background: linear-gradient(#3B82F6, #2755A1);
-  margin-bottom: 50px;
+  padding: 0px;
 }
-
-.banner_title {
+.banner__h2 {
   color: white;
-  padding: 30px 40px;
   font-weight: 420px;
   font-size: 36px;
   line-height: 40px;
   font-family: "Roboto";
 }
-
-.banner_text {
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 32px;
+}
+.banner__text__content {
+  display: flex;
+}
+.banner__image {
+  display: flex;
+}
+.banner__text {
   font-size: 18px;
   color: #FFFFFF;
-  padding: 10px 40px;
   font-family: "Roboto", sans-serif;
   font-weight: 100;
 }
-
-.banner_img {
-  width: 688px;
-  height: 314px;
-  display: flex;
-  flex-flow: wrap;
-  order: 2;
-  padding-bottom: 150px;
-}
-
-.banner_button {
+.banner__button {
   padding-left: 40px;
   padding-top: 52px;
 }
-
-.banner_button a {
+.banner__button a {
   background: #3B82F6 !important;
 }
-
-.banner_button:hover a {
+.banner__button:hover a {
   background: #2C68E7 !important;
 }
-
-.banner_button:active a {
+.banner__button:active a {
   background: #1E3A8A !important;
 }
 
