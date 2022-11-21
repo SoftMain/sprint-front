@@ -309,6 +309,7 @@ body {
 }
 
 .btn {
+  box-sizing: border-box;
   /* Auto layout */
   display: inline-flex;
   flex-direction: row;
@@ -798,13 +799,11 @@ footer {
   justify-content: space-between;
   background: linear-gradient(#3B82F6, #2755A1);
   padding: 0px;
+  margin-bottom: 88px;
+  margin-top: 137px;
 }
 .banner__h2 {
   color: white;
-  font-weight: 420px;
-  font-size: 36px;
-  line-height: 40px;
-  font-family: "Roboto";
 }
 .banner__content {
   display: flex;

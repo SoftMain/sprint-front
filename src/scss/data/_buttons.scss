@@ -16,6 +16,7 @@ $sm-btn-gap: 6px;
 $border-size: 2px;
 
 .btn {
+    box-sizing: border-box;
     /* Auto layout */
     display: inline-flex;
     flex-direction: row;
