@@ -50,3 +50,20 @@
     order: 2;
     padding-bottom: 150px;
 }
+
+.banner_button{
+    padding-left: 40px;
+    padding-top: 52px;
+}
+
+.banner_button a {
+    background: #3B82F6 !important;
+}
+
+.banner_button:hover a {
+    background: #2C68E7 !important;
+}
+
+.banner_button:active a {
+    background: #1E3A8A !important;
+}
