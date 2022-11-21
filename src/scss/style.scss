@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .container {
     width: 1120px;
     margin: 0 auto;
@@ -23,4 +27,8 @@
 'data/colors.scss',
 'data/typography.scss',
 'data/main.scss',
-'data/background.scss'
+'data/background.scss';
+
+.div::before{
+    color:#000;
+}
