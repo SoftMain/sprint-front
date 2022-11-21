@@ -1,9 +1,9 @@
-let icons = document.querySelectorAll("svg"); //ищем все svg
+let icons = document.querySelectorAll("span"); //ищем все svg
 let reg_exp = /^(\d{2}px)$/; //регулярное выражение
 
 for (let icon of icons) {
   //перебираем по каждому svg
-  let css = `width: ${icon.classList[1]};height: ${icon.classList[1]};background: url(img/icons/${icon.classList[0]}.svg) center center/cover no-repeat;`;
+  let css = `font-size: ${icon.classList[1]};`;
   
   if (icon.classList[1] && reg_exp.test(icon.classList[1])) {
     switch(icon.classList[1]){

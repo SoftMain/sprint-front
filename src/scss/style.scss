@@ -27,4 +27,8 @@ body{
 'data/colors.scss',
 'data/typography.scss',
 'data/main.scss',
-'data/background.scss'
+'data/background.scss';
+
+.div::before{
+    color:#000;
+}
