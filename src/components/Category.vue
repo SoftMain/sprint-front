@@ -35,116 +35,15 @@
           </ul>
         </div>
         <div class="category">
-          <div class="category-container">
-            <div class="category-container-logo"><img src="../assets/img/productlogo/lunacy.svg" alt="">
-            </div>
-            <div class="category-container-main">
-              <div class="category-container-main-title">
-                <div class="category-container-main-title-name">
-                  <h6>Lunacy</h6>
-                </div>
-                <div class="category-container-main-title-button">
-                  <span class="icon-chevron-r px16"></span>
-                </div>
-              </div>
-              <div class="category-container-main-description base">
-                Бесплатный софт для дизайнеров с искусственным интеллектом и встроенной графикой
-
-              </div>
-            </div>
-          </div>
-          <div class="category-container">
-            <div class="category-container-logo"><img src="../assets/img/productlogo/alivecolors.svg" alt="">
-            </div>
-            <div class="category-container-main">
-              <div class="category-container-main-title">
-                <div class="category-container-main-title-name">
-                  <h6>AliveColors</h6>
-                </div>
-                <div class="category-container-main-title-button"><span class="icon-chevron-r 16px"></span>
-                </div>
-              </div>
-              <div class="category-container-main-description">
-                Многофункциональный графический редактор для Windows и Mac
-              </div>
-            </div>
-          </div>
-          <div class="category-container">
-            <div class="category-container-logo"><img src="../assets/img/productlogo/supa.svg" alt="">
-            </div>
-            <div class="category-container-main">
-              <div class="category-container-main-title">
-                <div class="category-container-main-title-name">
-                  <h6>Supa</h6>
-                </div>
-                <div class="category-container-main-title-button"><span class="icon-chevron-r 16px"></span>
-                </div>
-              </div>
-              <div class="category-container-main-description">
-                Переходите на следующий уровень – создавайте по-настоящему уникальные креативы для
-                рекламы и контент для сообществ
-              </div>
-            </div>
-          </div>
-          <div class="category-container">
-            <div class="category-container-logo"><img src="../assets/img/productlogo/photomaster.svg" alt="">
-            </div>
-            <div class="category-container-main">
-              <div class="category-container-main-title">
-                <div class="category-container-main-title-name">
-                  <h6>ФотоМАСТЕР</h6>
-                </div>
-                <div class="category-container-main-title-button"><span class="icon-chevron-r 16px"></span>
-                </div>
-              </div>
-              <div class="category-container-main-description">
-                Доступный и мощный редактор фото
-              </div>
-            </div>
-          </div>
-          <div class="category-container">
-            <div class="category-container-logo"><img src="../assets/img/productlogo/supa.svg" alt="">
-            </div>
-            <div class="category-container-main">
-              <div class="category-container-main-title">
-                <div class="category-container-main-title-name">
-                  <h6>Supa</h6>
-                </div>
-                <div class="category-container-main-title-button"><span class="icon-chevron-r 16px"></span>
-                </div>
-              </div>
-              <div class="category-container-main-description">
-                Переходите на следующий уровень – создавайте по-настоящему уникальные креативы для
-                рекламы и контент для сообществ
-              </div>
-            </div>
-          </div>
-          <div class="category-container">
-            <div class="category-container-logo"><img src="../assets/img/productlogo/photomaster.svg" alt="">
-            </div>
-            <div class="category-container-main">
-              <div class="category-container-main-title">
-                <div class="category-container-main-title-name">
-                  <h6>ФотоМАСТЕР</h6>
-                </div>
-                <div class="category-container-main-title-button"><span class="icon-chevron-r 16px"></span>
-                </div>
-              </div>
-              <div class="category-container-main-description">
-                Доступный и мощный редактор фото
-              </div>
-            </div>
-          </div>
-        </div>
+          <Product />
       </div>
     </div>
+  </div>
   </section>
 </template>
 
-<script>
-    export default {
-        
-    }
+<script setup>
+    import Product from './category__product/Product.vue'
 </script>
 
 <style lang="scss" scoped>

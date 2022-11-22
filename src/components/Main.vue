@@ -4,7 +4,7 @@
       <div class="main proto__block">
         <div class="main__text">
           <div class="main__text-h1 proto__elem">
-            <h3>Поможем в выборе российского программного обеспечения</h3>
+            <h3>Поможем в выборе<br> российского программного<br> обеспечения</h3>
           </div>
           <div class="main__text-subtitle proto__elem">
             <p>Найдите, сравните и прочитайте отзывы!</p>
