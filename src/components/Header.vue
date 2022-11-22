@@ -4,14 +4,14 @@
       <nav class="nav proto__block">
         <div class="nav__wrapper">
           <div class="nav__wrapper-logo proto__elem">
-            <span class="icon-logo32 32px"></span>
+            <span class="icon-logo32 px32"></span>
 
             <a id="main-link" href="">SoftMain</a>
           </div>
 
           <div class="nav__wrapper-categories proto__elem">
             <a class="btn btn-primary">Категории
-              <span class="icon-caret-down 20px"></span>
+              <span class="icon-caret-down px20"></span>
             </a>
           </div>
         </div>
@@ -19,7 +19,7 @@
           <form action="#" method="get">
             <input class="search-area" type="search" name="search" placeholder="Поиск по сайту" required-placeholder="">
           </form>
-          <span class="icon-search 20px search-img"></span>
+          <span class="icon-search px20 search-img"></span>
         </div>
         <div class="nav__links">
           <div class="nav__links-link proto__elem"><a class="btn">Интеграторы</a></div>

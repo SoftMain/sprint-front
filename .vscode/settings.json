@@ -6,5 +6,6 @@
             "extensionName": ".min.css",
             "savePath": "~/../css/"
         }
-    ]
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
