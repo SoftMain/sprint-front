@@ -1,10 +1,16 @@
 <template>
-  <h1>Hello</h1>
+  <Header />
+  <Main />
+  <Footer />
 </template>
 
-<script>
+<script setup>
+  import Header from './components/Header.vue';
+  import Footer from './components/Footer.vue';
+  import Main from './views/Main.vue';
+
 </script>
 
-<style>
-
+<style lang="scss">
+@import './assets/scss/style.scss';
 </style>

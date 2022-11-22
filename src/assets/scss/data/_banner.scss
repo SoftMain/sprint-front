@@ -1,0 +1,53 @@
+.banner {
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    justify-content: space-between;
+    background: linear-gradient(#3B82F6, #2755A1);
+    padding: 0px;
+    margin-bottom: 88px;
+    margin-top: 137px;
+
+    &__h2 {
+        color: white;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 32px;
+    }
+
+    &__text__content {
+        display: flex;
+    }
+
+    &__image {
+        display: flex;
+    }
+
+    &__text {
+        font-size: 18px;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    }
+
+    &__button {
+        padding-left: 40px;
+        padding-top: 52px;
+    }
+
+    &__button a {
+        background: #3B82F6 !important;
+    }
+
+    &__button:hover a {
+        background: #2C68E7 !important;
+    }
+
+    &__button:active a {
+        background: #1E3A8A !important;
+    }
+}
