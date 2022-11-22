@@ -5,7 +5,7 @@
       <div class="container">
         <div class="upper">
           <div class="logo">
-            <span class="icon-logo32 32px"> </span>
+            <span class="icon-logo32 px32"> </span>
             <h3 class="logo-heading">SoftMain</h3>
           </div>
           <div class="about">
@@ -25,16 +25,16 @@
           </p>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <span class="icon-social-telegram 20px"> </span>
+              <span class="icon-social-telegram px24"> </span>
             </li>
             <li class="contacts__item">
-              <span class="icon-social-discord 20px"></span>
+              <span class="icon-social-discord px24"></span>
             </li>
             <li class="contacts__item">
-              <span class="icon-social-vk 20px"></span>
+              <span class="icon-social-vk px24"></span>
             </li>
             <li class="contacts__item">
-              <span class="icon-social-youtube 20px"></span>
+              <span class="icon-social-youtube px24"></span>
             </li>
           </ul>
         </div>
