@@ -1,31 +1,5 @@
 <template>
-  <main>
-    <div class="container">
-      <div class="main proto__block">
-        <div class="main__text">
-          <div class="main__text-h1 proto__elem">
-            <h3>Поможем в выборе российского программного обеспечения</h3>
-          </div>
-          <div class="main__text-subtitle proto__elem">
-            <p>Найдите, сравните и прочитайте отзывы!</p>
-          </div>
-          <div class="main__text-btns">
-            <div class="proto__elem">
-              <a class="btn btn-primary main-btn1">Каталог ПО</a>
-            </div>
-            <div class="proto__elem">
-              <a class="btn btn-outline-primary main-btn2">Интеграторы</a>
-            </div>
-          </div>
-        </div>
-        <div class="main__img proto__elem">
-          <img class="main__img-pic" src="../assets/img/OBJECTS.png" alt="">
-          <img class="main__img-bg" src="../assets/img/background/jopa.svg" alt="">
-        </div>
-      </div>
-    </div>
-  </main>
-  <section>
+    <section>
     <div class="container">
       <div class="mainproducts-infotext">
         <h3>Самые популярные категории</h3>
@@ -165,139 +139,12 @@
       </div>
     </div>
   </section>
-  <section>
-    <div class="container">
-      <div class="banner">
-        <div class="banner__content">
-          <div class="banner__text-content">
-            <div class="banner__h2">
-              <h2 class="text-medium">Хотите добавить свое <br> ПО на сайт?</h2>
-            </div>
-            <div class="banner__text">
-              <p class="text-large --light">Заполните форму для добавления вашего <br>программного
-                обеспечения.</p>
-            </div>
-          </div>
-
-          <div class="banner_button">
-            <a class="btn btn-primary btn-lg text-large">Добавить ПО</a>
-          </div>
-        </div>
-
-        <div class="banner__image">
-          <img class="banner_img" src="../assets/img/Group.png" alt="banner_background">
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="self-promotion-block">
-        <div class="self-promotion-block__header">
-          <h3>Выбирайте уверенно</h3>
-        </div>
-        <div class="self-promotion-block__frame">
-          <article class="self-promotion-block__content">
-            <div class="self-promotion-block__content-icon">
-              <span class="icon-search-content px64"></span>
-            </div>
-            <div class="self-promotion-block__content-text">
-              <h5>Упростите поиск</h5>
-              <p class="text-base ">
-                На SoftMain собрано множество программных продуктов для решения любой задачи.
-                Воспользуйтесь
-                поиском
-                из наших категорий.
-              </p>
-            </div>
-          </article>
-
-          <article class="self-promotion-block__content">
-            <div class="self-promotion-block__content-icon">
-              <span class="icon-mark-email-read px64"></span>
-            </div>
-            <div class="self-promotion-block__content-text">
-              <h5>Быстрое решение</h5>
-              <p>
-                Напишите нам на почту hello@softmain.ru для решения ваших вопросов.
-              </p>
-            </div>
-          </article>
-
-          <article class="self-promotion-block__content">
-            <div class="self-promotion-block__content-icon">
-              <span class="icon-pointer px64"></span>
-            </div>
-            <div class="self-promotion-block__content-text">
-              <h5>Сделайте выбор</h5>
-              <p>
-                Используйте исследования, идеии отзывы, чтобы сравнить программное обеспечение и сделать
-                правильный
-                выбор.
-              </p>
-            </div>
-          </article>
-        </div>
-        <div class="container">
-          <div class="partnersblocks">
-
-            <div class="partnersblocks-partners">
-              <div class="partnersblocks-partners-banner">
-                <div class="partnersblocks-partners-banner-logo yandex">
-                </div>
-                <div class="partnersblocks-partners-banner-logo ozon">
-                </div>
-                <div class="partnersblocks-partners-banner-logo wildberries"></div>
-                <div class="partnersblocks-partners-banner-logo vk">
-                </div>
-                <div class="partnersblocks-partners-banner-logo rosteh">
-                </div>
-                <div class="partnersblocks-partners-banner-logo rostelekom">
-                </div>
-                <div class="partnersblocks-partners-banner-logo econom">
-                </div>
-                <div class="partnersblocks-partners-banner-logo otr">
-                </div>
-                <div class="partnersblocks-partners-banner-logo sber">
-                </div>
-              </div>
-            </div>
-
-            <div class="partnerreviews">
-              <div class="partnerreviews-slider">
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-              </div>
-
-              <div class="comment wh">
-                <div class="comment-reviewer">
-                  <div class="comment-reviewer-avatar"></div>
-                  <div class="comment-reviewer-data">
-                    <div class="comment-reviewer-data-nick">
-                      <h4>Иван Фурсов</h4>
-                    </div>
-                    <div class="comment-reviewer-data-post text-small">Сбербанк</div>
-                  </div>
-
-                </div>
-                <div class="comment-reviewerinfo">Благодарю сайт «SoftMain» за понимание,
-                  профессионализм и
-                  высокое качество работы.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 </template>
 
-<script setup>
-
+<script>
+    export default {
+        
+    }
 </script>
 
 <style lang="scss" scoped>
