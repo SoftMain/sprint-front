@@ -124,9 +124,11 @@
 // }
 
 
-.blockcategory-navmenu-navigation li a {
+.blockcategory-navmenu-navigation li button {
   display: block;
-  /* background: white; */
+  background: white;
+  border: none;
+  border-radius: 8px;
   text-align: left;
   color: black;
   text-decoration: none;
@@ -137,7 +139,7 @@
 }
 
 
-.blockcategory-navmenu-navigation li a {
+.blockcategory-navmenu-navigation li button {
   display: block;
   margin: 0;
   // padding-left: 28px;
@@ -157,11 +159,17 @@
 .blockcategory-navmenu-navigation li:hover {
   border-radius: 5px;
   color: white;
-  background: #2C68E7
+  background: #2C68E7;
 }
 
-.blockcategory-navmenu-navigation li a:hover {
+.blockcategory-navmenu-navigation li button:hover {
   color: white;
+  background: #2C68E7;
+}
+
+.blockcategory-navmenu-navigation li button.active {
+  color: white;
+  background: #2C68E7;
 }
 
 .category {

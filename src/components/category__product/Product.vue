@@ -20,33 +20,10 @@
 
 <script>
     export default {
-        data(){
-          return{
-            posts:[{
-              img: "../assets/img/productlogo/lunacy.svg",
-              link:"/error",
-              text:"пипяо",
-              title:"Хуй"
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link:"/error",
-              text:"пипяо",
-              title:"Хуй"
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link:"/error",
-              text:"пипяо",
-              title:"Хуй"
-            },
-            {
-              img: "./assets/img/productlogo/lunacy.svg",
-              link:"/error",
-              text:"пипяо",
-              title:"Хуй"
-            }
-            ]
+        props:{
+          posts:{
+            type:Array,
+            required:true
           }
         }
     }
