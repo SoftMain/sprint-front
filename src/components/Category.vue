@@ -7,10 +7,10 @@
 
       <div class="blockcategory">
         <div class="blockcategory-navmenu">
-          <Pages :pages="pages" @cur="currentPage" />
+          <Chapters :chapters="chapters" @cur="currentChapter" />
         </div>
         <div class="category">
-          <Product :posts="pages[current - 1].posts" />
+          <Product :posts="chapters[current - 1].posts" />
         </div>
       </div>
     </div>
@@ -18,46 +18,46 @@
 </template>
 
 <script>
-import Product from "./category__product/Product.vue";
-import Pages from "./category__product/Pages.vue";
+import Product from "./Categoryes/Product.vue";
+import Chapters from "./Categoryes/Chapters.vue";
 export default {
   components: {
     Product,
-    Pages,
+    Chapters,
   },
   data() {
     return {
       current: 1,
-      pages: [
+      chapters: [
         {
           id: 1,
           icon: "icon-antivirus",
           text: "Антивирусы",
           posts: [
             {
-              img: "../assets/img/productlogo/lunacy.svg",
+              id:1,
               link: "/error",
-              text: "пипяо",
-              title: "пизда",
+              text: "Бесплатный софт для дизайнеров с искусственным интеллектом и встроенной графикой",
+              title: "Lunacy",
             },
             {
-              img: "../assets/img/productlogo/lunacy.svg",
+              id:2,
               link: "/error",
-              text: "пипяо",
-              title: "Хуй",
+              text: "Многофункциональный графический редактор для Windows и Mac",
+              title: "AliveColors",
             },
             {
-              img: "../assets/img/productlogo/lunacy.svg",
+              id:3,
               link: "/error",
-              text: "пипяо",
-              title: "Хуй",
+              text: "Переходите на следующий уровень – создавайте по-настоящему уникальные креативы для рекламы и ",
+              title: "Supa",
             },
             {
-              img: "./assets/img/productlogo/lunacy.svg",
+              id:4,
               link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
+              text: "Переходите на следующий уровень – создавайте по-настоящему уникальные креативы для рекламы и ",
+              title: "Supa",
+            }
           ],
         },
         {
@@ -66,28 +66,10 @@ export default {
           text: "Браузеры",
           posts: [
             {
-              img: "../assets/img/productlogo/lunacy.svg",
+              id: 1,
               link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "./assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
+              text: "Описание",
+              title: "'Браузеры'"
             },
           ],
         },
@@ -98,29 +80,11 @@ export default {
 
           posts: [
             {
-              img: "../assets/img/productlogo/lunacy.svg",
+              id: 1,
               link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "./assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
+              text: "Описание",
+              title: "'Видеоконференции'"
+            }
           ],
         },
         {
@@ -130,29 +94,11 @@ export default {
 
           posts: [
             {
-              img: "../assets/img/productlogo/lunacy.svg",
+              id: 1,
               link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "./assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
+              text: "Описание",
+              title: "'Графические редакторы'"
+            }
           ],
         },
         {
@@ -161,29 +107,11 @@ export default {
           text: "Мессенджеры",
           posts: [
             {
-              img: "../assets/img/productlogo/lunacy.svg",
+              id: 1,
               link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "./assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
+              text: "Описание",
+              title: "'Мессенджеры'"
+            }
           ],
         },
         {
@@ -192,29 +120,11 @@ export default {
           text: "Операционные системы",
           posts: [
             {
-              img: "../assets/img/productlogo/lunacy.svg",
+              id: 1,
               link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "./assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
+              text: "Описание",
+              title: "'Операционые системы'"
+            }
           ],
         },
         {
@@ -224,36 +134,18 @@ export default {
 
           posts: [
             {
-              img: "../assets/img/productlogo/lunacy.svg",
+              id: 1,
               link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "../assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
-            {
-              img: "./assets/img/productlogo/lunacy.svg",
-              link: "/error",
-              text: "пипяо",
-              title: "Хуй",
-            },
+              text: "Описание",
+              title: "'Таск-трекеры'"
+            }
           ],
         },
       ],
     };
   },
   methods: {
-    currentPage(current) {
+    currentChapter(current) {
       this.current = current;
     },
   },

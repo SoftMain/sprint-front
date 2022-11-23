@@ -1,6 +1,6 @@
 <template>
     <div v-for="post in posts" class="category-container">
-            <div class="category-container-logo"><img :src="post.img" alt="">
+            <div class="category-container-logo"><img :src="'img/productlogo/'+post.id+'.png'" alt="">
             </div>
             <div class="category-container-main">
               <div class="category-container-main-title">

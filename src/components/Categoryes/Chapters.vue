@@ -1,13 +1,12 @@
 <template>
   <ul class="blockcategory-navmenu-navigation">
-    <li v-for="page in pages" :key="page.id">
-      <span :class="page.icon + ' px20'"></span>
-      <button
-        @click="testClick(page.id)"
-        :class="{ active: page.id == activeCategory }"
-      >
-        <h6>{{ page.text }}</h6>
-      </button>
+    <li v-for="chapter in chapters" 
+    :key="chapter.id" 
+    @click="testClick(chapter.id)" 
+    :class="{ active: chapter.id == activeCategory }"
+    >
+      <span :class="chapter.icon + ' px20'"></span>
+        <h6>{{ chapter.text }}</h6>
     </li>
   </ul>
 </template>
@@ -15,7 +14,7 @@
 <script>
 export default {
   props: {
-    pages: {
+    chapters: {
       type: Array,
       required: true,
     },

@@ -19,7 +19,7 @@
         </div>
 
         <div class="banner__image">
-          <img class="banner_img" src="../assets/img/Group.png" alt="banner_background">
+          <img class="banner_img" src="img/Group.png" alt="banner_background">
         </div>
       </div>
     </div>

@@ -19,8 +19,8 @@
           </div>
         </div>
         <div class="main__img proto__elem">
-          <img class="main__img-pic" src="../assets/img/OBJECTS.png" alt="">
-          <img class="main__img-bg" src="../assets/img/background/jopa.svg" alt="">
+          <img class="main__img-pic" src="img/OBJECTS.png" alt="">
+          <img class="main__img-bg" src="img/background/jopa.svg" alt="">
         </div>
       </div>
     </div>
