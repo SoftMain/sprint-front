@@ -1,25 +1,3 @@
-.under_line {
-  width: 100%;
-  height: 1px;
-  background: #b0b0b0;
-}
-
-.heading_styles {
-  display: flex;
-  flex-direction: column;
-}
-
-.body_styles {
-  height: 537px;
-  margin-top: 64px;
-}
-
-.position {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
 //font-weight
 .text-regular {
   font-weight: var(--regular);
@@ -29,7 +7,7 @@
   font-weight: var(--medium);
 }
 
-.text-semiBold {
+.text-semibold {
   font-weight: var(--semiBold);
 }
 
@@ -46,7 +24,6 @@ h2 {
   font-size: var(--sizeH2);
   line-height: var(--heightH2);
 }
-
 h3 {
   font-size: var(--sizeH3);
   line-height: var(--heightH3);
