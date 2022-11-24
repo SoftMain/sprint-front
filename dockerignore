@@ -1,0 +1,7 @@
+.dockerignore
+.vscode
+Dockerfile
+node_modules
+src_old
+dist
+README.md
