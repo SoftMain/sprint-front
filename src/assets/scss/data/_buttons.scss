@@ -76,19 +76,19 @@ $border-size: 2px;
 }
 
 .btn-secondary{
-    border: $border-size solid $auro-metal;
+    border: $border-size solid $gray-5;
     background: #fff;
     color: #000 !important;
 }
 
 .btn-secondary:hover {
-    border: $border-size solid $Charcoal;
-    background: $Charcoal;
+    border: $border-size solid $gray-4;
+    background: $gray-4;
     color: white !important;
 }
 
 .btn-secondary:active {
-    border: $border-size solid $auro-metal;
+    border: $border-size solid $gray-5;
     background: #fff;
     color: #000 !important;
 }
@@ -109,20 +109,20 @@ $border-size: 2px;
 }
 
 .btn-light-primary{
-    border: $border-size solid $lightBlue;
-    background: $lightBlue;
+    border: $border-size solid $blue-2;
+    background: $blue-2;
     color: white !important;
     cursor: pointer;
 }
 
 .btn-light-primary:hover{
-    border: $border-size solid $LittleBoyBlue;
-    background: $LittleBoyBlue;
+    border: $border-size solid $blue-10;
+    background: $blue-10;
 }
 
 .btn-light-primary:active{
-    border: $border-size solid $NewCar;
-    background: $NewCar;
+    border: $border-size solid $blue-9;
+    background: $blue-9;
 }
 
 
