@@ -1,30 +1,31 @@
 <template>
   <div class="container">
     <div class="path">
-      <div class="path__home">
-        <span class="icon-home 14px"></span>
-        <p class="home-text">1</p>
-        <span class="icon-chevron-r 14px"></span>
-      </div>
-      <div class="path__catalog">
-        <p class="catalog-text">2</p>
-        <span class="icon-chevron-r 14px"></span>
-      </div>
-      <div class="path__category">
-        <p class="category-text">3</p>
-        <span class="icon-chevron-r 14px"></span>
-      </div>
-      <div class="path__product">
-        <p class="product-text">4</p>
-      </div>
+      
+        <span class="icon-home px16"></span>
+
+        <div class="path-text">Главная</div>
+        <span class="icon-chevron-r px20"></span>
+      
+      
+        <div class="path-text">Каталог</div>
+        <span class="icon-chevron-r px20"></span>
+      
+      
+        <div class="path-text">Антивирусы</div>
+        <span class="icon-chevron-r px20"></span>
+      
+      
+        <div class="path-text path__text-active">Kaspersky Anti-Virus</div>
+      
     </div>
     <div class="product__header">
       <div class="product__upper">
-        <img src="" alt="Kaspersky" />
+        <img src="img/products/h5.png" alt="Kaspersky"/>
       </div>
       <div class="product__under">
         <div class="product__logo">
-          <img src="" alt="Prxduct Lxgx" />
+          <img src="img/products/5.png" alt="Prxduct Lxgx" />
         </div>
         <div class="product__info">
           <h4>Kaspersky Anti-Virus</h4>
@@ -47,27 +48,27 @@
       <nav class="product__navbar">
         <ul class="navbar__list">
           <li class="navbar__item">
-            <span class="star-filler 20px"></span>
+            <span class="icon-file-text px20"></span>
             <a class="navbar-link" href="">Описание</a>
           </li>
           <li class="navbar__item">
-            <span class="star-filler 20px"></span>
+            <span class="icon-star px20"></span>
             <a class="navbar-link" href="">Особенности</a>
           </li>
           <li class="navbar__item">
-            <span class="star-filler 20px"></span>
+            <span class="icon-info px20"></span>
             <a class="navbar-link" href="">Тех. информация</a>
           </li>
           <li class="navbar__item">
-            <span class="star-filler 20px"></span>
+            <span class="icon-video px20"></span>
             <a class="navbar-link" href="">Медиа</a>
           </li>
           <li class="navbar__item">
-            <span class="star-filler 20px"></span>
+            <span class="icon-analog px20"></span>
             <a class="navbar-link" href="">Аналоги</a>
           </li>
           <li class="navbar__item">
-            <span class="star-filler 20px"></span>
+            <span class="icon-message px20"></span>
             <a class="navbar-link" href="">Отзывы</a>
           </li>
         </ul>

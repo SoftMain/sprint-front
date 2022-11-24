@@ -14,7 +14,7 @@
           </div>
 
           <div class="banner_button">
-            <a class="btn btn-primary btn-lg text-large">Добавить ПО</a>
+            <a class="btn-light-primary btn-lg text-large">Добавить ПО</a>
           </div>
         </div>
 

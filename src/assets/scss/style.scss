@@ -1,6 +1,6 @@
-@import 'data/colors.scss',
-'data/typography.scss',
-'data/fonts.scss';
+@import 'data/fonts.scss',
+'data/colors.scss',
+'data/typography.scss';
 
 
 * {
@@ -31,6 +31,5 @@ body{
 'data/background.scss';
 
 // Other pages
-@import 'data/product-main.scss',
-'data/company.scss',
+@import 'data/company.scss',
 'data/product.scss';
