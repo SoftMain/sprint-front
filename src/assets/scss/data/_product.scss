@@ -1,77 +1,30 @@
 .path {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 8px;
-  width: 425px;
+  align-items: center;
+  width: 100%;
   height: 16px;
   padding: 20px 0px;
+  
 }
-
-.path__home {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-
-  width: 94px;
-  height: 16px;
+.path > span{
+  color: $blue-6
+}
+.path-text {
+  color: $gray-3;
+  margin: 0px 4px;
 
 }
-
-.path__catalog {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-
-  width: 75px;
-  height: 16px;
+.path__text-active{
+  color: $blue-6;
 }
-
-.path__category {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-
-  width: 103px;
-  height: 16px;
-}
-
-.path__product {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-
-  width: 129px;
-  height: 16px;
-}
-
 .product__header {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
-  width: 1120px;
-  height: 198px;
+  height: 310px;
   
-  // background: url(Kaspersky (1).png);
-  /* Stroke/Grey */
-  
-  border: 1px solid #B3B3B3;
-  border-radius: 12px 12px 0px 0px;
-  
-  /* Inside auto layout */
-  
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .product__upper {
@@ -85,7 +38,6 @@
 .product__under {
   display: flex;
   align-items: center;
-  padding: 0px;
   gap: 24px;
 
   border-width: 0px 1px 1px 1px;
@@ -96,6 +48,7 @@
 
   width: 1120px;
   height: 112px;
+  position: relative;
 }
 
 .product__logo {
@@ -104,11 +57,13 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: 10px;
+
 
 
   width: 144px;
   height: 144px;
+
+  padding: 8px;
 
   margin-bottom: 55px;
   margin-left: 30px;
@@ -117,7 +72,9 @@
 
   border: 1px solid #B3B3B3;
   border-radius: 12px;
+  background: #FFFFFF;
 }
+
 
 .product__info {
   display: flex;
@@ -193,7 +150,7 @@
 
   width: 112px;
   height: 52px;
-  padding: 30px;
+  
   margin-right: 30px;
   margin-bottom: 14px;
 
