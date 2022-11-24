@@ -14,7 +14,7 @@
               <a class="btn btn-primary main-btn1">Каталог ПО</a>
             </div>
             <div class="proto__elem">
-              <a class="btn btn-outline-primary main-btn2">Интеграторы</a>
+              <a class="btn btn-secondary main-btn2">Интеграторы</a>
             </div>
           </div>
         </div>

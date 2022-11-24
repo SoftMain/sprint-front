@@ -23,11 +23,9 @@ $border-size: 2px;
     justify-content: center;
     align-items: center;
     user-select: none;
-
+    cursor: pointer;
     /* Text layout */
     text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
 
     /* Default params */
     color: black; // text colour
@@ -77,6 +75,24 @@ $border-size: 2px;
     color: white !important;
 }
 
+.btn-secondary{
+    border: $border-size solid $auro-metal;
+    background: #fff;
+    color: #000 !important;
+}
+
+.btn-secondary:hover {
+    border: $border-size solid $Charcoal;
+    background: $Charcoal;
+    color: white !important;
+}
+
+.btn-secondary:active {
+    border: $border-size solid $auro-metal;
+    background: #fff;
+    color: #000 !important;
+}
+
 .btn-outline-primary {
     border: $border-size solid $royal-blue;
     color: black !important;
@@ -91,6 +107,24 @@ $border-size: 2px;
     border: $border-size solid $dark-blue;
     color: black !important;
 }
+
+.btn-light-primary{
+    border: $border-size solid $lightBlue;
+    background: $lightBlue;
+    color: white !important;
+    cursor: pointer;
+}
+
+.btn-light-primary:hover{
+    border: $border-size solid $LittleBoyBlue;
+    background: $LittleBoyBlue;
+}
+
+.btn-light-primary:active{
+    border: $border-size solid $NewCar;
+    background: $NewCar;
+}
+
 
 .btn:hover {
     color: #727272;
