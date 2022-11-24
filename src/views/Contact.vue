@@ -2,7 +2,7 @@
   <section>
     <div class="infoblock container">
       <div class="infoblock-logo">
-        <img src="./img/company/meet_team.svg" alt="" />
+        <img src="img/background/company_page.svg" alt="" />
       </div>
       <div class="infoblock-text">
         <div class="infoblock-text1">
@@ -46,7 +46,7 @@
             <textarea
               placeholder="Краткая информация о продукте"
               name=""
-              class="infoproduct"
+              class="form-infoproduct-textarea"
               cols="30"
               rows="10"
             ></textarea>
