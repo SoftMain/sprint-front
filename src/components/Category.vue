@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import Product from "./Categoryes/Product.vue";
-import Chapters from "./Categoryes/Chapters.vue";
+import Product from "./Categories/Product.vue";
+import Chapters from "./Categories/Chapters.vue";
 export default {
   components: {
     Product,
