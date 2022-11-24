@@ -1,103 +1,26 @@
-/*Цвета*/
-$blueYonder: #466EAF;
-$white: #FFFFFF;
+/* Colors */
+$white: #ffffff;
 $black: #000000;
-$Grey: #F3F3F3;
-$tGrey: #B3B3B3;
-$darkGrey: #727272;
-$paleCornflowerBlue: #B4CEFA;
-$lightBlue: #5788D8;
-$cetlicBlue: #326ECF;
-$royalBlue: #2C68E7;
-$blueberry: #3B82F6;
-$cyanCobaltBlue: #2755A1;
-$darkBlue: #1E3A8A;
-$orange: #E09A30;
-$green: #22A317;
-$red: #DA0000;
-/*Градиенты*/
-$gdGrey: linear-gradient(324.55deg, #E3E3E3 13.57%, rgba(227, 227, 227, 0.2) 85.34%);
-$gdBlue: linear-gradient(249.49deg, #3B82F6 18.16%, #2755A1 86.45%);
-$gdOrange: linear-gradient(90deg, #E06F30 -0.25%, rgb(221, 168, 31) 99.75%);
 
-.underLine {
-	width: 1440px;
-	height: 1px;
-	background: #5E5E5E;
-}
+$blue-1: #b4cefa;
+$blue-2: #5788d8;
+$blue-3: #326ecf;
+$blue-4: #2c68e7;
+$blue-5: #3b82f6;
+$blue-6: #466eaf;
+$blue-7: #2755a1;
+$blue-8: #1e3a8a;
 
-.element {
-    display: flex;
-	flex-direction: column;
-}
+$gray-1: #f3f3f3;
+$gray-2: #b3b3b3;
+$gray-3: #727272;
+$gray-4: #374151;
 
-.block {
-	display: flex;
-	justify-content: space-around;
-	margin-top: 50px;
-}
+$orange: #e09a30;
+$green: #22a317;
+$red: #da0000;
 
-.colour {
-	width: 70px;
-	height: 70px;
-	border-radius: 100%;
-	border: 1px solid #5E5E5E;
-}
-
-.wh {
-	background-color: $white;
-}
-.grey {
-	background-color: $Grey;
-}
-.GDgrey {
-	background: $gdGrey;
-}
-.GDblue {
-	background: $gdBlue;
-}
-.tgrey {
-	background-color: $tGrey;
-}
-.dark{
-    background-color: $black;
-}
-.darkGr {
-	background-color: $darkGrey;
-}
-.lBlue {
-	background-color: $lightBlue;
-}
-.cBlue {
-	background-color: $cetlicBlue;
-}
-.rBlue {
-	background-color: $royalBlue;
-}
-.yblue {
-	background: $blueYonder;
-}
-.ccBlue {
-	background-color: $cyanCobaltBlue;
-}
-.pcfBlue {
-	background-color: $paleCornflowerBlue;
-}
-.blueBerry {
-	background-color: $blueberry;
-}
-.or {
-	background-color: $orange;
-}
-.green {
-	background-color: $green;
-}
-.red {
-	background-color: $red;
-}
-.GDOr {
-	background: $gdOrange;
-}
-.DBlue {
-	background: $darkBlue;
-}
+/* Gradients */
+$gd-gray: linear-gradient(324.55deg,#e3e3e3 13.57%,rgba(227, 227, 227, 0.2) 85.34%);
+$gd-blue: linear-gradient(249.49deg, #3b82f6 18.16%, #2755a1 86.45%);
+$gd-orange: linear-gradient(90deg, #e06f30 -0.25%, rgb(221, 168, 31) 99.75%);
