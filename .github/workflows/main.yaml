@@ -24,6 +24,8 @@ jobs:
           context: .
           push: true
           tags: softmain/sprint-front:latest
+          secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.TOKEN }}
 # jobs:
 #   build-and-publish-latest:
 #     runs-on: ubuntu-latest
