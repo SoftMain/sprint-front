@@ -1,15 +1,171 @@
 <template>
-  <div>
-    <h2>About</h2>
+  <div class="container">
+    <div class="about__our-project">
+      <div class="about__our-project-text">
+        <h2 class="font-medium">О нашем проекте</h2>
+        <p class="text-lg">
+          Каталог SoftMain разработан с целью информирования<br />
+          общественности и потенциальных потребителей о российских
+          <br />программных продуктах. Данные о продуктах взяты из Единого<br />
+          Реестра Отечественного ПО, а также разработчиков продуктов.<br />
+          На нашем сайте вы можете подобрать продукт для личного и
+          <br />коммерческого использования с помощью фильтров, а также
+          <br />ознакомиться со списком компаний-системных интеграторов,<br />
+          которые смогут вам помочь во внедрении ПО в свою компанию.
+        </p>
+      </div>
+      <img src="/img/background/about_1.png" alt="about_1" />
+    </div>
+  </div>
+  <div class="about__label">
+    <div class="container">
+      <ul class="about__label-card">
+        <li class="about__label-item">
+          <div class="about__label-h2">
+            <h2 class="font-medium">50+</h2>
+          </div>
+          <div class="about__label-text text-lg">Добавленных продуктов</div>
+        </li>
+        <li class="about__label-item">
+          <div class="about__label-h2">
+            <h2 class="font-medium">16</h2>
+          </div>
+          <div class="about__label-text text-lg">Категорий ПО</div>
+        </li>
+        <li class="about__label-item">
+          <div class="about__label-h2">
+            <h2 class="font-medium">30</h2>
+          </div>
+          <div class="about__label-text text-lg">Разработчиков</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="about__history">
+      <div class="about__history-text">
+        <h3 class="font-medium">Наша история</h3>
+        <p class="text-lg">
+          С марта 2022 года наблюдается отток иностранных<br />
+          продуктов с российского ИТ-рынка и возникают<br />
+          сложности с оплатой доступа к этим продуктам.<br />
+          Для пользователей, у которых возникла потребность <br />
+          в поиске и использовании отечественного ПО.<br />«SoftMain» является
+          информационным сервисом, на<br />котором собрана подробная и
+          структурированная<br />
+          информация о российских программах.<br />
+          В 2022 году, на курсе 1TSprint собрались 20 <br />замечательных ребят
+          вместе, чтобы ответить на один<br />
+          единственный вопрос. “Почему легче найти <br />достоверную информацию
+          о гостиничном номере, <br />
+          чем о программном обеспечении в России?”. <br />
+          Решение, которое они нашли? Вы!
+        </p>
+      </div>
+      <img src="/img/background/about_2.png" alt="about_2" />
+    </div>
+  </div>
+  <div class="container">
+    <div class="about__our-team">
+      <h3 class="font-medium">Наша команда</h3>
+
+      <div class="about__our-team-block">
+        <div class="about__our-team-card">
+          <img src="/img/team/julia_gornostaeva.jpg" />
+          <h5 class="font-regular">Юлия Горностаева</h5>
+          <div>Менеджер</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/ilya_vasilenko.jpg" />
+          <h5 class="font-regular">Илья Василенко</h5>
+          <div>Менеджер</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/karina_methodieva.jpg" />
+          <h5 class="font-regular">Карина Мефодьева</h5>
+          <div>Аналитик</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/blinova_maria.jpg" />
+          <h5 class="font-regular">Блинова Мария</h5>
+          <div>Аналитик</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/anastasia_paliy.jpg" />
+          <h5 class="font-regular">Анастасия Палий</h5>
+          <div>Дизайнер</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/grigory_pogudin.jpg" />
+          <h5 class="font-regular">Григорий Погудин</h5>
+          <div>Дизайнер</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/anna_pankratova.jpg" />
+          <h5 class="font-regular">Анна Панкратова</h5>
+          <div>Маркетолог</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/olga_sheikina.jpg" />
+          <h5 class="font-regular">Ольга Шейкина</h5>
+          <div>Маркетолог</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/evgeny_bolshakov.jpg" />
+          <h5 class="font-regular">Евгений Большаков</h5>
+          <div>Разработчик</div>
+        </div>
+        <div class="about__our-team-card">
+          <img src="/img/team/alexander_artemiev.jpg" />
+          <h5 class="font-regular">Александр Артемьев</h5>
+          <div>Разработчик</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/maria_kuznetsova.jpg" />
+          <h5 class="font-regular">Мария Кузнецова</h5>
+          <div>Разработчик</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/ilya_khozhainov.jpg" />
+          <h5 class="font-regular">Илья Хожаинов</h5>
+          <div>Разработчик</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/artem_yanin.jpg" />
+          <h5 class="font-regular">Артем Янин</h5>
+          <div>Разработчик</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/maxim_matryonin.jpg" />
+          <h5 class="font-regular">Максим Матрёнин</h5>
+          <div>Разработчик</div>
+        </div>
+
+        <div class="about__our-team-card">
+          <img src="/img/team/nikita_ivanov.jpg" />
+          <h5 class="font-regular">Никита Иванов</h5>
+          <div>Разработчик</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-  export default {
-    
-  }
+export default {};
 </script>
 
-<style lang="sass" scoped>
-
-</style>
+<style lang="sass" scoped></style>
