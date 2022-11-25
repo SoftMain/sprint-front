@@ -96,74 +96,46 @@
   -webkit-box-orient: vertical;
 }
 
-.yandex {
-  background: url(img/patnerslogo/yandex.svg);
+.partnersblocks-partners-banner-logo{
+  filter: saturate(0%);
 }
 
-.yandex:hover {
-  background: url(img/patnerslogo/colorize/yandex.png);
+.partnersblocks-partners-banner-logo:hover{
+  filter: saturate(100%);
+}
+
+.yandex {
+  background: url(/img/patnerslogo/yandex.png);
 }
 
 .ozon {
-  background: url(img/patnerslogo/ozon.svg);
-}
-
-.ozon:hover {
-  background: url(img/patnerslogo/colorize/ozon.png);
+  background: url(/img/patnerslogo/ozon.png);
 }
 
 .wildberries {
-  background: url(img/patnerslogo/wildberries.svg);
-}
-
-.wildberries:hover {
-  background: url(img/patnerslogo/colorize/wildberries.png);
+  background: url(/img/patnerslogo/wildberries.png);
 }
 
 .vk {
-  background: url(img/patnerslogo/vk.svg);
-}
-
-.vk:hover {
-  background: url(img/patnerslogo/colorize/vk.png);
+  background: url(/img/patnerslogo/vk.png);
 }
 
 .rosteh {
-  background: url(img/patnerslogo/rosteh.svg);
-}
-
-.rosteh:hover {
-  background: url(img/patnerslogo/colorize/rosteh.png);
+  background: url(/img/patnerslogo/rosteh.png);
 }
 
 .rostelekom {
-  background: url(img/patnerslogo/rostelekom.svg);
-}
-
-.rostelekom:hover {
-  background: url(img/patnerslogo/colorize/rostelekom.png);
+  background: url(/img/patnerslogo/rostelekom.png);
 }
 
 .econom {
-  background: url(img/patnerslogo/econom.svg);
-}
-
-.econom:hover {
-  background: url(img/patnerslogo/colorize/econom.png);
+  background: url(/img/patnerslogo/econom.png);
 }
 
 .otr {
-  background: url(img/patnerslogo/otr.svg);
-}
-
-.otr:hover {
-  background: url(img/patnerslogo/colorize/otr.png);
+  background: url(/img/patnerslogo/otr.png);
 }
 
 .sber {
-  background: url(img/patnerslogo/sber.svg);
-}
-
-.sber:hover {
-  background: url(img/patnerslogo/colorize/sber.png);
+  background: url(/img/patnerslogo/sber.png);
 }

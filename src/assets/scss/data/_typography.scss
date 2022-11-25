@@ -1,20 +1,57 @@
-//font-weight
-.text-regular {
+:root {
+  /* Weight */
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --semibold: 600;
+  --bold: 700;
+
+  /* Heading */
+  --sizeH1: 48px;
+  --sizeH2: 36px;
+  --sizeH3: 30px;
+  --sizeH4: 24px;
+  --sizeH5: 20px;
+  --sizeH6: 18px;
+  --heightH1: 48px;
+  --heightH2: 40px;
+  --heightH3: 36px;
+  --heightH4: 32px;
+  --heightH5: 28px;
+  --heightH6: 24px;
+
+  /* Body */
+  --sizeLarge: 18px;
+  --sizeBase: 16px;
+  --sizeSmall: 14px;
+  --sizeXSmall: 12px;
+  --heightLarge: 24px;
+  --heightBase: 20px;
+  --heightSmall: 16px;
+  --heightXSmall: 16px;
+
+  /* OVERLINE */
+  --overline: 0.1em;
+}
+
+// Weight
+.font-regular {
   font-weight: var(--regular);
 }
 
-.text-medium {
+.font-medium {
   font-weight: var(--medium);
 }
 
-.text-semibold {
+.font-semibold {
   font-weight: var(--semiBold);
 }
 
-.text-bold {
+.font-bold {
   font-weight: var(--bold);
 }
-//Размеры заголовков
+
+// Heading
 h1 {
   font-size: var(--sizeH1);
   line-height: var(--heightH1);
@@ -24,6 +61,7 @@ h2 {
   font-size: var(--sizeH2);
   line-height: var(--heightH2);
 }
+
 h3 {
   font-size: var(--sizeH3);
   line-height: var(--heightH3);
@@ -43,8 +81,9 @@ h6 {
   font-size: var(--sizeH6);
   line-height: var(--heightH6);
 }
-//Размеры текста
-.text-large {
+
+// Body
+.text-lg {
   font-size: var(--sizeLarge);
   line-height: var(--heightLarge);
 }
@@ -54,12 +93,12 @@ h6 {
   line-height: var(--heightBase);
 }
 
-.text-small {
+.text-sm {
   font-size: var(--sizeSmall);
   line-height: var(--heightSmall);
 }
 
-.text-xsmall {
+.text-xsm {
   font-size: var(--sizeXSmall);
   line-height: var(--heightXSmall);
 }
@@ -67,37 +106,4 @@ h6 {
 .text-overline {
   letter-spacing: var(--overline);
   text-transform: uppercase;
-}
-
-:root {
-  /*font weight*/
-  --light: 300;
-  --regular: 400;
-  --medium: 500;
-  --semiBold: 600;
-  --bold: 700;
-  /*overline*/
-  --overline: 0.1em;
-  /*Для текста*/
-  --sizeLarge: 18px;
-  --sizeBase: 16px;
-  --sizeSmall: 14px;
-  --sizeXSmall: 12px;
-  --heightLarge: 24px;
-  --heightBase: 20px;
-  --heightSmall: 16px;
-  --heightXSmall: 16px;
-  /*Для заголовков*/
-  --sizeH1: 48px;
-  --sizeH2: 36px;
-  --sizeH3: 30px;
-  --sizeH4: 24px;
-  --sizeH5: 20px;
-  --sizeH6: 18px;
-  --heightH1: 48px;
-  --heightH2: 40px;
-  --heightH3: 36px;
-  --heightH4: 32px;
-  --heightH5: 28px;
-  --heightH6: 24px;
 }
