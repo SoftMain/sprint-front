@@ -22,7 +22,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: softmain/app:latest
+          tags: softmain/sprint-front:latest
 # jobs:
 #   build-and-publish-latest:
 #     runs-on: ubuntu-latest
