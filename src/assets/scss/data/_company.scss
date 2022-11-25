@@ -46,17 +46,12 @@
   line-height: 20px;
 }
 
-// .infoproduct {
-//     width: 510px;
-// }
-
 .form-infoproduct-textarea {
   display: block;
   padding: 10px 20px;
   resize: none;
   width: 510px;
   height: 164px;
-  // padding: 0 20px;
   border: 1px solid #2c68e7;
   border-radius: 15px;
   outline: none;
@@ -66,16 +61,12 @@
   line-height: 20px;
 }
 
-// .form-callback {
-//     padding-bottom: 64px;
-// }
 
 .form {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   width: 550px;
-  // height: 356px;
   height: 382px;
   grid-gap: 24px;
   padding-bottom: 64px;
@@ -100,14 +91,12 @@
   flex-direction: column;
   width: 1112px;
   height: 420px;
-  // background-color: #2ce72c8f;
 }
 
 .copyright-title {
   text-align: center;
   height: 44px;
   margin-bottom: 28px;
-  // background-color: coral;
 }
 
 .copyright-text {
@@ -115,8 +104,6 @@
   flex-direction: row;
   width: 1112px;
   height: 352px;
-
-  // background-color: crimson
 }
 
 .copyright-text-left,
@@ -138,7 +125,6 @@
 
 .copyright-text-left-two {
   height: 252px;
-  // margin-bottom: 16px;
 }
 
 .copyright-text-right-one {
@@ -180,19 +166,3 @@
   z-index: 2;
   color: #2755a1;
 }
-
-// .edit-input {
-//     display: inline-block;
-// }
-
-// .form-nameapp:before {
-//     // background: url(/src/img/icons/edit.svg) no-repeat center left 10px;
-//     content: "\e91b";
-//     background-size: 20px 20px;
-// }
-
-// .email-input {
-//     top: 645px;
-//     // bottom: 0px;
-//     left: 450px;
-// }
