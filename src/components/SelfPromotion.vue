@@ -8,7 +8,7 @@
         <div class="self-promotion-block__frame">
           <article class="self-promotion-block__content">
             <div class="self-promotion-block__content-icon">
-              <img src="img/info/Icon.svg" alt="">
+              <img src="/img/info/Icon.svg" alt="">
             </div>
             <div class="self-promotion-block__content-text">
               <h5>Упростите поиск</h5>
@@ -23,7 +23,7 @@
 
           <article class="self-promotion-block__content">
             <div class="self-promotion-block__content-icon">
-              <img src="img/info/Icon-1.svg" alt="">
+              <img src="/img/info/Icon-1.svg" alt="">
             </div>
             <div class="self-promotion-block__content-text">
               <h5>Быстрое решение</h5>
@@ -35,7 +35,7 @@
 
           <article class="self-promotion-block__content">
             <div class="self-promotion-block__content-icon">
-              <img src="img/info/Icon-2.svg" alt="">
+              <img src="/img/info/Icon-2.svg" alt="">
             </div>
             <div class="self-promotion-block__content-text">
               <h5>Сделайте выбор</h5>

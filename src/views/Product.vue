@@ -21,11 +21,11 @@
     </div>
     <div class="product__header">
       <div class="product__upper">
-        <img src="img/products/h5.png" alt="Kaspersky"/>
+        <img src="/img/products/h5.png" alt="Kaspersky"/>
       </div>
       <div class="product__under">
         <div class="product__logo">
-          <img src="img/products/5.png" alt="Prxduct Lxgx" />
+          <img src="/img/products/5.png" alt="Prxduct Lxgx" />
         </div>
         <div class="product__info">
           <h4>Kaspersky Anti-Virus</h4>
