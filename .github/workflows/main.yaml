@@ -23,7 +23,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: softmain/sprint-front:latest
 # jobs:
 #   build-and-publish-latest:
 #     runs-on: ubuntu-latest
