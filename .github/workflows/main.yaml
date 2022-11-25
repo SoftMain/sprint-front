@@ -15,16 +15,17 @@ jobs:
       - name: Login to image repository
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_TOKEN }}
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.TOKEN }}
       - name: Build and push
         uses: docker/build-push-action@v3
         with:
           context: .
           push: true
-          tags: awbait/app:latest
-          # secrets: |
-          #   GIT_AUTH_TOKEN=${{ secrets.TOKEN }}
+          tags: softmain/sprint-front:latest
+          secrets: |
+            GIT_AUTH_TOKEN=${{ secrets.TOKENQ }}
 # jobs:
 #   build-and-publish-latest:
 #     runs-on: ubuntu-latest
