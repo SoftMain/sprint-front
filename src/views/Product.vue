@@ -1,31 +1,31 @@
 <template>
   <div class="container">
     <div class="path">
-      
-        <span class="icon-home px16"></span>
 
-        <div class="path-text">Главная</div>
-        <span class="icon-chevron-r px20"></span>
-      
-      
-        <div class="path-text">Каталог</div>
-        <span class="icon-chevron-r px20"></span>
-      
-      
-        <div class="path-text">Антивирусы</div>
-        <span class="icon-chevron-r px20"></span>
-      
-      
-        <div class="path-text path__text-active">Kaspersky Anti-Virus</div>
-      
+      <span class="icon-home px16"></span>
+
+      <div class="path-text">Главная</div>
+      <span class="icon-chevron-r px20"></span>
+
+
+      <div class="path-text">Каталог</div>
+      <span class="icon-chevron-r px20"></span>
+
+
+      <div class="path-text">Антивирусы</div>
+      <span class="icon-chevron-r px20"></span>
+
+
+      <div class="path-text path__text-active">Kaspersky Anti-Virus</div>
+
     </div>
     <div class="product__header">
       <div class="product__upper">
-        <img src="img/products/h5.png" alt="Kaspersky"/>
+        <img src="/img/products/h5.png" alt="Kaspersky" />
       </div>
       <div class="product__under">
         <div class="product__logo">
-          <img src="img/products/5.png" alt="Prxduct Lxgx" />
+          <img src="/img/products/5.png" alt="Prxduct Lxgx" />
         </div>
         <div class="product__info">
           <h4>Kaspersky Anti-Virus</h4>
@@ -84,29 +84,29 @@
           </p>
         </div>
         <div class="product__main-features">
-          <h4>Особенности</h4>
-          <div class="product__columns-features">
-            <div class="product__feature-column">
-              <div class="product__feature">
+          <h4 class="">Особенности</h4>
+          <div class="product__features-columns">
+            <div class="feature-column">
+              <div class="feature">
                 <span class="icon-checkmark-circle 24px"></span>Крутой интерфейс
               </div>
-              <div class="product__feature">
+              <div class="feature">
                 <span class="icon-checkmark-circle 24px"></span>Обновления
               </div>
-              <div class="product__feature">
-                <span class="icon-checkmark-circle 24px"></span>Обновления
+              <div class="feature">
+                <span class="icon-checkmark-circle 24px"></span>Расширения
               </div>
             </div>
 
-            <div class="product__feature-column">
-              <div class="product__feature">
-                <span class="icon-checkmark-circle 24px"></span>Обновления
+            <div class="feature-column">
+              <div class="feature">
+                <span class="icon-checkmark-circle 24px"></span>Безопасность
               </div>
-              <div class="product__feature">
-                <span class="icon-checkmark-circle 24px"></span>Обновления
+              <div class="feature">
+                <span class="icon-checkmark-circle 24px"></span>Документация
               </div>
-              <div class="product__feature">
-                <span class="icon-checkmark-circle 24px"></span>Обновления
+              <div class="feature">
+                <span class="icon-checkmark-circle 24px"></span>Поддержка
               </div>
             </div>
           </div>
@@ -116,24 +116,25 @@
           <h4>Техническая информация</h4>
           <div class="main__tech-info-col">
             <div class="line__tech-info">
-              <div>Поддерживаемые платформы</div>
+              <div class="tech__category">Поддерживаемые <br>
+                платформы</div>
               <div>Linux, Windows, Android</div>
             </div>
             <div class="line__tech-info">
-              <div>Поддерживаемые платформы</div>
-              <div>Linux, Windows, Android</div>
+              <div class="tech__category">Поддерживаемые языки</div>
+              <div>Русский, Английский</div>
             </div>
             <div class="line__tech-info">
-              <div>Поддерживаемые платформы</div>
-              <div>Linux, Windows, Android</div>
+              <div class="tech__category">Мобильное приложение</div>
+              <div>Да</div>
             </div>
             <div class="line__tech-info">
-              <div>Поддерживаемые платформы</div>
-              <div>Linux, Windows, Android</div>
+              <div class="tech__category">Сертификация</div>
+              <div>ФСТЭК</div>
             </div>
             <div class="line__tech-info">
-              <div>Поддерживаемые платформы</div>
-              <div>Linux, Windows, Android</div>
+              <div class="tech__category">Категории</div>
+              <div>Антивирусы</div>
             </div>
           </div>
         </div>
@@ -141,21 +142,25 @@
           <h4>Медиа</h4>
           <div class="product__main-media-wrap">
             <div class="product__main-vid-rev">
-              <div><p>Видеообзоры</p></div>
+              <div>
+                <p>Видеообзоры</p>
+              </div>
               <div class="videos">
-                <div class="product__main-video">1</div>
-                <div class="product__main-video">2</div>
-                <div class="product__main-video">3</div>
-                <div class="product__main-video">4</div>
+                <div class="video">1</div>
+                <div class="video">2</div>
+                <div class="video">3</div>
+                <div class="video">4</div>
               </div>
             </div>
             <div class="product__main-screen">
-              <div><p>Скриншоты</p></div>
+              <div>
+                <p>Скриншоты</p>
+              </div>
               <div class="screenshots">
-                <div class="product__main-photo">1</div>
-                <div class="product__main-photo">2</div>
-                <div class="product__main-photo">3</div>
-                <div class="product__main-photo">4</div>
+                <div class="screen">1</div>
+                <div class="screen">2</div>
+                <div class="screen">3</div>
+                <div class="screen">4</div>
               </div>
             </div>
           </div>
@@ -165,48 +170,29 @@
           <p>ESET32, 360 Total Security, Malwarebytes</p>
         </div>
 
-        <section class="review">
-          <div class="product__review-container">
-            <div class="product__review-wrap">
-              <h4>Отзывы</h4>
-              <div class="product__review"></div>
-              <div class="product__review"></div>
-              <div class="product__review"></div>
+        <div class="product__comments-wrap">
+          <h4>Отзывы</h4>
+          <div class="product__comment"></div>
+          <div class="product__comment"></div>
+          <div class="product__comment"></div>
+        </div>
+        <form class="product__comments-form">
+          <h4>Оставьте свой отзыв</h4>
+          <div class="product__comm-inputs">
+            <div class="comment__left">
+              <input type="text" name="" placeholder="Иди спать" class="comment__input-left" />
+              <input type="text" name="" placeholder="Настя" class="comment__input-left" />
+              <input type="text" name="" placeholder="Я устал" class="comment__input-left" />
             </div>
-            <h4>Оставьте свой отзыв</h4>
-            <form class="product__review-form">
-              <div class="product__rev-input-wrap">
-                <div class="review__left">
-                  <input
-                    type="text"
-                    name=""
-                    placeholder=""
-                    class="review__input-left"
-                  />
-                  <input
-                    type="text"
-                    name=""
-                    placeholder=""
-                    class="review__input-left"
-                  />
-                  <input
-                    type="text"
-                    name=""
-                    placeholder=""
-                    class="review__input-left"
-                  />
-                </div>
-                <div class="review__right">
-                  <input type="text" name="" class="review__input-right" />
-                  <div class="product__review-captcha">captcha</div>
-                  <div class="product__review-btn">
-                    <a class="product__review-button" href="">Перейти</a>
-                  </div>
-                </div>
+            <div class="comment__right">
+              <input type="text" name="" class="comment__input-right" />
+              <div class="product__comment-captcha">captcha</div>
+              <div class="product__comment-btn">
+                <a class="comment__button" href="">Отправить</a>
               </div>
-            </form>
+            </div>
           </div>
-        </section>
+        </form>
       </div>
     </div>
   </div>

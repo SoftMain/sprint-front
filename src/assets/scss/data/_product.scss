@@ -24,7 +24,7 @@
   align-items: flex-start;
 
   height: 310px;
-  
+  margin-bottom: 24px;
 }
 
 .product__upper {
@@ -113,7 +113,7 @@
   width: 265px;
   height: 310px;
 
-
+  margin-right: 20px;
   /* Stroke/Grey */
 
   border: 1px solid #B3B3B3;
@@ -198,6 +198,8 @@ a.button {
   width: 835px;
   height: 128px;
 
+  padding: 16px;
+  margin-bottom: 20px;
   /* BG/White */
 
   background: #FFFFFF;
@@ -222,6 +224,7 @@ a.button {
   width: 835px;
   height: 192px;
 
+  margin-bottom: 20px;
   /* BG/White */
 
   background: #FFFFFF;
@@ -230,7 +233,7 @@ a.button {
   border: 1px solid #B3B3B3;
   border-radius: 12px;
 }
-.product__columns-features {
+.product__features-columns {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -240,7 +243,7 @@ a.button {
   width: 803px;
   height: 104px;
 }
-.product__feature-column {
+.feature-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -257,7 +260,7 @@ a.button {
   order: 0;
   flex-grow: 0;
 }
-.product__feature {
+.feature {
   
   display: flex;
   flex-direction: row;
@@ -282,6 +285,7 @@ a.button {
   width: 835px;
   height: 272px;
 
+  margin-bottom: 20px;
   /* BG/White */
 
   background: #FFFFFF;
@@ -308,12 +312,13 @@ a.button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
-  gap: 20px;
 
   width: 803px;
   height: 40px;
-
+}
+.tech__category {
+  width: 200px;
+  margin-right: 20px;
 }
 
 .product__main-media {
@@ -326,7 +331,7 @@ a.button {
   gap: 24px;
   
   width: 835px;
-  height: 440px;
+  margin-bottom: 20px;
   
   /* BG/White */
   
@@ -370,7 +375,7 @@ a.button {
 
 }
 
-.product__main-video {
+.video {
   border: 1px solid #B3B3B3;
   display: flex;
   flex-direction: row;
@@ -405,7 +410,7 @@ a.button {
   height: 124px;
 
 }
-.product__main-photo {
+.screen {
   border: 1px solid #B3B3B3;
   display: flex;
   flex-direction: row;
@@ -434,6 +439,7 @@ a.button {
   width: 835px;
   height: 108px;
 
+  margin-bottom: 20px;
   /* BG/White */
 
   background: #FFFFFF;
@@ -450,13 +456,20 @@ a.button {
   // flex-grow: 0;
 }
 
-.product__review-container {
-  
+
+.product__comments-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 835px;
+  margin-bottom: 20px;
+
 }
 
-.product__review-container-wrap {}
-
-.product__review {
+.product__comment {
   box-sizing: border-box;
 
   /* Auto layout */
@@ -479,7 +492,7 @@ a.button {
   border-radius: 12px;
 }
 
-.product__review-form {
+.product__comments-form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -488,15 +501,16 @@ a.button {
 
   width: 835px;
   height: 375px;
+  margin-bottom: 40px;
 }
 
-.product__rev-input-wrap {
+.product__comm-inputs {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.review__left {
+.comment__left {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -507,7 +521,7 @@ a.button {
   height: 144px;
   }
 
-input.review__input-left {
+input.comment__input-left {
   box-sizing: border-box;
 
   /* Auto layout */
@@ -528,7 +542,7 @@ input.review__input-left {
 
 }
 
-.review__right {
+.comment__right {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap-reverse;
@@ -538,7 +552,7 @@ input.review__input-left {
   gap: 16px;
 }
 
-.review__input-right {
+.comment__input-right {
   box-sizing: border-box;
 
   /* Auto layout */
@@ -560,7 +574,7 @@ input.review__input-left {
 
 }
 
-.product__review-captcha {
+.product__comment-captcha {
   box-sizing: border-box;
 
   /* Auto layout */
@@ -583,26 +597,29 @@ input.review__input-left {
   border-radius: 12px;
 }
 
-.product__review-btn {
+.product__comment-btn {
   display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
   gap: 9px;
-
+  
   width: 113px;
   height: 40px;
-
-  margin-bottom: 48px;
+  
   /* Header/RoyalBlue */
-
+  
   background: #2C68E7;
   border-radius: 8px;
+  
 
 }
 
-.product-button {
+.comment__button {
+  text-align: center;
   padding: 10px 16px;
-  text-align: center; 
+  text-align: center;
+  color: #FFFFFF; 
+  
 }
