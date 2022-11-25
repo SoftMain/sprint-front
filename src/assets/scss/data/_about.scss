@@ -1,0 +1,90 @@
+.about__our-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__our-project-text > img {
+  max-width: 100%;
+  order: 2;
+  height: 434px;
+  width: 548px;
+  left: 568px;
+  top: 0px;
+  border-radius: 0px;
+}
+
+.about__our-project-text {
+  order: 0;
+}
+
+.about__label {
+  background: $gd-blue;
+  height: 148px;
+  width: 100%;
+
+  &-card {
+    margin-top: 188px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &-h2 {
+    padding: 15px 0 5px 150px;
+  }
+
+  &-item {
+    margin-top: 21px;
+    border-bottom: 52px;
+    width: 360px;
+    height: 106px;
+    background: $white;
+    border-radius: 50px;
+  }
+
+  &-text {
+    padding: 5px 0px 50px 70px;
+  }
+}
+
+.about__history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__history > img {
+  height: 532px;
+  max-width: 100%;
+  order: 1;
+}
+
+.about__history-text {
+  padding-right: 20px;
+  order: 2;
+}
+
+.about__our-team {
+  &_img {
+    width: 233px;
+    height: 184px;
+    margin-bottom: 8px;
+  }
+
+  &-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 16px;
+  }
+
+  &-card {
+    height: 240px;
+    background: $white;
+    padding: 16px;
+    outline: 1px solid $gray-2;
+    border-radius: 12px;
+  }
+}
