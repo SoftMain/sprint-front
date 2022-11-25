@@ -31,7 +31,6 @@
 .partnerreviews {
   width: 550px;
   height: 346px;
-  flex-direction: column;
 }
 
 .partnerreviews-slider {
@@ -48,6 +47,10 @@
   border-radius: 4px;
 }
 
+.partnerreviews-slider .active{
+  background-color: $blue-5;
+}
+
 
 
 .comment {
@@ -60,6 +63,19 @@
   border: 1px solid #B3B3B3;
   border-radius: 12px;
   margin-top: 32px;
+  margin-right: 50px;
+  padding: 30px;
+}
+
+.comment-wrapper{
+  width: 602px;
+  height: 206px;
+  overflow: hidden;
+}
+
+.slider-area{
+  display: flex;
+  transition: all ease .5s;
 }
 
 .comment-reviewer {
@@ -67,7 +83,6 @@
   width: 490px;
   height: 64px;
   margin-bottom: 8px;
-  margin-top: 30px;
 }
 
 .comment-reviewer-avatar {
@@ -88,7 +103,6 @@
 
 .comment-reviewerinfo {
   width: 490px;
-  margin-bottom: 30px;
   max-height: 306px;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -25,40 +25,18 @@
               </div>
             </div>
 
-            <div class="partnerreviews">
-              <div class="partnerreviews-slider">
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-                <div class="partnerreviews-slider-switcher"></div>
-              </div>
-
-              <div class="comment wh">
-                <div class="comment-reviewer">
-                  <div class="comment-reviewer-avatar"></div>
-                  <div class="comment-reviewer-data">
-                    <div class="comment-reviewer-data-nick">
-                      <h4>Иван Фурсов</h4>
-                    </div>
-                    <div class="comment-reviewer-data-post text-small">Сбербанк</div>
-                  </div>
-
-                </div>
-                <div class="comment-reviewerinfo">Благодарю сайт «SoftMain» за понимание,
-                  профессионализм и
-                  высокое качество работы.</div>
-              </div>
-            </div>
+            <Slider />
           </div>
         </div>
   </section>
 </template>
 
 <script>
+  import Slider from "./Partners/Slider.vue";
     export default {
-        
+        components:{
+          Slider
+        }
     }
 </script>
 
