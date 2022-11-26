@@ -31,7 +31,6 @@
 .partnerreviews {
   width: 550px;
   height: 346px;
-  flex-direction: column;
 }
 
 .partnerreviews-slider {
@@ -48,6 +47,10 @@
   border-radius: 4px;
 }
 
+.partnerreviews-slider .active{
+  background-color: $blue-5;
+}
+
 
 
 .comment {
@@ -60,6 +63,19 @@
   border: 1px solid #B3B3B3;
   border-radius: 12px;
   margin-top: 32px;
+  margin-right: 50px;
+  padding: 30px;
+}
+
+.comment-wrapper{
+  width: 602px;
+  height: 206px;
+  overflow: hidden;
+}
+
+.slider-area{
+  display: flex;
+  transition: all ease .5s;
 }
 
 .comment-reviewer {
@@ -67,7 +83,6 @@
   width: 490px;
   height: 64px;
   margin-bottom: 8px;
-  margin-top: 30px;
 }
 
 .comment-reviewer-avatar {
@@ -88,7 +103,6 @@
 
 .comment-reviewerinfo {
   width: 490px;
-  margin-bottom: 30px;
   max-height: 306px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -98,44 +112,79 @@
 
 .partnersblocks-partners-banner-logo{
   filter: saturate(0%);
+  min-width: 170px;
+  height: 80px;
 }
 
 .partnersblocks-partners-banner-logo:hover{
   filter: saturate(100%);
 }
 
+.shuffle__wrapper{
+  width: 170px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.shuffle__image{
+  display: flex;
+  transition: all ease .5s;
+}
+
+.shuffle__image.horizontal{
+  flex-direction: column;
+}
+
 .yandex {
-  background: url(/img/patnerslogo/yandex.png);
+  width: 170px;
+  height: 80px;
+  background: url(/img/patnerslogo/yandex.png) center center/cover no-repeat;
 }
 
 .ozon {
-  background: url(/img/patnerslogo/ozon.png);
+  width: 170px;
+  height: 80px;
+  background: url(/img/patnerslogo/ozon.png) center center/cover no-repeat;
 }
 
 .wildberries {
-  background: url(/img/patnerslogo/wildberries.png);
+  width: 170px;
+  height: 80px;
+  background: url(/img/patnerslogo/wildberries.png) center center/cover no-repeat;
 }
 
 .vk {
-  background: url(/img/patnerslogo/vk.png);
+  width: 170px;
+  height: 80px;
+  background: url(/img/patnerslogo/vk.png) center center/cover no-repeat;
 }
 
 .rosteh {
-  background: url(/img/patnerslogo/rosteh.png);
+  width: 170px;
+  height: 80px;
+  background: url(/img/patnerslogo/rosteh.png) center center/cover no-repeat;
 }
 
 .rostelekom {
-  background: url(/img/patnerslogo/rostelekom.png);
+  width: 170px;
+  height: 80px;
+  background: url(/img/patnerslogo/rostelekom.png) center center/cover no-repeat;
 }
 
 .econom {
-  background: url(/img/patnerslogo/econom.png);
+  width: 170px;
+  height: 80px;
+  background: url(/img/patnerslogo/econom.png) center center/cover no-repeat;
 }
 
 .otr {
-  background: url(/img/patnerslogo/otr.png);
+  width: 170px;
+  height: 80px;
+  background: url(/img/patnerslogo/otr.png) center center/cover no-repeat;
 }
 
 .sber {
-  background: url(/img/patnerslogo/sber.png);
+  width: 170px;
+  height: 80px;
+  background: url(/img/patnerslogo/sber.png) center center/cover no-repeat;
 }

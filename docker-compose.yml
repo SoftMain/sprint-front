@@ -1,0 +1,6 @@
+version: '3'
+services:
+  front:
+    image: ghcr.io/softmain/sprint-front:build
+    ports:
+      - "8080:80"

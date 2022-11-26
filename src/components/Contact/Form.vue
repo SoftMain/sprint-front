@@ -41,6 +41,9 @@ export default {
         async submit() {
             try {
                 console.log(this.form)
+                this.form.email = "";
+                this.form.product = "";
+                this.form.infoproduct = "";
             }
             catch (err) {
                 console.error('Ошибка:', err);

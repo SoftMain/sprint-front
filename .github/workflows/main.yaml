@@ -53,8 +53,11 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.VM_HOST }}
-          username: ${{ secrets.VM_USERNAME}}
+          username: ${{ secrets.VM_USERNAME }}
           key: ${{ secrets.VM_KEY}}
           port: 22
           script: |
-            whoami
+            sudo docker-compose pull
+            sudo docker stop front
+            sudo docker rm front
+            sudo docker-compose up -d

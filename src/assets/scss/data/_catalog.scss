@@ -1,0 +1,337 @@
+// .proto {
+//     &__elem {
+//         background-color: black;
+//     }
+
+//     &__block {
+//         background-color: grey;
+//     }
+
+//     &__elem2 {
+//         background-color: #4a4a4a;
+//     }
+
+//     &__elem3 {
+//         background-color: #727272;
+//     }
+
+//     &__elem4 {
+//         background-color: #505050;
+//     }
+
+//     &__elem5 {
+//         background-color: #3d3c3c;
+//     }
+// }
+.catalog-container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    &__h6 {
+        color: $blue-7;
+    }
+
+    &__categories {
+        box-sizing: border-box;
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 8px;
+
+        width: 265px;
+        height: 116px;
+        border: 1px solid #B3B3B3;
+        border-radius: 12px;
+    }
+
+    &__filters {
+        box-sizing: border-box;
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 16px;
+
+        width: 265px;
+        height: 456px;
+        border: 1px solid #B3B3B3;
+        border-radius: 12px;
+    }
+
+    &__catalog-categories {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+        padding: 0px;
+        gap: 4px;
+    }
+
+    &__filters {
+        box-sizing: border-box;
+
+        /* Auto layout */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+        gap: 16px;
+        height: 100%;
+    }
+
+    &__platform-filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    &__certificate-filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    &__language-filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    &__analogs-filter {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    &__collapse {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    &__collapse-icon {
+        color: $blue-7;
+    }
+
+    &__collapse-h6 {
+        color: $blue-7;
+    }
+
+    &__variants {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4px;
+
+        width: 90%;
+        height: 100%;
+    }
+
+    &__checkbox {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    &__actions {
+        display: flex;
+        align-self: stretch;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    &__button {
+        display: flex;
+    }
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+
+
+    &__product {
+        box-sizing: border-box;
+
+        /* Auto layout */
+        display: flex;
+        align-self: stretch;
+        height: 240px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 0px 8px;
+        gap: 8px;
+
+        /* Text/Grey */
+        border: 1px solid #B3B3B3;
+        border-radius: 12px;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        align-self: stretch;
+        justify-content: space-between;
+        /* Auto layout */
+
+        &-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            align-self: stretch;
+
+            padding: 0px 16px;
+            gap: 16px;
+        }
+    }
+
+    &__image {
+        width: 96px;
+        height: 96px;
+        border-radius: 6px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+    }
+
+    &__developer {
+        display: flex;
+        gap: 4px;
+        color: #727272;
+
+        span {
+            color: $blue-7;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        span {
+            color: $orange;
+        }
+    }
+
+    &__lable {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-items: stretch;
+        background: linear-gradient(90deg, #E06F30 -0.25%, #DDA81F 99.75%);
+        border-radius: 8px 0px 0px 8px;
+        padding: 6px 32px;
+        color: #fff;
+        position: relative;
+        left: 8px;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        height: 100%;
+        align-items: flex-start;
+        margin: 0px 16px;
+    }
+
+    &__under {
+        /* Auto layout */
+        display: flex;
+        align-self: stretch;
+        justify-content: flex-end;
+        padding: 5px 16px 3px;
+        height: 44px;
+
+        /* Stroke/Grey */
+        border-top: 1px solid #B3B3B3;
+    }
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    gap: 3px;
+
+    &__page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+
+        width: 36px;
+        height: 36px;
+
+        &_active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+
+            width: 36px;
+            height: 36px;
+            background: $blue-3;
+            border-radius: 6px;
+            color: white;
+
+        }
+    }
+}

@@ -12,14 +12,7 @@
                 обеспечения.</p>
             </div>
           </div>
-
-          <div class="banner_button">
-            <a class="btn-light-primary btn-lg text-large">Добавить ПО</a>
-          </div>
-        </div>
-
-        <div class="banner__image">
-          <img class="banner_img" src="/img/Group.png" alt="banner_background">
+            <a class="btn-light-primary btn-lg text-large banner__button">Добавить ПО</a>
         </div>
       </div>
     </div>

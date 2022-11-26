@@ -3,11 +3,17 @@
   width: 1120px;
   height: 452px;
   padding-bottom: 44px;
+
 }
 
 .infoblock-logo {
   width: 550px;
   height: 452px;
+  padding-left: 20px;
+}
+
+.mail-text-two-emaillink {
+  text-decoration: none;
 }
 
 .infoblock-text {
@@ -91,6 +97,7 @@
   flex-direction: column;
   width: 1112px;
   height: 420px;
+  padding-bottom: 64px;
 }
 
 .copyright-title {
@@ -101,43 +108,16 @@
 
 .copyright-text {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 16px;
   width: 1112px;
   height: 352px;
 }
 
-.copyright-text-left,
-.copyright-text-right {
-  display: flex;
-  flex-direction: column;
+.size {
   width: 546px;
-  height: 340px;
-}
-
-.copyright-text-left {
-  margin-right: 20px;
-}
-
-.copyright-text-left-one {
-  height: 84px;
-  margin-bottom: 16px;
-}
-
-.copyright-text-left-two {
-  height: 252px;
-}
-
-.copyright-text-right-one {
-  height: 56px;
-  margin-bottom: 16px;
-}
-
-.copyright-text-right-two {
-  height: 120px;
-}
-
-.copyright-text-right-three {
-  height: 144px;
 }
 
 .mail {
