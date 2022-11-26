@@ -4,7 +4,7 @@
       <h1>Упс! Страница не существует.</h1>
     </div>
     <button class="btn-primary btn">Вернуться на главную</button>
-    <img class="err404" src="img/background/err404.svg" alt="" />
+    <img class="err404" src="/img/background/err404.svg" alt="" />
   </div>
 </template>
 

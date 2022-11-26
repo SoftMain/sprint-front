@@ -4,4 +4,3 @@ Dockerfile
 node_modules
 dist
 README.md
-build
