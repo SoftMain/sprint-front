@@ -23,6 +23,12 @@
 //         background-color: #3d3c3c;
 //     }
 // }
+.catalog-container {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    gap: 20px;
+}
 
 .sidebar {
     display: flex;
@@ -30,12 +36,6 @@
     align-items: center;
     padding: 0px;
     gap: 16px;
-
-    position: absolute;
-    width: 265px;
-    height: 588px;
-    left: 160px;
-    top: 128px;
 
 
     &__categories {
@@ -228,64 +228,51 @@
     align-items: center;
     padding: 8px 12px;
     gap: 6px;
-
-    position: absolute;
-    width: 181px;
-    height: 36px;
-    left: 445px;
-    top: 128px;
 }
 
 .products {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 24px;
+
+
 
     &__product {
         box-sizing: border-box;
 
         /* Auto layout */
         display: flex;
+        align-self: stretch;
+        height: 240px;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         padding: 16px 0px 8px;
         gap: 8px;
-
-        width: 835px;
-        height: 240px;
 
         /* Text/Grey */
         border: 1px solid #B3B3B3;
         border-radius: 12px;
-
-        /* Inside auto layout */
-        flex: none;
-        order: 0;
-        align-self: stretch;
-        flex-grow: 0;
     }
 
     &__header {
-
-        /* Auto layout */
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        padding: 0px 16px;
-        gap: 16px;
-        isolation: isolate;
-
-        width: 835px;
-        height: 96px;
-
-
-        /* Inside auto layout */
-        flex: none;
-        order: 0;
         align-self: stretch;
-        flex-grow: 0;
+        justify-content: space-between;
+        /* Auto layout */
+
+        &-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            align-self: stretch;
+
+            padding: 0px 16px;
+            gap: 16px;
+        }
     }
 
     &__image {
@@ -307,41 +294,37 @@
         gap: 8px;
     }
 
-    &__title {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 32px;
-        font-style: normal;
-    }
-
     &__developer {
         display: flex;
         gap: 4px;
-        width: 84px;
-        height: 16px;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 16px;
         color: #727272;
+
+        span {
+            color: $blue-7;
+        }
     }
 
     &__rating {
-        width: 137px;
-        height: 20px;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        span {
+            color: $orange;
+        }
     }
 
     &__lable {
         display: flex;
-        flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
-        padding: 0px;
-        isolation: isolate;
-
-        position: absolute;
-        width: 173px;
-        height: 32px;
-        left: 670px;
+        align-items: stretch;
+        background: linear-gradient(90deg, #E06F30 -0.25%, #DDA81F 99.75%);
+        border-radius: 8px 0px 0px 8px;
+        padding: 6px 32px;
+        color: #fff;
+        position: relative;
+        left: 8px;
     }
 
     &__description {
@@ -349,40 +332,18 @@
         flex-direction: row;
         align-items: flex-start;
         margin: 0px 16px;
-
-        width: 835px;
-        height: 60px;
     }
 
     &__under {
-        box-sizing: border-box;
-
         /* Auto layout */
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        padding: 8px 16px 0px;
-
-        width: 835px;
+        align-self: stretch;
+        justify-content: flex-end;
+        padding: 5px 16px 3px;
         height: 44px;
 
         /* Stroke/Grey */
         border-top: 1px solid #B3B3B3;
-    }
-
-    &__button {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 8px 12px;
-        gap: 6px;
-
-        width: 107px;
-        height: 36px;
-
-        border-radius: 6px;
     }
 }
 
