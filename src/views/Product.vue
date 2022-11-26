@@ -21,7 +21,7 @@
     </div>
     <div class="product__header">
       <div class="product__upper">
-        <img src="/img/products/h5.png" alt="Kaspersky" />
+        <img class="product__upper-img" src="/img/products/h5.png" alt="Kaspersky" />
       </div>
       <div class="product__under">
         <div class="product__logo">
@@ -29,13 +29,13 @@
         </div>
         <div class="product__info">
           <h4>Kaspersky Anti-Virus</h4>
-          <p>Лаборатория Касперского</p>
+          <div class="info__text">Лаборатория Касперского</div>
           <div class="product__raiting">
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star-filled 14px"></span>
-            <span class="icon-star-filled 14px"></span>
-            <span class="icon-star-filled 14px"></span>
+            <span class="icon-star 14px"></span>
+            <span class="icon-star 14px"></span>
             <p class="product__raiting-text">(12)</p>
           </div>
         </div>
@@ -142,8 +142,8 @@
           <h4>Медиа</h4>
           <div class="product__main-media-wrap">
             <div class="product__main-vid-rev">
-              <div>
-                <p>Видеообзоры</p>
+              <div class="vid-rev-title">
+                Видеообзоры
               </div>
               <div class="videos">
                 <div class="video">1</div>
@@ -153,8 +153,8 @@
               </div>
             </div>
             <div class="product__main-screen">
-              <div>
-                <p>Скриншоты</p>
+              <div class="screen-title">
+                Скриншоты
               </div>
               <div class="screenshots">
                 <div class="screen">1</div>
