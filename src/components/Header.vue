@@ -1,5 +1,7 @@
 <template>
-  <header>
+  <header
+    :class="isTop && this.$route.name == 'main' ? 'header_transparent' : ''"
+  >
     <div class="container">
       <nav class="nav">
         <div class="nav__wrapper">
@@ -9,19 +11,33 @@
           </router-link>
 
           <div class="nav__wrapper-categories proto__elem">
-            <a class="btn btn-primary">Категории
+            <a class="btn btn-primary"
+              >Категории
               <span class="icon-caret-down px20"></span>
             </a>
           </div>
         </div>
         <div class="nav__search proto__elem">
-            <input class="search-area" type="search" placeholder="Поиск по сайту" required-placeholder="">
+          <form action="#" method="get">
+            <input
+              class="search-area"
+              type="search"
+              placeholder="Поиск по сайту"
+              required-placeholder=""
+            />
+          </form>
           <span class="icon-search px20 search-img"></span>
         </div>
         <div class="nav__links">
-          <router-link to="/integrators" class="btn text-base font-regular">Интеграторы</router-link>
-          <router-link to="/contact" class="btn text-base font-regular">Компаниям</router-link>
-          <router-link to="/about" class="btn text-base font-regular">О нас</router-link>
+          <router-link to="/integrators" class="btn text-base font-regular"
+            >Интеграторы</router-link
+          >
+          <router-link to="/contact" class="btn text-base font-regular"
+            >Компаниям</router-link
+          >
+          <router-link to="/about" class="btn text-base font-regular"
+            >О нас</router-link
+          >
         </div>
       </nav>
     </div>
@@ -29,9 +45,32 @@
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      isTop: true,
+    };
+  },
+  methods: {
+    handleScroll(event) {
+      this.isUserScrolling = window.scrollY > 0;
+      if (window.scrollY >= 100) {
+        this.isTop = false;
+        return;
+      }
+      this.isTop = true;
+    },
+  },
+  mounted() {
+    this.handleDebouncedScroll = setTimeout.bind(null, this.handleScroll, 100);
+    window.addEventListener("scroll", this.handleDebouncedScroll, {
+      passive: true,
+    });
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleDebouncedScroll);
+  },
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -65,6 +65,7 @@
   margin-top: 32px;
   margin-right: 50px;
   padding: 30px;
+  background-color: #fff;
 }
 
 .comment-wrapper{
@@ -114,6 +115,7 @@
   filter: saturate(0%);
   min-width: 170px;
   height: 80px;
+  transition: all ease .5s;
 }
 
 .partnersblocks-partners-banner-logo:hover{
@@ -129,6 +131,10 @@
 .shuffle__image{
   display: flex;
   transition: all ease .5s;
+}
+
+.shuffle__image.horizontal{
+  flex-direction: column;
 }
 
 .yandex {

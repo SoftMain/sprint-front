@@ -43,7 +43,7 @@
         Timer(){
             document.querySelector('.slider-area').style.marginLeft = `-${100*this.counter}%`;
             this.activeCategory=this.counter;
-            if(this.counter>=9){
+            if(this.counter>=5){
                 this.counter=0;
             }else{
                 this.counter++;
