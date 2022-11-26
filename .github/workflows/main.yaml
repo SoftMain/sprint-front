@@ -57,6 +57,7 @@ jobs:
           key: ${{ secrets.VM_KEY}}
           port: 22
           script: |
-            whoami
             sudo docker-compose pull
+            sudo docker stop front
+            sudo docker rm front
             sudo docker-compose up -d
