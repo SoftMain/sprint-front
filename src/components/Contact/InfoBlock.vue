@@ -2,7 +2,7 @@
     <section>
         <div class="infoblock container">
             <div class="infoblock-logo">
-                <img src="img/background/company_page.svg" alt="" />
+                <img src="/img/background/company_page.svg" alt="" />
             </div>
             <div class="infoblock-text">
                 <div class="infoblock-text1">
