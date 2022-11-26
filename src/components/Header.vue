@@ -3,10 +3,10 @@
     <div class="container">
       <nav class="nav">
         <div class="nav__wrapper">
-            <router-link to="/" class="nav__wrapper-logo">
+          <router-link to="/" class="nav__wrapper-logo">
             <span class="icon-logo32 px32"></span>
             <h3>SoftMain</h3>
-            </router-link>
+          </router-link>
 
           <div class="nav__wrapper-categories proto__elem">
             <a class="btn btn-primary">Категории
@@ -14,11 +14,8 @@
             </a>
           </div>
         </div>
-
         <div class="nav__search proto__elem">
-          <form action="#" method="get">
             <input class="search-area" type="search" placeholder="Поиск по сайту" required-placeholder="">
-          </form>
           <span class="icon-search px20 search-img"></span>
         </div>
         <div class="nav__links">
@@ -31,7 +28,7 @@
   </header>
 </template>
 
-<script setup>
+<script>
 
 </script>
 
