@@ -12,7 +12,7 @@
                 обеспечения.</p>
             </div>
           </div>
-            <a class="btn-light-primary btn-lg text-large banner__button">Добавить ПО</a>
+            <router-link to="/contact" class="btn-light-primary btn-lg text-large banner__button">Добавить ПО</router-link>
         </div>
       </div>
     </div>

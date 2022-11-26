@@ -1,5 +1,5 @@
 <template>
-  <div v-for="post in posts" class="category-container">
+  <router-link v-for="post in posts" :to="post.link" class="category-container">
     <div class="category-container-logo">
       <img :src="`img/products/${post.id}.png`" alt="" />
     </div>
@@ -8,15 +8,15 @@
         <div class="category-container-main-title-name">
           <h6>{{ post.title }}</h6>
         </div>
-        <a :href="post.link" class="category-container-main-title-button">
+        <div class="category-container-main-title-button">
           <span class="icon-chevron-r px16"></span>
-        </a>
+        </div>
       </div>
       <div class="category-container-main-description base">
         {{ post.text }}
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
