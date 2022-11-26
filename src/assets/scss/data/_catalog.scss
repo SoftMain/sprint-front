@@ -30,6 +30,13 @@
     gap: 20px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -176,12 +183,6 @@
     }
 }
 
-.sort-button {
-    display: flex;
-
-    margin-bottom: 10px;
-}
-
 .products {
     display: flex;
     flex-direction: column;
@@ -302,19 +303,11 @@
 }
 
 .pagination {
-    position: absolute;
-    height: 36px;
-    left: 445px;
-    right: 160px;
-    top: 1500px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
     padding: 0px;
     gap: 3px;
-
-    width: 348px;
-    height: 36px;
 
     &__page {
         display: flex;
@@ -325,5 +318,20 @@
 
         width: 36px;
         height: 36px;
+
+        &_active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+
+            width: 36px;
+            height: 36px;
+            background: $blue-3;
+            border-radius: 6px;
+            color: white;
+
+        }
     }
 }
