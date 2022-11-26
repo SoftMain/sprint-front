@@ -143,7 +143,9 @@
     </section>
 
     <section>
-      <a class="sort-button"></a>
+      <div class="sort-button">
+        <a class="btn btn-primary">Высокий рейтинг<span class="icon-caret-down px20"></span></a>
+      </div>
 
       <div class="products">
         <div class="products__product">
