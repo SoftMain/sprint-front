@@ -49,6 +49,17 @@ header {
   z-index: 1;
   top: 0px;
   z-index: 1;
+  background-color: $blue-3;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+header.header_transparent {
+  background-color: transparent;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
 }
 
 .nav__search {
@@ -61,7 +72,7 @@ header {
   width: 430px;
   height: 40px;
   padding: 0 40px;
-  border: 1px solid #2C68E7;
+  border: 1px solid $blue-4;
   border-radius: 15px;
   outline: none;
   font-style: normal;
