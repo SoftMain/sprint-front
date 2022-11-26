@@ -18,10 +18,16 @@ const router = createRouter({
     {
       path: '/catalog',
       name: 'catalog',
-      component: Catalog
+      component: Catalog,
+      children: [
+        {
+          path: ':id',
+          component: Catalog
+        }
+      ]
     },
     {
-      path: '/product',
+      path: '/product/:id',
       name: 'product',
       component: Product
     },
