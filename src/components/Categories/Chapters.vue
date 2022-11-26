@@ -7,7 +7,7 @@
       :class="{ active: chapter.id == activeCategory }"
     >
       <span :class="chapter.icon + ' px20'"></span>
-      <h6 class="text-semibold">{{ chapter.text }}</h6>
+      <h6 class="font-regular">{{ chapter.text }}</h6>
     </li>
   </ul>
 </template>
