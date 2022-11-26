@@ -3,7 +3,7 @@
         <div :style="{'margin-left':'-'+(100*currentSlide)+'%'}" class="slider-area">
             <div v-for="comment of comments" class="comment wh">
                 <div class="comment-reviewer">
-                  <div class="comment-reviewer-avatar"><img src="#" alt=""></div>
+                  <div class="comment-reviewer-avatar"><img :src="`/img/comment/${comment.id}.png`" alt=""></div>
                   <div class="comment-reviewer-data">
                     <div class="comment-reviewer-data-nick">
                       <h4>{{comment.name}}</h4>
