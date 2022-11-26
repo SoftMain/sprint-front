@@ -131,6 +131,10 @@
   transition: all ease .5s;
 }
 
+.shuffle__image.horizontal{
+  flex-direction: column;
+}
+
 .yandex {
   width: 170px;
   height: 80px;
