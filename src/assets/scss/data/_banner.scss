@@ -3,10 +3,10 @@
     flex-direction: row;
     border-radius: 12px;
     justify-content: space-between;
-    background: linear-gradient(#3B82F6, #2755A1);
+    background: url(/img/background/Banner.jpg) center center/cover no-repeat;
     padding: 0px;
     margin-bottom: 88px;
-
+    padding: 32px;
     &__h2 {
         color: white;
     }
@@ -14,12 +14,8 @@
     &__content {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-        margin-left: 32px;
-    }
-
-    &__text__content {
-        display: flex;
+        justify-content: space-between;
+        height: 248px
     }
 
     &__image {
@@ -34,8 +30,9 @@
     }
 
     &__button {
-        padding-left: 40px;
-        padding-top: 52px;
+        width: 155px;
+        height: 54px;
+        box-sizing: border-box;
     }
 
     &__button a {

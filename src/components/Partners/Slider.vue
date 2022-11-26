@@ -36,6 +36,7 @@
         Slide(id){
                 document.querySelector('.slider-area').style.marginLeft = `-${100*id}%`;
                 this.activeCategory=id;
+                this.counter=id;
 
                     
         },
