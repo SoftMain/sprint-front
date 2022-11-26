@@ -10,12 +10,8 @@
             <p>Найдите, сравните и прочитайте отзывы!</p>
           </div>
           <div class="main__text-btns">
-            <div class="proto__elem">
-              <a class="btn btn-primary main-btn1">Каталог ПО</a>
-            </div>
-            <div class="proto__elem">
-              <a class="btn btn-secondary main-btn2">Интеграторы</a>
-            </div>
+              <router-link to="/" class="btn btn-primary main-btn1">Каталог ПО</router-link>
+              <router-link to="/integrators" class="btn btn-secondary main-btn2">Интеграторы</router-link>
           </div>
         </div>
         <div class="main__img proto__elem">

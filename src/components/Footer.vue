@@ -4,16 +4,14 @@
     <div class="footer__background">
       <div class="container">
         <div class="upper">
-          <div class="logo">
+            <router-link to="/" class="logo">
             <span class="icon-logo32 px32"> </span>
             <h3 class="logo-heading">SoftMain</h3>
-          </div>
+            </router-link>
           <div class="about">
-            <ul class="about__list">
-              <li class="about__item1"><a href="#" class="about-link">Интеграторы</a> </li>
-              <li class="about__item2"><a href="#" class="about-link">Компаниям</a> </li>
-              <li class="about__item3"><a href="#" class="about-link">О нас</a> </li>
-            </ul>
+            <router-link to="/integrators" class="btn text-base font-regular">Интеграторы</router-link>
+            <router-link to="/contact" class="btn text-base font-regular">Компаниям</router-link>
+            <router-link to="/about" class="btn text-base font-regular">О нас</router-link>
           </div>
         </div>
 
