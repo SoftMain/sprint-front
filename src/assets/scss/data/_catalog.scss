@@ -30,6 +30,13 @@
     gap: 20px;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 10px;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -37,6 +44,9 @@
     padding: 0px;
     gap: 16px;
 
+    &__h6 {
+        color: $blue-7;
+    }
 
     &__categories {
         box-sizing: border-box;
@@ -70,21 +80,14 @@
         border-radius: 12px;
     }
 
-    &__h6 {
-        width: 87px;
-        height: 24px;
-    }
-
     &__catalog-categories {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        text-align: center;
         padding: 0px;
         gap: 4px;
-
-        width: 233px;
-        height: 52px;
     }
 
     &__filters {
@@ -96,9 +99,7 @@
         align-items: flex-start;
         padding: 16px;
         gap: 16px;
-
-        width: 265px;
-        height: 456px;
+        height: 100%;
     }
 
     &__platform-filter {
@@ -107,9 +108,6 @@
         align-items: flex-start;
         padding: 0px;
         gap: 8px;
-
-        width: 233px;
-        height: 124px;
     }
 
     &__certificate-filter {
@@ -118,9 +116,6 @@
         align-items: flex-start;
         padding: 0px;
         gap: 8px;
-
-        width: 233px;
-        height: 124px;
     }
 
     &__language-filter {
@@ -129,9 +124,6 @@
         align-items: flex-start;
         padding: 0px;
         gap: 8px;
-
-        width: 233px;
-        height: 124px;
     }
 
     &__analogs-filter {
@@ -140,32 +132,22 @@
         align-items: flex-start;
         padding: 0px;
         gap: 8px;
-
-        width: 233px;
-        height: 124px;
     }
 
     &__collapse {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-end;
         padding: 0px;
         gap: 8px;
-
-        width: 126px;
-        height: 24px;
     }
 
     &__collapse-icon {
-        padding: 0px;
-
-        width: 20px;
-        height: 20px;
+        color: $blue-7;
     }
 
     &__collapse-h6 {
-        width: 98px;
-        height: 24px;
+        color: $blue-7;
     }
 
     &__variants {
@@ -185,49 +167,20 @@
         align-items: flex-start;
         padding: 0px;
         gap: 8px;
-
-        width: 93px;
-        height: 20px;
-    }
-
-    &__checkbox-icon {
-        padding: 0px;
-
-        width: 20px;
-        height: 20px;
-    }
-
-    &__checkbox-text {
-        width: 98px;
-        height: 24px;
     }
 
     &__actions {
         display: flex;
+        align-self: stretch;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        align-items: stretch;
         padding: 0px;
         gap: 8px;
-
-        width: 233px;
-        height: 88px;
     }
 
     &__button {
-
-        width: 233px;
-        height: 40px;
+        display: flex;
     }
-}
-
-.sort-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 12px;
-    gap: 6px;
 }
 
 .products {
@@ -330,6 +283,8 @@
     &__description {
         display: flex;
         flex-direction: row;
+        align-self: stretch;
+        height: 100%;
         align-items: flex-start;
         margin: 0px 16px;
     }
@@ -348,19 +303,11 @@
 }
 
 .pagination {
-    position: absolute;
-    height: 36px;
-    left: 445px;
-    right: 160px;
-    top: 1500px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
     padding: 0px;
     gap: 3px;
-
-    width: 348px;
-    height: 36px;
 
     &__page {
         display: flex;
@@ -371,5 +318,20 @@
 
         width: 36px;
         height: 36px;
+
+        &_active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+
+            width: 36px;
+            height: 36px;
+            background: $blue-3;
+            border-radius: 6px;
+            color: white;
+
+        }
     }
 }
