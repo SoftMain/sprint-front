@@ -1,0 +1,79 @@
+.proto_block {
+  display: flex;
+  width: 1120px;
+  height: 436px;
+  background-color: gray;
+  margin-top: 64px;
+}
+.hero__text_block {
+  display: flex;
+  flex-direction: column;
+}
+.hero__text_block_header {
+  width: 550px;
+  height: 80px;
+  background: black;
+}
+.hero__text_block_text {
+  width: 550px;
+  height: 260px;
+  margin-top: 24px;
+  background: black;
+}
+.hero__image {
+  width: 519px;
+  height: 335px;
+  background: black;
+  margin-left: 35px;
+}
+.integrators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  width: 1120px;
+  height: 606px;
+}
+.integrators_block_header {
+  display: flex;
+  justify-content: center;
+  background: black;
+  width: 1120px;
+  height: 36px;
+}
+.integrator__block_cards {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.integrator__block_cards_elem {
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  height: 237px;
+  border-radius: 12px;
+  border: 1px solid black;
+  margin-top: 32px;
+}
+.integrator__block_cards_elem_image {
+  width: 231px;
+  height: 147px;
+  background: black;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+.integrator__block_cards_elem_header {
+  width: 91px;
+  height: 28px;
+  background: black;
+  margin-top: 4px;
+  margin-left: 12px;
+}
+.integrator__block_cards_elem_text {
+  width: 241px;
+  height: 40px;
+  background: black;
+  margin-top: 4px;
+  margin-left: 12px;
+}

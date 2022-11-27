@@ -146,7 +146,7 @@
     </section>
 
     <section>
-      <div class="main">
+      <div class="catalog">
         <div class="sort-button">
           <a class="btn btn-primary btn-sm">Высокий рейтинг<span class="icon-caret-down px20"></span></a>
         </div>

@@ -36,25 +36,25 @@ export default {
           posts: [
             {
               id: 1,
-              link: "/error",
+              link: "/product:id",
               text: "Бесплатный софт для дизайнеров с искусственным интеллектом и встроенной графикой",
               title: "Lunacy",
             },
             {
               id: 2,
-              link: "/error",
+              link: "/product:id",
               text: "Многофункциональный графический редактор для Windows и Mac",
               title: "AliveColors",
             },
             {
               id: 3,
-              link: "/error",
+              link: "/product:id",
               text: "Переходите на следующий уровень – создавайте по-настоящему уникальные креативы для рекламы и ",
               title: "Supa",
             },
             {
               id: 4,
-              link: "/error",
+              link: "/product:id",
               text: "Переходите на следующий уровень – создавайте по-настоящему уникальные креативы для рекламы и ",
               title: "Supa",
             },
@@ -67,7 +67,7 @@ export default {
           posts: [
             {
               id: 1,
-              link: "/error",
+              link: "/product:id",
               text: "Описание",
               title: "'Браузеры'",
             },
@@ -81,7 +81,7 @@ export default {
           posts: [
             {
               id: 1,
-              link: "/error",
+              link: "/product:id",
               text: "Описание",
               title: "'Видеоконференции'",
             },
@@ -95,7 +95,7 @@ export default {
           posts: [
             {
               id: 1,
-              link: "/error",
+              link: "/product:id",
               text: "Описание",
               title: "'Графические редакторы'",
             },
@@ -108,7 +108,7 @@ export default {
           posts: [
             {
               id: 1,
-              link: "/error",
+              link: "/product:id",
               text: "Описание",
               title: "'Мессенджеры'",
             },
@@ -121,7 +121,7 @@ export default {
           posts: [
             {
               id: 1,
-              link: "/error",
+              link: "/product:id",
               text: "Описание",
               title: "'Операционые системы'",
             },
@@ -135,7 +135,7 @@ export default {
           posts: [
             {
               id: 1,
-              link: "/error",
+              link: "/product:id",
               text: "Описание",
               title: "'Таск-трекеры'",
             },
