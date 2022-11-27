@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="hero__image">
-        <img src="/img/Integrators image/integrators_hero.png" alt="" />
+        <img src="/img/background/integrators.png" alt="" />
       </div>
     </div>
   </div>
@@ -34,7 +34,7 @@
     <div class="integrator__block_cards">
       <div class="integrator__block_cards_elem">
         <div class="integrator__block_cards_elem_image">
-          <img src="/img/Integrators image/softline.png" alt="" />
+          <img src="/img/integrators/softline.png" alt="" />
         </div>
         <div class="integrator__block_cards_elem_header">
           <h5 class="font-regular">SOFTLINE</h5>
@@ -45,7 +45,7 @@
       </div>
       <div class="integrator__block_cards_elem">
         <div class="integrator__block_cards_elem_image">
-          <img src="/img/Integrators image/lanit.png" alt="" />
+          <img src="/img/integrators/lanit.png" alt="" />
         </div>
         <div class="integrator__block_cards_elem_header">
           <h5 class="font-regular">Ланит</h5>
@@ -56,7 +56,7 @@
       </div>
       <div class="integrator__block_cards_elem">
         <div class="integrator__block_cards_elem_image">
-          <img src="/img/Integrators image/krok.png" alt="" />
+          <img src="/img/integrators/krok.png" alt="" />
         </div>
         <div class="integrator__block_cards_elem_header">
           <h5 class="font-regular">КРОК</h5>
@@ -67,7 +67,7 @@
       </div>
       <div class="integrator__block_cards_elem">
         <div class="integrator__block_cards_elem_image">
-          <img src="/img/Integrators image/galacticka.png" alt="" />
+          <img src="/img/integrators/galacticka.png" alt="" />
         </div>
         <div class="integrator__block_cards_elem_header">
           <h5 class="font-regular">Корпорация Галактика</h5>
@@ -78,7 +78,7 @@
       </div>
       <div class="integrator__block_cards_elem">
         <div class="integrator__block_cards_elem_image">
-          <img src="/img/Integrators image/itglobal.png" alt="" />
+          <img src="/img/integrators/itglobal.png" alt="" />
         </div>
         <div class="integrator__block_cards_elem_header">
           <h5 class="font-regular">ITGLOBAL.COM</h5>
@@ -89,7 +89,7 @@
       </div>
       <div class="integrator__block_cards_elem">
         <div class="integrator__block_cards_elem_image">
-          <img src="/img/Integrators image/aiteko.png" alt="" />
+          <img src="/img/integrators/aiteko.png" alt="" />
         </div>
         <div class="integrator__block_cards_elem_header">
           <h5 class="font-regular">АЙТЕКО</h5>
@@ -100,7 +100,7 @@
       </div>
       <div class="integrator__block_cards_elem">
         <div class="integrator__block_cards_elem_image">
-          <img src="/img/Integrators image/otr.png" alt="" />
+          <img src="/img/integrators/otr.png" alt="" />
         </div>
         <div class="integrator__block_cards_elem_header">
           <h5 class="font-regular">OTP</h5>
@@ -111,7 +111,7 @@
       </div>
       <div class="integrator__block_cards_elem">
         <div class="integrator__block_cards_elem_image">
-          <img src="/img/Integrators image/korus.png" alt="" />
+          <img src="/img/integrators/korus.png" alt="" />
         </div>
         <div class="integrator__block_cards_elem_header">
           <h5 class="font-regular">КОРУС Консалтинг</h5>
