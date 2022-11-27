@@ -38,8 +38,7 @@ export default {
   },
   mounted() {
     this.slides = this.slidesIn.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
-    let interval = (Math.floor(Math.random() * 10) + 3) * 1000
-    console.log(interval)
+    let interval = (Math.floor(Math.random() * 10) + 3) * 1000;
     setInterval(() => this.slide(), interval);
   },
 };
