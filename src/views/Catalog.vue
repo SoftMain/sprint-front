@@ -4,12 +4,15 @@
 
       <div class="sidebar">
         <div class="sidebar__categories">
-          <div class="sidebar__h6 font-regular text-lg">
-            <h6>Категория</h6>
+          <div class="sidebar__h6">
+            <h6 class="font-regular">Категория</h6>
           </div>
           <div class="sidebar__catalog-categories">
-            <p><span class="icon-chevron-l px16"></span>Антивирусы и безопасность</p>
-            <a class="btn btn-primary btn-sm">Антивирусы для дома</a>
+            <div class="sidebar__catalog-categories-sub">
+              <span class="icon-chevron-l px16"></span>
+              <p class="font-regular text-base">Антивирусы и безопасность</p>
+            </div>
+            <a class="btn btn-primary btn-sm font-regular text-base">Антивирусы для дома</a>
           </div>
         </div>
 
@@ -20,7 +23,7 @@
                 <span class="icon-caret-down px20"></span>
               </div>
               <div class="sidebar__collapse-h6">
-                <h6>Платформа</h6>
+                <h6 class="font-regular">Платформа</h6>
               </div>
             </div>
             <div class="sidebar__variants">
@@ -64,7 +67,7 @@
                 <span class="icon-caret-down px20"></span>
               </div>
               <div class="sidebar__collapse-h6">
-                <h6>Сертификация</h6>
+                <h6 class="font-regular">Сертификация</h6>
               </div>
             </div>
             <div class="sidebar__variants">
@@ -108,7 +111,7 @@
                 <span class="icon-caret-up px20"></span>
               </div>
               <div class="sidebar__collapse-h6">
-                <h6>Язык интерфейса</h6>
+                <h6 class="font-regular">Язык интерфейса</h6>
               </div>
             </div>
             <div class="sidebar__variants">
@@ -124,7 +127,7 @@
                 <span class="icon-caret-up px20"></span>
               </div>
               <div class="sidebar__collapse-h6">
-                <h6>Аналоги</h6>
+                <h6 class="font-regular">Аналоги</h6>
               </div>
             </div>
             <div class="sidebar__variants">
@@ -145,7 +148,7 @@
     <section>
       <div class="main">
         <div class="sort-button">
-          <a class="btn btn-primary">Высокий рейтинг<span class="icon-caret-down px20"></span></a>
+          <a class="btn btn-primary btn-sm">Высокий рейтинг<span class="icon-caret-down px20"></span></a>
         </div>
 
         <div class="products">
@@ -158,8 +161,8 @@
                     alt="">
                 </div>
                 <div class="products__content">
-                  <div class="products__title font-regular text-lg">
-                    <h4>Kaspersky Internet Security</h4>
+                  <div class="products__title">
+                    <h4 class="font-regular">Kaspersky Internet Security</h4>
                   </div>
                   <div class="products__developer font-light text-sm">
                     <p>Kaspersky</p>
@@ -176,7 +179,8 @@
                 </div>
               </div>
               <div class="products__lable">
-                <p>Рекомендуем!</p>
+                <div class="products__lable-text  font-medium"><p>Рекомендуем!</p></div>
+                <div class="products__triangle"></div>
               </div>
             </div>
             <div class="products__description">
@@ -203,8 +207,8 @@
                     alt="">
                 </div>
                 <div class="products__content">
-                  <div class="products__title font-regular text-lg">
-                    <h4>Kaspersky Internet Security</h4>
+                  <div class="products__title">
+                    <h4 class="font-regular">Kaspersky Internet Security</h4>
                   </div>
                   <div class="products__developer font-light text-sm">
                     <p>Kaspersky</p>
@@ -221,7 +225,8 @@
                 </div>
               </div>
               <div class="products__lable">
-                <p>Рекомендуем!</p>
+                <div class="products__lable-text  font-medium"><p>Рекомендуем!</p></div>
+                <div class="products__triangle"></div>
               </div>
             </div>
             <div class="products__description">
@@ -248,8 +253,8 @@
                     alt="">
                 </div>
                 <div class="products__content">
-                  <div class="products__title font-regular text-lg">
-                    <h4>Kaspersky Internet Security</h4>
+                  <div class="products__title">
+                    <h4 class="font-regular">Kaspersky Internet Security</h4>
                   </div>
                   <div class="products__developer font-light text-sm">
                     <p>Kaspersky</p>
@@ -266,7 +271,8 @@
                 </div>
               </div>
               <div class="products__lable">
-                <p>Рекомендуем!</p>
+                <div class="products__lable-text  font-medium"><p>Рекомендуем!</p></div>
+                <div class="products__triangle"></div>
               </div>
             </div>
             <div class="products__description">
@@ -293,8 +299,8 @@
                     alt="">
                 </div>
                 <div class="products__content">
-                  <div class="products__title font-regular text-lg">
-                    <h4>Kaspersky Internet Security</h4>
+                  <div class="products__title">
+                    <h4 class="font-regular">Kaspersky Internet Security</h4>
                   </div>
                   <div class="products__developer font-light text-sm">
                     <p>Kaspersky</p>
@@ -311,7 +317,8 @@
                 </div>
               </div>
               <div class="products__lable">
-                <p>Рекомендуем!</p>
+                <div class="products__lable-text  font-medium"><p>Рекомендуем!</p></div>
+                <div class="products__triangle"></div>
               </div>
             </div>
             <div class="products__description">
@@ -333,14 +340,16 @@
             <div class="products__header">
               <div class="products__header-container">
                 <div class="products__image">
-                  <img src="https://upload.wikimedia.org/wikipedia/ru/3/3a/The_Elder_Scrolls_V_-_Skyrim.jpg" alt="">
+                  <img
+                    src="https://content.kaspersky-labs.com/se/ru/content/ru-ru/images/kaspersky-logo-square/kaspersky-logo-square.svg"
+                    alt="">
                 </div>
                 <div class="products__content">
-                  <div class="products__title font-regular text-lg">
-                    <h4>TES: Skyrim</h4>
+                  <div class="products__title">
+                    <h4 class="font-regular">Kaspersky Internet Security</h4>
                   </div>
                   <div class="products__developer font-light text-sm">
-                    <p>Bethesda</p>
+                    <p>Kaspersky</p>
                     <span class="icon-verify px16"></span>
                   </div>
                   <div class="products__rating">
@@ -348,60 +357,59 @@
                     <span class="icon-star-filled px20"></span>
                     <span class="icon-star-filled px20"></span>
                     <span class="icon-star-filled px20"></span>
-                    <span class="icon-star-filled px20"></span>
-                    <span class="icon-star-filled px20"></span>
-                    <span class="icon-star-filled px20"></span>
-                    <span class="icon-star-filled px20"></span>
-                    <span class="icon-star-filled px20"></span>
-                    <span class="icon-star-filled px20"></span>
-
-                    <p class="text-sm">(9999999999)</p>
+                    <span class="icon-star px20"></span>
+                    <p class="text-sm">(12)</p>
                   </div>
                 </div>
               </div>
               <div class="products__lable">
-                <p>Рекомендуем!</p>
+                <div class="products__lable-text  font-medium"><p>Рекомендуем!</p></div>
+                <div class="products__triangle"></div>
               </div>
             </div>
             <div class="products__description">
               <p class="text-sm">
-                Купи скайрим.</p>
+                Антивирусное программное обеспечение, разрабатываемое «Лабораторией Касперского». Предоставляет
+                пользователю защиту от вирусов, троянских программ, шпионских программ, руткитов, adware, а также от
+                неизвестных угроз с помощью проактивной защиты, включающей компонент HIPS. Первоначально, в начале
+                1990-х,
+                именовался -V, затем - AntiViral Toolkit Pro.</p>
             </div>
             <div class="products__under">
               <div class="products__button">
-                <a class="btn btn-primary btn-sm">Купить скайрим</a>
+                <a class="btn btn-primary btn-sm">Подробнее</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="pagination">
-          <div class="pagination__page">
+          <div class="pagination__page  font-regular text-base">
             <span class="icon-chevron-double-left px14"></span>
           </div>
-          <div class="pagination__page">
+          <div class="pagination__page font-regular text-base">
             <span class="icon-chevron-l px14"></span>
           </div>
-          <div class="pagination__page_active">
+          <div class="pagination__page_active font-regular text-base">
             <p>1</p>
           </div>
-          <div class="pagination__page">
+          <div class="pagination__page font-regular text-base">
             <p>2</p>
           </div>
-          <div class="pagination__page">
+          <div class="pagination__page font-regular text-base">
             <p>3</p>
           </div>
-          <div class="pagination__page">
+          <div class="pagination__page font-regular text-base">
             <p>4</p>
           </div>
-          <div class="pagination__page">
+          <div class="pagination__page font-regular text-base">
 
             <p>5</p>
           </div>
-          <div class="pagination__page">
+          <div class="pagination__page font-regular text-base">
             <span class="icon-chevron-r px14"></span>
           </div>
-          <div class="pagination__page">
+          <div class="pagination__page font-regular text-base">
             <span class="icon-chevron-double-right px14"></span>
           </div>
         </div>
