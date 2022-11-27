@@ -17,7 +17,7 @@
 
 <script>
   import Slider from "./Partners/Slider.vue";
-  import Shuffler from "./Partners/ImageShuffler.vue"
+  import Shuffler from "./Partners/PartnerSwitcher.vue"
     export default {
         components:{
           Slider,

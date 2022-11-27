@@ -1,4 +1,51 @@
-<template>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/assets/scss/style.scss">
+    <title>Document</title>
+</head>
+
+<body id="main">
+    <header id="header">
+        <div class="container">
+            <nav class="nav proto__block">
+                <div class="nav__wrapper">
+                    <div class="nav__wrapper-logo proto__elem">
+                        <span class="icon-logo32 32px"></span>
+
+                        <a id="main-link" href="">SoftMain</a>
+                    </div>
+
+                    <div class="nav__wrapper-categories proto__elem">
+                        <a class="btn btn-primary">Категории
+                            <span class="icon-caret-down 20px"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav__search proto__elem">
+                    <form action="#" method="get">
+                        <input class="search-area" type="search" name="search" placeholder="Поиск по сайту"
+                            required-placeholder="">
+                    </form>
+                    <span class="icon-search 20px search-img"></span>
+                </div>
+                <div class="nav__links">
+                    <div class="nav__links-link proto__elem"><a class="btn">Интеграторы</a></div>
+                    <div class="nav__links-link proto__elem"><a class="btn">Компаниям</a></div>
+                    <div class="nav__links-link proto__elem"><a class="btn">О нас</a></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
         <div class="container">
             <div class="hero proto_block">
                 <div class="hero__text_block">
@@ -55,10 +102,50 @@
                 </div>
             </div>
         </div>
-</template>
+    </main>
+    <footer>
+        <div class="bevel"></div>
+        <div class="footer__background">
+            <div class="container">
+                <div class="upper">
+                    <div class="logo">
+                        <span class="icon-logo32 32px"> </span>
+                        <h3 class="logo-heading">SoftMain</h3>
+                    </div>
+                    <div class="about">
+                        <ul class="about__list">
+                            <li class="about__item1"><a href="#" class="about-link">Интеграторы</a> </li>
+                            <li class="about__item2"><a href="#" class="about-link">Компаниям</a> </li>
+                            <li class="about__item3"><a href="#" class="about-link">О нас</a> </li>
+                        </ul>
+                    </div>
+                </div>
 
-<script>
-export default {};
-</script>
+                <div class="under">
+                    <p class="company__text">
+                        © 2022 SoftMain. Все права на материалы, представленные на нашем сайте, принадлежат их законным
+                        владельцам и <wbr>
+                            предназначены только для ознакомления.
+                    </p>
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <span class="icon-social-telegram 20px"> </span>
+                        </li>
+                        <li class="contacts__item">
+                            <span class="icon-social-discord 20px"></span>
+                        </li>
+                        <li class="contacts__item">
+                            <span class="icon-social-vk 20px"></span>
+                        </li>
+                        <li class="contacts__item">
+                            <span class="icon-social-youtube 20px"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/icons.js"></script>
+</body>
 
-<style lang="sass" scoped></style>
+</html>

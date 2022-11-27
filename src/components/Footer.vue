@@ -4,22 +4,28 @@
     <div class="footer__background">
       <div class="container">
         <div class="upper">
-            <router-link to="/" class="logo">
+          <router-link to="/" class="logo">
             <span class="icon-logo32 px32"> </span>
             <h3 class="logo-heading">SoftMain</h3>
-            </router-link>
+          </router-link>
           <div class="about">
-            <router-link to="/integrators" class="btn text-base font-regular">Интеграторы</router-link>
-            <router-link to="/contact" class="btn text-base font-regular">Компаниям</router-link>
-            <router-link to="/about" class="btn text-base font-regular">О нас</router-link>
+            <router-link to="/integrators" class="btn text-base font-regular"
+              >Интеграторы</router-link
+            >
+            <router-link to="/contact" class="btn text-base font-regular"
+              >Компаниям</router-link
+            >
+            <router-link to="/about" class="btn text-base font-regular"
+              >О нас</router-link
+            >
           </div>
         </div>
 
         <div class="under">
           <p class="company__text">
-            © 2022 SoftMain. Все права на материалы, представленные на нашем сайте, принадлежат их законным
-            владельцам и <wbr>
-                            предназначены только для ознакомления.
+            © 2022 SoftMain. Все права на материалы, представленные на нашем
+            сайте, принадлежат их законным владельцам и <wbr />
+            предназначены только для ознакомления.
           </p>
           <ul class="contacts__list">
             <li class="contacts__item">
@@ -41,10 +47,6 @@
   </footer>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

@@ -112,14 +112,15 @@
 }
 
 .partnersblocks-partners-banner-logo{
+  position: absolute;
   filter: saturate(0%);
-  min-width: 170px;
-  height: 80px;
-  transition: all ease .5s;
+  transition: all ease .3s;
 }
 
 .partnersblocks-partners-banner-logo:hover{
   filter: saturate(100%);
+  min-width: 170px;
+  height: 80px;
 }
 
 .shuffle__wrapper{
@@ -129,18 +130,13 @@
 }
 
 .shuffle__image{
-  display: flex;
-  transition: all ease .5s;
-}
-
-.shuffle__image.horizontal{
-  flex-direction: column;
+  position: relative;
 }
 
 .yandex {
   width: 170px;
   height: 80px;
-  background: url(/img/patnerslogo/yandex.png) center center/cover no-repeat;
+  background: url(/img/patnerslogo/yandex.png);
 }
 
 .ozon {
