@@ -7,7 +7,7 @@
       :visibleSlide="visibleSlide"
       :direction="direction"
     >
-      <img :class="slide" alt="" />
+      <div :class="slide"></div>
     </CarouselSlide>
   </div>
 </template>
