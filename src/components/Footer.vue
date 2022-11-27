@@ -32,10 +32,10 @@
               <span class="icon-social-telegram px24"> </span>
             </li>
             <li class="contacts__item">
-              <span class="icon-social-discord px24"></span>
+              <a title="Discord" target="_blank" class="footer_disco_link" href="https://discord.gg/it-spec"><span class="icon-social-discord px24"></span></a>
             </li>
             <li class="contacts__item">
-              <span class="icon-social-vk px24"></span>
+              <a title="VK" target="_blank" class="footer_vk_link" href="https://vk.com/rusoftmain"><span class="icon-social-vk px24"></span></a>
             </li>
             <li class="contacts__item">
               <span class="icon-social-youtube px24"></span>

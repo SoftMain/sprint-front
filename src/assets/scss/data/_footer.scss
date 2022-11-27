@@ -68,6 +68,16 @@ footer {
     padding-left: 5%;
 }
 
-.contacts__item {
+.contacts__item {  
     display: flex;
+}
+
+.icon-social-discord,
+.icon-social-vk {
+    color: $white;
+}
+
+.footer_disco_link,
+.footer_vk_link {
+    text-decoration: none;
 }

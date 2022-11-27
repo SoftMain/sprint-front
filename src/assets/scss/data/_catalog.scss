@@ -36,6 +36,7 @@
     flex-direction: column;
     padding: 0;
     gap: 20px;
+
 }
 
 .sidebar {
@@ -44,27 +45,53 @@
     align-items: center;
     padding: 0px;
     gap: 16px;
-    background: white;
 
-    &__h6 {
-        color: $blue-7;
-    }
 
+    // Category block style 
+    /* 
+    NOTE:
+    Height - auto
+    Width - hardcoded to 265px
+    Button padding is overridden to 4px 8px
+    */
     &__categories {
         box-sizing: border-box;
-
-        /* Auto layout */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
         padding: 16px;
         gap: 8px;
-
         width: 265px;
-        border: 1px solid #B3B3B3;
         border-radius: 12px;
+
+        display: inline-flex;
+        flex-direction: column;
+
+        border: 1px solid $gray-2;
+        background: white;
+
+
+        &-header {
+            color: $blue-7;
+        }
+
+        &-catalog {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 4px;
+
+            &-main {
+                display: flex;
+            }
+
+            &-sub a {
+                padding: 4px 8px;
+            }
+        }
+
+
+
     }
 
+    // Filters block style 
     &__filters {
         box-sizing: border-box;
 
@@ -76,57 +103,30 @@
         padding: 16px;
         gap: 16px;
         height: 100%;
-
-
+        background: white;
         border: 1px solid #B3B3B3;
         border-radius: 12px;
-    }
 
-    &__catalog-categories {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: center;
-        padding: 0px;
-        gap: 4px;
-
-        &-sub {
+        &-filter {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 8px;
         }
-    }
 
-    &__platform-filter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 8px;
-    }
+        &-actions {
+            display: flex;
+            align-self: stretch;
+            flex-direction: column;
+            align-items: stretch;
+            padding: 0px;
+            gap: 8px;
 
-    &__certificate-filter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 8px;
-    }
-
-    &__language-filter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 8px;
-    }
-
-    &__analogs-filter {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 8px;
+            .btn-outline-primary{
+                filter:grayscale(100%);
+            }
+        }
     }
 
     &__collapse {
@@ -136,15 +136,15 @@
         justify-content: center;
         padding: 0px;
         gap: 8px;
-    }
 
-    &__collapse-icon {
-        color: $blue-7;
-        display: flex;
-    }
+        &-icon {
+            color: $blue-7;
+            display: flex;
+        }
 
-    &__collapse-h6 {
-        color: $blue-7;
+        &-header {
+            color: $blue-7;
+        }
     }
 
     &__variants {
@@ -153,34 +153,24 @@
         align-items: flex-start;
         padding: 0px;
         gap: 4px;
-
         width: 90%;
         height: 100%;
-    }
 
-    &__checkbox {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        gap: 8px;
-
-        &-text {
-            font-weight: 300;
-        }
-
-        &-icon {
+        &-item {
             display: flex;
-        }
-    }
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 8px;
 
-    &__actions {
-        display: flex;
-        align-self: stretch;
-        flex-direction: column;
-        align-items: stretch;
-        padding: 0px;
-        gap: 8px;
+            &-text {
+                font-weight: 300;
+            }
+
+            &-icon {
+                display: flex;
+            }
+        }
     }
 
     &__button {
@@ -193,6 +183,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+
 
 
     &__description {
@@ -242,11 +233,11 @@
         justify-content: center;
         width: 96px;
         height: 96px;
-        border-radius: 6px;
 
         img {
             max-width: 100%;
             max-height: 100%;
+            border-radius: 6px;
         }
     }
 
@@ -301,24 +292,22 @@
         align-self: stretch;
         height: 100%;
         align-items: flex-start;
+        max-height: 45px;
         margin: 0px 16px;
+        // Если вы видете это, то реализуйте эту функцию в бекенде пж
+        overflow: hidden;
+        /* Обрезаем все, что не помещается в область */
     }
 
     &__under {
-        /* Auto layout */
         display: flex;
         align-self: stretch;
         justify-self: end;
         justify-content: flex-end;
         height: 44px;
-        padding: 4px 16px;
-
+        padding: 8px 16px 0px;
         /* Stroke/Grey */
         border-top: 1px solid #B3B3B3;
-    }
-
-    &__button {
-        display: flex;
     }
 
     &__triangle {
@@ -338,6 +327,13 @@
     justify-content: center;
     padding: 0px;
     gap: 3px;
+
+    a {
+    filter: invert(100%); // Делает белые кнопки - черными
+    }
+    .btn-primary {
+        filter: invert(0%);  // Убирает предыдущий эффект 
+    }
 
     &__page {
         display: flex;
