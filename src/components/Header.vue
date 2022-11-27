@@ -1,7 +1,5 @@
 <template>
-  <header
-    :class="isTop && this.$route.name == 'main' ? 'header_transparent' : ''"
-  >
+  <header :class="isTop && this.$route.name == 'main' ? 'header_transparent' : ''">
     <div class="container">
       <nav class="nav">
         <div class="nav__wrapper">
@@ -17,15 +15,13 @@
             </a>
           </div>
         </div>
-        <div class="nav__search proto__elem">
-          <form action="#" method="get">
+        <div class="nav__search proto__elem">       
             <input
               class="search-area"
               type="search"
               placeholder="Поиск по сайту"
               required-placeholder=""
             />
-          </form>
           <span class="icon-search px20 search-img"></span>
         </div>
         <div class="nav__links">
