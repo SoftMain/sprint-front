@@ -1,5 +1,4 @@
 .nav{
-  // padding: 16px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,7 +27,7 @@
   &__links{
       display: flex;
       justify-content: space-between;
-      width: 326px;
+      width: 325px;
       & > .btn:active {
         color: ($white);
       }       
@@ -49,7 +48,7 @@ header {
   z-index: 1;
   top: 0px;
   z-index: 1;
-  background-color: $blue-3;
+  background-color: $blue-3; 
   -webkit-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
@@ -62,10 +61,6 @@ header.header_transparent {
   transition: background-color 200ms linear;
 }
 
-.nav__wrapper {
-  
-}
-
 .nav__search {
   padding-left: 10px;
   position: relative;
@@ -73,22 +68,21 @@ header.header_transparent {
 
 .search-area {
   display: block;
-  width: 430px;
-  height: 40px;
+  width: 404px;
+  height: 44px;
   padding: 0 40px;
   border: 1px solid $blue-4;
   border-radius: 15px;
   outline: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .search-img {
   position: absolute;
-  top: 8px;
-  right: 22px;
+  top: 12px;
+  right: 55px;
   color: ($blue-4);
-  opacity: .8;
+}
+
+.btnc2:hover {
+  color: $gray-2;
 }

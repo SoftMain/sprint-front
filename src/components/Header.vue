@@ -17,7 +17,7 @@
         </div>
         <div class="nav__search proto__elem">       
             <input
-              class="search-area"
+              class="search-area text-base font-regular"
               type="search"
               placeholder="Поиск по сайту"
               required-placeholder=""
@@ -25,13 +25,13 @@
           <span class="icon-search px20 search-img"></span>
         </div>
         <div class="nav__links">
-          <router-link to="/integrators" class="btn text-base font-regular"
+          <router-link to="/integrators" class="btn text-base font-regular btnc2"
             >Интеграторы</router-link
           >
-          <router-link to="/contact" class="btn text-base font-regular"
+          <router-link to="/contact" class="btn text-base font-regular btnc2"
             >Компаниям</router-link
           >
-          <router-link to="/about" class="btn text-base font-regular"
+          <router-link to="/about" class="btn text-base font-regular btnc2"
             >О нас</router-link
           >
         </div>
