@@ -3,21 +3,21 @@
     <div class="container">
       <nav class="nav">
         <div class="nav__wrapper">
-          <router-link to="/" class="nav__wrapper-logo">
+          <router-link to="/" class="nav__wrapper-logo" :class="isTop && this.$route.name == 'main' ? 'header_logo_color' : ''">
             <span class="icon-logo32 px32"></span>
             <h3>SoftMain</h3>
           </router-link>
 
           <div class="nav__wrapper-categories proto__elem">
-            <a class="btn btn-primary"
+            <button class="btn btn-primary btnb2"
               >Категории
               <span class="icon-caret-down px20"></span>
-            </a>
+          </button>
           </div>
         </div>
         <div class="nav__search proto__elem">       
             <input
-              class="search-area"
+              class="search-area text-base font-regular"
               type="search"
               placeholder="Поиск по сайту"
               required-placeholder=""
@@ -25,13 +25,13 @@
           <span class="icon-search px20 search-img"></span>
         </div>
         <div class="nav__links">
-          <router-link to="/integrators" class="btn text-base font-regular"
+          <router-link to="/integrators" class="btn text-base font-regular btnc2"
             >Интеграторы</router-link
           >
-          <router-link to="/contact" class="btn text-base font-regular"
+          <router-link to="/contact" class="btn text-base font-regular btnc2"
             >Компаниям</router-link
           >
-          <router-link to="/about" class="btn text-base font-regular"
+          <router-link to="/about" class="btn text-base font-regular btnc2"
             >О нас</router-link
           >
         </div>
