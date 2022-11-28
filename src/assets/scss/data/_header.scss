@@ -28,7 +28,7 @@
       display: flex;
       justify-content: space-between;
       width: 325px;
-      & > .btn:active {
+      & > .btn {
         color: ($white);
       }       
       &-link{
@@ -61,6 +61,14 @@ header.header_transparent {
   transition: background-color 200ms linear;
 }
 
+.nav__wrapper-logo {
+  color: $white;
+}
+
+.header_logo_color {
+  color: black;
+}
+
 .nav__search {
   padding-left: 10px;
   position: relative;
@@ -85,4 +93,9 @@ header.header_transparent {
 
 .btnc2:hover {
   color: $gray-2;
+}
+
+.btnb2 {
+  border: $border-size solid $blue-2;
+  background: $blue-2;
 }
