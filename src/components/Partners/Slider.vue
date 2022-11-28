@@ -8,7 +8,13 @@
                 :class="{ active: btn.id == activeCategory }"
                 class="partnerreviews-slider-switcher"></div>
               </div>
-              <Item :currentSlide="currentSlide"/>
+              <div class="comment-wrapper">
+                <div class="slider-area">
+                    <Item :counter="counter"
+                    :name="name"
+                    />
+              </div>
+                </div>
             </div>
 </template>
 
@@ -20,6 +26,7 @@
         },
         data(){
             return {
+                name:"forward",
                 counter:0,
                 activeCategory:0,
                 switcher:[
@@ -34,20 +41,19 @@
         },
         methods:{
         Slide(id){
-                document.querySelector('.slider-area').style.marginLeft = `-${100*id}%`;
+                this.counter>id?this.name="backward":this.name="forward";
                 this.activeCategory=id;
-                this.counter=id;
-
-                    
+                this.counter=id;  
         },
         Timer(){
-            document.querySelector('.slider-area').style.marginLeft = `-${100*this.counter}%`;
-            this.activeCategory=this.counter;
+            this.name="forward";
             if(this.counter>=5){
+                this.name="backward";
                 this.counter=0;
             }else{
                 this.counter++;
             }
+            this.activeCategory=this.counter;
         }
         },
         mounted(){
@@ -60,5 +66,5 @@
 </script>
 
 <style lang="scss" scoped>
-
+    
 </style>

@@ -1,7 +1,8 @@
 <template>
     <div class="comment-wrapper">
-        <div :style="{'margin-left':'-'+(100*currentSlide)+'%'}" class="slider-area">
-            <div v-for="comment of comments" class="comment wh">
+        <div class="slider-area">
+                <Transition v-for="comment in comments" :name="name" mode="in-out">
+                <div v-show="comment.id==counter" class="comment wh">
                 <div class="comment-reviewer">
                   <div class="comment-reviewer-avatar"><img :src="`/img/comment/${comment.id}.png`" alt=""></div>
                   <div class="comment-reviewer-data">
@@ -14,30 +15,32 @@
                 </div>
                 <div class="comment-reviewerinfo">{{comment.text}}</div>
               </div>
+            </Transition>
         </div>
     </div>
 </template>
 
 <script>
     export default {
+        props: ["counter","name"],
         data(){
             return{
-                props: {
-                    currentSlide:{
-                    type: Number,
-                    required: true
-                    }
-                },
                 comments:[
                     {
-                        id:1,
+                        id:0,
                         name:"Иван Фурсов",
                         company:"Сбербанк",
                         text:"Благодарю сайт «SoftMain» за понимание, профессионализм и высокое качество работы."
                     },
                     {
-                        id:2,
+                        id:1,
                         name:"кто-то...",
+                        company:"Сбербанк",
+                        text:"Благодарю сайт «SoftMain» за понимание, профессионализм и высокое качество работы."
+                    },
+                    {
+                        id:2,
+                        name:"Иван Фурсов",
                         company:"Сбербанк",
                         text:"Благодарю сайт «SoftMain» за понимание, профессионализм и высокое качество работы."
                     },
@@ -48,19 +51,13 @@
                         text:"Благодарю сайт «SoftMain» за понимание, профессионализм и высокое качество работы."
                     },
                     {
-                        id:2,
+                        id:4,
                         name:"Иван Фурсов",
                         company:"Сбербанк",
                         text:"Благодарю сайт «SoftMain» за понимание, профессионализм и высокое качество работы."
                     },
                     {
-                        id:2,
-                        name:"Иван Фурсов",
-                        company:"Сбербанк",
-                        text:"Благодарю сайт «SoftMain» за понимание, профессионализм и высокое качество работы."
-                    },
-                    {
-                        id:2,
+                        id:5,
                         name:"Иван Фурсов",
                         company:"Сбербанк",
                         text:"Благодарю сайт «SoftMain» за понимание, профессионализм и высокое качество работы."
@@ -72,5 +69,56 @@
 </script>
 
 <style lang="scss" scoped>
+    .forward-enter-active {
+        animation: forwardInAnimation 0.4s ease-in-out;
+    }
 
+    .forward-leave-active {
+        animation: forwardOutAnimation 0.4s ease-in-out;
+    }
+
+    @keyframes forwardInAnimation {
+        from {
+            transform: translateX(calc(100% + 50px));
+        }
+        to {
+            transform: translateX(calc(-100% - 50px));
+        }
+    }
+
+    @keyframes forwardOutAnimation {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-100% - 50px));
+        }
+    }
+    
+
+    .backward-enter-active {
+        animation: backwardInAnimation 0.4s ease-in-out;
+    }
+
+    .backward-leave-active {
+        animation: backwardOutAnimation 0.4s ease-in-out;
+    }
+
+    @keyframes backwardInAnimation {
+        from {
+            transform: translateX(calc(-100% - 50px));
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes backwardOutAnimation {
+        from {
+            transform: translateX(calc(-100% - 50px));
+        }
+        to {
+            transform: translateX(calc(+100% + 50px));
+        }
+    }
 </style>
