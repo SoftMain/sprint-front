@@ -21,7 +21,8 @@
 
         <div class="sidebar__filters">
           <div class="sidebar__filters-filter">
-            <div class="sidebar__collapse">
+
+            <div @click="show = !show" class="sidebar__collapse btn">
               <div class="sidebar__collapse-icon">
                 <span class="icon-caret-down px20"></span>
               </div>
@@ -29,116 +30,141 @@
                 <h6 class="font-regular">Платформа</h6>
               </div>
             </div>
-            <div class="sidebar__variants">
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon">
-                  <span class="icon-checkbox-fill px20"></span>
+            <Transition name="slide-fade">
+              <div v-if="show" class="sidebar__variants">
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox-fill px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>Windows</p>
+                  </div>
                 </div>
-                <div class="sidebar__variants-item-text">
-                  <p>Windows</p>
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>Linux</p>
+                  </div>
+                </div>
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>Android</p>
+                  </div>
+                </div>
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>iOS</p>
+                  </div>
                 </div>
               </div>
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon">
-                  <span class="icon-checkbox px20"></span>
-                </div>
-                <div class="sidebar__variants-item-text">
-                  <p>Linux</p>
-                </div>
-              </div>
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon">
-                  <span class="icon-checkbox px20"></span>
-                </div>
-                <div class="sidebar__variants-item-text">
-                  <p>Android</p>
-                </div>
-              </div>
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon">
-                  <span class="icon-checkbox px20"></span>
-                </div>
-                <div class="sidebar__variants-item-text">
-                  <p>iOS</p>
-                </div>
-              </div>
-            </div>
+            </Transition>
+
           </div>
+
           <div class="sidebar__filters-filter">
-            <div class="sidebar__collapse">
+
+            <div @click="show = !show" class="sidebar__collapse btn">
               <div class="sidebar__collapse-icon">
                 <span class="icon-caret-down px20"></span>
               </div>
-              <div class="sidebar__collapse-h6">
-                <h6 class="font-regular">Сертификация</h6>
+              <div class="sidebar__collapse-header">
+                <h6 class="font-regular">Платформа</h6>
               </div>
             </div>
-            <div class="sidebar__variants">
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon">
-                  <span class="icon-checkbox-fill px20"></span>
+            <Transition name="slide-fade">
+              <div v-if="show" class="sidebar__variants">
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox-fill px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>Windows</p>
+                  </div>
                 </div>
-                <div class="sidebar__variants-item-text">
-                  <p>Windows</p>
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>Linux</p>
+                  </div>
+                </div>
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>Android</p>
+                  </div>
+                </div>
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>iOS</p>
+                  </div>
                 </div>
               </div>
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon">
-                  <span class="icon-checkbox px20"></span>
-                </div>
-                <div class="sidebar__variants-item-text">
-                  <p>Linux</p>
-                </div>
-              </div>
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon">
-                  <span class="icon-checkbox px20"></span>
-                </div>
-                <div class="sidebar__variants-item-text">
-                  <p>Android</p>
-                </div>
-              </div>
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon">
-                  <span class="icon-checkbox px20"></span>
-                </div>
-                <div class="sidebar__variants-item-text">
-                  <p>iOS</p>
-                </div>
-              </div>
-            </div>
+            </Transition>
+
           </div>
+
           <div class="sidebar__filters-filter">
-            <div class="sidebar__collapse">
+
+            <div @click="show = !show" class="sidebar__collapse btn">
               <div class="sidebar__collapse-icon">
-                <span class="icon-caret-up px20"></span>
+                <span class="icon-caret-down px20"></span>
               </div>
-              <div class="sidebar__collapse-h6">
-                <h6 class="font-regular">Язык интерфейса</h6>
-              </div>
-            </div>
-            <div class="sidebar__variants">
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon"></div>
-                <div class="sidebar__variants-item-text"></div>
+              <div class="sidebar__collapse-header">
+                <h6 class="font-regular">Платформа</h6>
               </div>
             </div>
-          </div>
-          <div class="sidebar__filters-filter">
-            <div class="sidebar__collapse">
-              <div class="sidebar__collapse-icon">
-                <span class="icon-caret-up px20"></span>
+            <Transition name="slide-fade">
+              <div v-if="show" class="sidebar__variants">
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox-fill px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>Windows</p>
+                  </div>
+                </div>
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>Linux</p>
+                  </div>
+                </div>
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>Android</p>
+                  </div>
+                </div>
+                <div class="sidebar__variants-item">
+                  <div class="sidebar__variants-item-icon">
+                    <span class="icon-checkbox px20"></span>
+                  </div>
+                  <div class="sidebar__variants-item-text">
+                    <p>iOS</p>
+                  </div>
+                </div>
               </div>
-              <div class="sidebar__collapse-h6">
-                <h6 class="font-regular">Аналоги</h6>
-              </div>
-            </div>
-            <div class="sidebar__variants">
-              <div class="sidebar__variants-item">
-                <div class="sidebar__variants-item-icon"></div>
-                <div class="sidebar__variants-item-text"></div>
-              </div>
-            </div>
+            </Transition>
+
           </div>
           <div class="sidebar__filters-actions">
             <a class="btn btn-primary">Применить</a>
@@ -419,7 +445,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      show: true
+    }
+  }
+};
 </script>
 
 <style lang="sass" scoped></style>

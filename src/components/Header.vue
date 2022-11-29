@@ -5,11 +5,11 @@
         <div class="nav__wrapper">
           <router-link to="/" class="nav__wrapper-logo" :class="isTop && this.$route.name == 'main' ? 'header_logo_color' : ''">
             <span class="icon-logo32 px32"></span>
-            <h3>SoftMain</h3>
+            <h3 class="font-medium">SoftMain</h3>
           </router-link>
 
-          <div class="nav__wrapper-categories proto__elem">
-            <button class="btn btn-primary btnb2"
+          <div class="nav__wrapper-categories">
+            <button @click="" class="btn btn-primary btnb2"
               >Категории
               <span class="icon-caret-down px20"></span>
           </button>

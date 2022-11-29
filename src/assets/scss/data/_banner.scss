@@ -1,50 +1,48 @@
 .banner {
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+  justify-content: space-between;
+  background: url(/img/background/Banner.jpg) center center/cover no-repeat;
+  padding: 0px;
+  margin-bottom: 88px;
+  padding: 32px;
+  &__h2 {
+    color: $white;
+  }
+
+  &__content {
     display: flex;
-    flex-direction: row;
-    border-radius: 12px;
+    flex-direction: column;
     justify-content: space-between;
-    background: url(/img/background/Banner.jpg) center center/cover no-repeat;
-    padding: 0px;
-    margin-bottom: 88px;
-    padding: 32px;
-    &__h2 {
-        color: white;
-    }
+    height: 248px;
+  }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 248px
-    }
+  &__image {
+    display: flex;
+  }
 
-    &__image {
-        display: flex;
-    }
+  &__text {
+    font-size: 18px;
+    color: $white;
+  }
 
-    &__text {
-        font-size: 18px;
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    }
+  &__button {
+    width: 155px;
+    height: 54px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
 
-    &__button {
-        width: 155px;
-        height: 54px;
-        box-sizing: border-box;
-        text-decoration: none;
-    }
+  &__button a {
+    background: $blue-4 !important;
+  }
 
-    &__button a {
-        background: #3B82F6 !important;
-    }
+  &__button:hover a {
+    background: $blue-9 !important;
+  }
 
-    &__button:hover a {
-        background: #2C68E7 !important;
-    }
-
-    &__button:active a {
-        background: #1E3A8A !important;
-    }
+  &__button:active a {
+    background: $blue-4 !important;
+  }
 }
