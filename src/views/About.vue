@@ -55,10 +55,10 @@
       <img src="/img/background/about_2.png" alt="about_2" />
     </div>
   </div>
+
   <div class="container">
     <div class="about__our-team">
       <h3 class="font-medium">Наша команда</h3>
-
       <div class="about__our-team-block">
         <div class="about__our-team-card">
           <img src="/img/team/julia_gornostaeva.jpg" />
