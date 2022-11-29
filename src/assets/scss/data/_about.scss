@@ -5,6 +5,7 @@
 }
 
 .about__our-project>img {
+  max-width: 100%;
   order: 2;
   height: 434px;
   width: 548px;
@@ -68,6 +69,8 @@
 }
 
 .about__our-team {
+  max-width: 100%;
+
   &_img {
     width: 233px;
     height: 184px;
@@ -101,8 +104,13 @@
 
 //noteboock
 @media (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
   .about__our-project {
-    width: 89%;
+    width: 97%;
+
   }
 
   .about__our-project-text {
@@ -110,7 +118,7 @@
   }
 
   .about__label-card {
-    width: 88%;
+    width: 97%;
   }
 
   .about__label-item {
@@ -119,13 +127,12 @@
   }
 
   .about__our-project>img {
-    width: 486px;
-    height: 382px;
-    //padding-left: 10px;
+    width: 100%;
+    padding-left: 10px;
   }
 
   .about__history {
-    width: 88%;
+    width: 97%;
   }
 
   .about__history>img {
@@ -144,7 +151,12 @@
   }
 
   .about__our-team {
+    width: 100%;
     padding-top: 100px;
+  }
+
+  .about__our-team h3 {
+    padding-left: 30px;
   }
 
   .about__our-team-card>img {
@@ -152,27 +164,39 @@
     height: 184px;
   }
 
-  .about__our-team {
-    width: 1100px;
-  }
+
 
   .about__our-team-card {
     width: 193px;
     height: 272px;
   }
 
-  .about__our-team-block {
-    padding-right: 80px;
-  }
+
 }
 
 
 @media (max-width: 768px) {
 
+  .container {
+    width: 100%;
+  }
+
   .about__our-project {
     width: 70%;
   }
 
+  .about__our-project>img {
+    width: 385px;
+  }
+
+  .about__label-card {
+    width: 97%;
+  }
+
+
+  .about__our-team {
+    width: 80%;
+  }
 
 }
 
