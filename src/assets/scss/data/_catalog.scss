@@ -91,6 +91,30 @@
 
     }
 
+    .slide-fade-enter-active {
+        transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+    }
+
+    .slide-fade-leave-active {
+        transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+
+    }
+
+    .slide-fade-enter-from,
+    .slide-fade-leave-to {
+        max-height: 0;
+        overflow: hidden;
+
+
+    }
+
+    .slide-fade-enter-to,
+    .slide-fade-leave-from {
+        overflow: hidden;
+        max-height: 1000px;
+    }
+
+
     // Filters block style 
     &__filters {
         box-sizing: border-box;
@@ -123,8 +147,8 @@
             padding: 0px;
             gap: 8px;
 
-            .btn-outline-primary{
-                filter:grayscale(100%);
+            .btn-outline-primary {
+                filter: grayscale(100%);
             }
         }
     }
@@ -149,6 +173,7 @@
 
     &__variants {
         display: flex;
+        overflow: hidden;
         flex-direction: column;
         align-items: flex-start;
         padding: 0px;
@@ -329,10 +354,11 @@
     gap: 3px;
 
     a {
-    filter: invert(100%); // Делает белые кнопки - черными
+        filter: invert(100%); // Делает белые кнопки - черными
     }
+
     .btn-primary {
-        filter: invert(0%);  // Убирает предыдущий эффект 
+        filter: invert(0%); // Убирает предыдущий эффект 
     }
 
     &__page {
