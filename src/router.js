@@ -13,43 +13,91 @@ const router = createRouter({
     {
       path: '/',
       name: 'main',
-      component: Home
+      component: Home,
+      meta: {
+        breadcrumb: [
+          { name: 'Home Page' }
+        ]
+      }
     },
     {
       path: '/catalog',
       name: 'catalog',
       component: Catalog,
+      meta: {
+        breadcrumb: [
+          { name: 'Home Page', link: '/' },
+          { name: 'Catalog' }
+        ]
+      },
       children: [
         {
           path: ':id',
-          component: Catalog
+          component: Catalog,
+          meta: {
+            breadcrumb: [
+              { name: 'Home Page', link: '/' },
+              { name: 'Catalog', link: 'catalog:id' }
+            ]
+          }
         }
       ]
     },
     {
       path: '/product/:id',
       name: 'product',
-      component: Product
+      component: Product,
+      meta: {
+        breadcrumb: [
+          { name: 'Home Page', link: '/' },
+          { name: 'Catalog', link: 'catalog' },
+          { name: 'Product' }
+        ]
+      }
     },
     {
       path: '/integrators',
       name: 'integrators',
-      component: Integrators
+      component: Integrators,
+      meta: {
+        breadcrumb: [
+          { name: 'Home Page', link: '/' },
+          { name: 'Integrators' },
+        ]
+      }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: Contact
+      component: Contact,
+      meta: {
+        breadcrumb: [
+          { name: 'Home Page', link: '/' },
+          { name: 'Contact' },
+        ]
+      }
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
+      meta: {
+        breadcrumb: [
+          { name: 'Home Page', link: '/' },
+          { name: 'About' },
+        ]
+      }
     },
     {
       path: '/:pathMatch(.*)*',
       name: 'error',
-      component: Error404
+      component: Error404,
+      meta: {
+        breadcrumb: [
+          { name: 'Home Page', link: '/' },
+          { name: 'Error404' },
+        ]
+      }
     }
   ]
 });
