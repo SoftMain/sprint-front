@@ -4,17 +4,19 @@
                 <div class="hero__text_block">
                     <div class="hero__text_block_header"><h2 class="font-medium">Что такое системный интегратор?</h2></div>
                     <div class="hero__text_block_text"><p class="text-base"> Системный интегратор в IT – это компания, которая разрабатывает и внедряет комплексные IT-решения для автоматизации бизнес-процессов на предприятии.
+                        <br><br>
                         Основной задачей системных интеграторов является обеспечение эффективной работы отдельной команды (отдела) или всей организации в целом. Системные интеграторы занимаются поддержкой и интеграцией: ПО, аппаратных комплексов, решений (ERP, CRM), систем в бизнес-процессах.
+                        <br><br>
                         Услуги системной интеграции предоставляются подрядными компаниями, которые имеют в своем штате высококвалифицированных и сертифицированных сотрудников, способных решить любые задачи, поставленные заказчиком. Ниже вы можете ознакомиться с ведущими системными интеграторами в России и их клиентами.</p></div>
                 </div>
-                <div class="hero__image"><img src="/img/background/integrators.png" alt=""></div>
+                <img class="hero__image" src="/img/background/integrators.png" alt="">
             </div>
         </div>
-        <div class="integrators proto_block">
+        <div class="integrators">
             <div class="integrators_block_header"><h3 class="font-medium">Список Интерграторов</h3></div>
             <div class="integrator__block_cards">
                 <div class="integrator__block_cards_elem">
-                    <div class="integrator__block_cards_elem_image"><img src="/img/integrator/softline.png" alt=""></div>
+                    <img class="integrator__block_cards_elem_image" src="/img/integrator/softline.png" alt="">
                     <div class="integrator__block_cards_elem_header">
                         <h5 class="font-regular">SOFTLINE</h5>
                         <a title="Softline" target="_blank" class="integrators_link" href="https://softline.ru/"><img src="/img/integrator/link img.png" alt=""></a>
@@ -22,7 +24,7 @@
                     <div class="integrator__block_cards_elem_text"><p class="text-base">Доброфлот, Росводоканал</p></div>
                 </div>
                 <div class="integrator__block_cards_elem">
-                    <div class="integrator__block_cards_elem_image"><img src="/img/integrator/lanit.png" alt=""></div>
+                    <img class="integrator__block_cards_elem_image" src="/img/integrator/lanit.png" alt="">
                     <div class="integrator__block_cards_elem_header">
                         <h5 class="font-regular">Ланит</h5>
                         <a title="Lanit" target="_blank" class="integrators_link" href="https://www.lanit.ru/"><img src="/img/integrator/link img.png" alt=""></a>
@@ -30,7 +32,7 @@
                     <div class="integrator__block_cards_elem_text"><p class="text-base">Куратье, Росгидромет</p></div>
                 </div>
                 <div class="integrator__block_cards_elem">
-                    <div class="integrator__block_cards_elem_image"><img src="/img/integrator/krok.png" alt=""></div>
+                    <img class="integrator__block_cards_elem_image" src="/img/integrator/krok.png" alt="">
                     <div class="integrator__block_cards_elem_header">
                         <h5 class="font-regular">КРОК</h5>
                         <a title="Krok" target="_blank" class="integrators_link" href="https://www.croc.ru/"><img src="/img/integrator/link img.png" alt=""></a>
@@ -38,7 +40,7 @@
                     <div class="integrator__block_cards_elem_text"><p class="text-base">Ингосстрах, ДИТ Москвы</p></div>
                 </div>
                 <div class="integrator__block_cards_elem">
-                    <div class="integrator__block_cards_elem_image"><img src="/img/integrator/galacticka.png" alt=""></div>
+                    <img class="integrator__block_cards_elem_image" src="/img/integrator/galacticka.png" alt="">
                     <div class="integrator__block_cards_elem_header">
                         <h5 class="font-regular">Корпорация Галактика</h5>
                         <a title="Galaxy" target="_blank" class="integrators_link" href="https://galaktika.ru/"><img src="/img/integrator/link img.png" alt=""></a>
@@ -46,7 +48,7 @@
                     <div class="integrator__block_cards_elem_text"><p class="text-base">Росатом, Роснефть</p></div>
                 </div>
                 <div class="integrator__block_cards_elem">
-                    <div class="integrator__block_cards_elem_image"><img src="/img/integrator/itglobal.png" alt=""></div>
+                    <img class="integrator__block_cards_elem_image" src="/img/integrator/itglobal.png" alt="">
                     <div class="integrator__block_cards_elem_header">
                         <h5 class="font-regular">ITGLOBAL.COM</h5>
                         <a title="itglobal" target="_blank" class="integrators_link" href="https://itglobal.com/ru-ru/?utm_source=yandex&utm_medium=cpc&utm_campaign=78611660&utm_content=12795071372_12795071372_type1_41196795826_41196795826_desktop_5036446149_it%20global_0_1_premium_none_search_Новосибирск&utm_term=it%20global&roistat=direct2_search_12795071372_it%20global&roistat_referrer=none&roistat_pos=premium_1&etext&yclid=7074774208870156308"><img src="/img/integrator/link img.png" alt=""></a>
@@ -54,7 +56,7 @@
                     <div class="integrator__block_cards_elem_text"><p class="text-base">Сеть АЗС «Опти», Digital Attitude</p></div>
                 </div>
                 <div class="integrator__block_cards_elem">
-                    <div class="integrator__block_cards_elem_image"><img src="/img/integrator/aiteko.png" alt=""></div>
+                    <img class="integrator__block_cards_elem_image" src="/img/integrator/aiteko.png" alt="">
                     <div class="integrator__block_cards_elem_header">
                         <h5 class="font-regular">АЙТЕКО</h5>
                         <a title="iteko" target="_blank" class="integrators_link" href="https://www.i-teco.ru/"><img src="/img/integrator/link img.png" alt=""></a>
@@ -62,7 +64,7 @@
                     <div class="integrator__block_cards_elem_text"><p class="text-base">Райффайзенбанк, Москоллектор</p></div>
                 </div>
                 <div class="integrator__block_cards_elem">
-                    <div class="integrator__block_cards_elem_image"><img src="/img/integrator/otr.png" alt=""></div>
+                    <img class="integrator__block_cards_elem_image" src="/img/integrator/otr.png" alt="">
                     <div class="integrator__block_cards_elem_header">
                         <h5 class="font-regular">OTP</h5>
                         <a title="otr" target="_blank" class="integrators_link" href="https://otr.ru/"><img src="/img/integrator/link img.png" alt=""></a>
@@ -70,7 +72,7 @@
                     <div class="integrator__block_cards_elem_text"><p class="text-base">ПФР, МинФин, Альфа-Банк, Ренессанс</p></div>
                 </div>
                 <div class="integrator__block_cards_elem">
-                    <div class="integrator__block_cards_elem_image"><img src="/img/integrator/korus.png" alt=""></div>
+                    <img class="integrator__block_cards_elem_image" src="/img/integrator/korus.png" alt="">
                     <div class="integrator__block_cards_elem_header">
                         <h5 class="font-regular">КОРУС Консалтинг</h5>
                         <a title="korus" target="_blank" class="integrators_link" href="https://korusconsulting.ru/"><img src="/img/integrator/link img.png" alt=""></a>
