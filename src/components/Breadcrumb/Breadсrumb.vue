@@ -1,11 +1,18 @@
 <template>
-  <div class="container breadcrumb">
-    <BreadcrumbItem v-for="(item, index) in items" :key="index" :item="item"/>
+  <div class="container">
+    <div class="breadcrumb">
+      <BreadcrumbItem
+        v-if="this.$route.name != 'main'"
+        v-for="(item, index) in items"
+        :key="index"
+        :item="item"
+      />
+    </div>
   </div>
 </template>
 
 <script>
-import BreadcrumbItem from './BreadcrumbItem.vue';
+import BreadcrumbItem from "./BreadcrumbItem.vue";
 export default {
   name: "Breadcrumb",
   components: { BreadcrumbItem },
@@ -15,16 +22,11 @@ export default {
     };
   },
   watch: {
-    '$route' () {
+    $route() {
       this.items = this.$route.meta.breadcrumb;
-    }
-  }
+    },
+  },
 };
 </script>
 
-<style lang="scss" scoped>
-.breadcrumb {
-  display: flex;
-  align-items: center;
-}
-</style>
+<style lang="scss" scoped></style>

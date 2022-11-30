@@ -1,24 +1,5 @@
 <template>
   <div class="container">
-    <div class="path">
-
-      <span class="icon-home px16"></span>
-
-      <div class="path-text">Главная</div>
-      <span class="icon-chevron-r px20"></span>
-
-
-      <div class="path-text">Каталог</div>
-      <span class="icon-chevron-r px20"></span>
-
-
-      <div class="path-text">Антивирусы</div>
-      <span class="icon-chevron-r px20"></span>
-
-
-      <div class="path-text path__text-active">Kaspersky Anti-Virus</div>
-
-    </div>
     <div class="product__header">
       <div class="product__upper">
         <img class="product__upper-img" src="/img/products/h5.png" alt="Kaspersky" />
