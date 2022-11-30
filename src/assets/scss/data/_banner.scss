@@ -1,15 +1,14 @@
 .banner {
-  display: flex;
-  flex-direction: row;
-  border-radius: 12px;
-  justify-content: space-between;
-  background: url(/img/background/Banner.jpg) center center/cover no-repeat;
-  padding: 0px;
-  margin-bottom: 88px;
-  padding: 32px;
-  &__h2 {
-    color: $white;
-  }
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    justify-content: space-between;
+    background: url(/img/background/Banner.jpg) center center/cover no-repeat;
+    margin-bottom: 88px;
+    padding: 32px;
+    &__h2 {
+        color: white;
+    }
 
   &__content {
     display: flex;

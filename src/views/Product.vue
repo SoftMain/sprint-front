@@ -1,43 +1,25 @@
 <template>
   <div class="container">
-    <div class="path">
-
-      <span class="icon-home px16"></span>
-
-      <div class="path-text">Главная</div>
-      <span class="icon-chevron-r px20"></span>
-
-
-      <div class="path-text">Каталог</div>
-      <span class="icon-chevron-r px20"></span>
-
-
-      <div class="path-text">Антивирусы</div>
-      <span class="icon-chevron-r px20"></span>
-
-
-      <div class="path-text path__text-active">Kaspersky Anti-Virus</div>
-
-    </div>
     <div class="product__header">
       <div class="product__upper">
         <img class="product__upper-img" src="/img/products/h5.png" alt="Kaspersky" />
       </div>
       <div class="product__under">
         <div class="product__logo">
-          <img src="/img/products/5.png" alt="Prxduct Lxgx" />
+          <img class="product__logo-img" src="/img/products/5.png" alt="Prxduct Lxgx" />
         </div>
         <div class="product__info">
           <h4>Kaspersky Anti-Virus</h4>
           <div class="info__text">Лаборатория Касперского</div>
-          <div class="product__raiting">
+          <StarRating ></StarRating>
+          <!-- <div class="product__raiting">  
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star 14px"></span>
             <span class="icon-star 14px"></span>
             <p class="product__raiting-text">(12)</p>
-          </div>
+          </div> -->
         </div>
         <div class="product__btn">
           <a class="button" href="">Перейти</a>
@@ -172,17 +154,47 @@
 
         <div class="product__comments-wrap">
           <h4>Отзывы</h4>
-          <div class="product__comment"></div>
-          <div class="product__comment"></div>
-          <div class="product__comment"></div>
+          <div class="product__comment">
+            <div class="comment-user">
+              <div class="user--avatar">
+                <img src="" alt="">
+              </div>
+              <div class="user--title">
+                <div class="title-name">Персиваль Шуттенбах</div>
+              </div>
+            </div>
+            <div class="coment-text">Данным антивирусом пользуюсь давно, работает отлично, никогда не подводил.</div>
+          </div>
+          <div class="product__comment">
+            <div class="comment-user">
+              <div class="user--avatar">
+                <img src="" alt="">
+              </div>
+              <div class="user--title">
+                <div class="title-name">Персиваль Шуттенбах</div>
+              </div>
+            </div>
+            <div class="coment-text">Касперский одна из лучших антивирусных программ, во-первых постоянно обновляется база, во-вторых как никто надежно защищает систему. Перепробовал ни одну, но больше всего мне понравился именно этот антивирус. Когда стояли другие, комп жутко тормозил, когда запущен касперский, то этого нет.</div>
+          </div>
+          <div class="product__comment">
+            <div class="comment-user">
+              <div class="user--avatar">
+                <img src="" alt="">
+              </div>
+              <div class="user--title">
+                <div class="title-name">Персиваль Шуттенбах</div>
+              </div>
+            </div>
+            <div class="coment-text">Хороший антивирус, с огромным функционалом, но жрет очень много оперативной памяти</div>
+          </div>
         </div>
         <form class="product__comments-form">
           <h4>Оставьте свой отзыв</h4>
           <div class="product__comm-inputs">
             <div class="comment__left">
-              <input type="text" name="" placeholder="Иди спать" class="comment__input-left" />
-              <input type="text" name="" placeholder="Настя" class="comment__input-left" />
-              <input type="text" name="" placeholder="Я устал" class="comment__input-left" />
+              <input  type="text" name="" placeholder="Имя" class="comment__input-left" />
+              <input  type="text" name="" placeholder="Почта" class="comment__input-left" />
+              <input  type="text" name="" placeholder="Оценка:" class="comment__input-left" />
             </div>
             <div class="comment__right">
               <input type="text" name="" class="comment__input-right" />
@@ -199,7 +211,12 @@
 </template>
 
 <script>
-export default {};
+import StarRating from '../components/StarRating.vue';
+export default {
+  components: {
+    StarRating
+  },
+};
 </script>
 
 <style lang="sass" scoped></style>

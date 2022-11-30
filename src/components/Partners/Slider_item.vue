@@ -13,7 +13,7 @@
                   </div>
 
                 </div>
-                <div class="comment-reviewerinfo">{{comment.text}}</div>
+                <div :style="{width:property+'px'}" class="comment-reviewerinfo">{{comment.text}}</div>
               </div>
             </Transition>
         </div>
@@ -25,6 +25,7 @@
         props: ["counter","name"],
         data(){
             return{
+                property:null,
                 comments:[
                     {
                         id:0,
@@ -64,17 +65,29 @@
                     }
                 ]
             }
+        },
+        methods:{
+            getprop(){
+                let el= document.querySelector(".comment-wrapper");
+                this.property = window.getComputedStyle(el).getPropertyValue("width");
+                this.property=parseFloat(this.property)-110;
+            }
+        },
+        mounted(){
+            // this.getprop();
+            window.addEventListener('resize', this.getprop());
         }
+        
     }
 </script>
 
 <style lang="scss" scoped>
     .forward-enter-active {
-        animation: forwardInAnimation 0.4s ease-in-out;
+        animation: forwardInAnimation .4s ease-in-out;
     }
 
     .forward-leave-active {
-        animation: forwardOutAnimation 0.4s ease-in-out;
+        animation: forwardOutAnimation .4s ease-in-out;
     }
 
     @keyframes forwardInAnimation {
@@ -97,11 +110,11 @@
     
 
     .backward-enter-active {
-        animation: backwardInAnimation 0.4s ease-in-out;
+        animation: backwardInAnimation .4s ease-in-out;
     }
 
     .backward-leave-active {
-        animation: backwardOutAnimation 0.4s ease-in-out;
+        animation: backwardOutAnimation .4s ease-in-out;
     }
 
     @keyframes backwardInAnimation {
