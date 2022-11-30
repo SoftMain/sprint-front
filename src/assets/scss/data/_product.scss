@@ -23,19 +23,24 @@
   display: flex;
   flex-direction: column;
   height: 310px;
+  max-width: 1120px;
   margin-bottom: 24px;
 }
 
 .product__upper {
   height: 198px;
+  max-width: 1120px;
   box-sizing: border-box;
+  // border: 1px solid #B3B3B3;
+  border-radius: 12px 12px 0px 0px;
+
 }
 .product__upper-img {
-  width: 1120px;
-    height: 198px;
+  width: 100%;
+  height: 198px;
 
   border-radius: 12px 12px 0px 0px;
-  border: 1px solid $gray-2;
+  outline: 1px solid $gray-2;
   box-sizing: border-box;
 }
 
@@ -54,12 +59,13 @@
 
   /* BG/White */
 
-  background: $white;
+  // background: $white;
   /* Stroke/Grey */
 
-  border-width: 0px 1px 1px 1px;
-  border-style: solid;
-  border-color: $gray-2;
+  // border-width: 0px 1px 1px 1px;
+  outline: 1px solid $gray-2;
+  // border-style: solid;
+  // border-color: $gray-2;
   border-radius: 0px 0px 12px 12px;
   position: relative;
 }
@@ -86,10 +92,12 @@
   outline: 1px solid $gray-2;
   border-radius: 12px;
   background: $white;
+  z-index: 500;
 }
 .product__logo-img {
   width: 128px;
   height: 128px;
+
 }
 
 .product__info {
@@ -504,11 +512,11 @@ a.button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
+  padding: 16px;
   gap: 8px;
 
   width: 835px;
-  height: 108px;
+  // height: 108px;
 
   /* BG/White */
 
@@ -518,7 +526,49 @@ a.button {
   border: 1px solid $gray-2;
   border-radius: 12px;
 }
+.comment-user {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
 
+  width: 168px;
+  height: 48px;
+  }
+.user--avatar {
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 48px;
+  height: 48px;
+
+  /* Stroke/Grey */
+
+  outline: 1px solid #B3B3B3;
+  border-radius: 24px;
+}
+.user--title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 108px;
+  height: 48px;
+}
+.title-name {
+}
+.coment-text {
+}
 .product__comments-form {
   display: flex;
   flex-direction: column;
@@ -552,20 +602,22 @@ input.comment__input-left {
   box-sizing: border-box;
 
   /* Auto layout */
-
+  
   display: flex;
   flex-direction: row;
   align-items: center;
-
-
+  padding: 10px 20px;
+  
   width: 408px;
   height: 40px;
-  gap: 12px;
-
+  
+  /* BG/White */
+  
+  background: #FFFFFF;
   /* Stroke/RoyalBlue */
-
-  border: 1px solid $blue-4;
-  border-radius: 20px;
+  
+  border: 1px solid #2C68E7;
+  border-radius: 12px;
 
 }
 
