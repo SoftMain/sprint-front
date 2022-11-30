@@ -15,7 +15,7 @@ body{
 }
 
 .container {
-    width: 1120px;
+    max-width: 1120px;
     margin: 0 auto;
 }
 
@@ -37,3 +37,6 @@ body{
 'data/btn_category',
 'data/catalog.scss',
 'data/integrators.scss';
+
+// media
+@import 'data/media.scss';
