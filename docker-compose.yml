@@ -1,6 +1,12 @@
 version: '3'
 services:
   front:
-    image: ghcr.io/softmain/sprint-front:build
+    image: ghcr.io/softmain/sprint-front:latest
     ports:
       - "8080:80"
+  back:
+    image: ghcr.io/softmain/sprint-back:latest
+    ports:
+      - "8081:5000"
+    env_file:
+    - .production.env
