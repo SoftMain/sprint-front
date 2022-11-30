@@ -181,7 +181,7 @@
 </template>
 
 <script>
-import StarRating from './components/StarRating';
+import StarRating from '../components/StarRating.vue';
 export default {
   name: 'StarRating',
   components: {
