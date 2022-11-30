@@ -11,7 +11,8 @@
         <div class="product__info">
           <h4>Kaspersky Anti-Virus</h4>
           <div class="info__text">Лаборатория Касперского</div>
-          <div class="product__raiting">
+            <StarRating />
+          <div class="product__raiting">  
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star-filled 14px"></span>
@@ -180,7 +181,13 @@
 </template>
 
 <script>
-export default {};
+import StarRating from './components/StarRating';
+export default {
+  name: 'StarRating',
+  components: {
+    StarRating
+  },
+};
 </script>
 
 <style lang="sass" scoped></style>

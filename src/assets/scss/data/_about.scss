@@ -35,6 +35,7 @@
   }
 
   &-item {
+    max-width: 100%;
     margin-top: 26px;
     border-bottom: 52px;
     width: 360px;
@@ -103,14 +104,13 @@
 }
 
 //noteboock
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .container {
     width: 100%;
   }
 
   .about__our-project {
     width: 97%;
-
   }
 
   .about__our-project-text {
@@ -164,21 +164,17 @@
     height: 184px;
   }
 
-
-
   .about__our-team-card {
     width: 193px;
     height: 272px;
   }
-
-
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   .container {
-    width: 100%;
+    width: 70%;
   }
 
   .about__our-project {
@@ -193,6 +189,10 @@
     width: 97%;
   }
 
+  .about__label-item {
+    width: 80%;
+
+  }
 
   .about__our-team {
     width: 80%;
@@ -200,7 +200,7 @@
 
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 375px) {
 
 
 
