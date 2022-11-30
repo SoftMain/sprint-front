@@ -15,5 +15,5 @@ import Partners from '../components/Partners.vue';
 </script>
 
 <style lang="sass" scoped>
-
+   
 </style>
