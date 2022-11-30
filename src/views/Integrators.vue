@@ -27,7 +27,7 @@
   </div>
   <div class="container integrators proto_block">
     <div class="integrators_block_header">
-      <h3 class="font-medium">Список Интерграторов</h3>
+      <h3 class="font-medium">Список Интеграторов</h3>
     </div>
     <div class="integrator__block_cards">
       <div class="integrator__block_cards_elem">
