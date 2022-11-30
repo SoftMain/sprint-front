@@ -83,11 +83,14 @@
 
   /* Stroke/Grey */
 
-  border: 1px solid $gray-2;
+  outline: 1px solid $gray-2;
   border-radius: 12px;
   background: $white;
 }
-
+.product__logo-img {
+  width: 128px;
+  height: 128px;
+}
 
 .product__info {
   display: flex;

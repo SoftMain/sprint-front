@@ -1,6 +1,6 @@
 <template>
     <div class="star-rating">
-        <span  v-for="index in starLimit" :key="index" class="star"> </span>
+        <span  v-for="index in starLimit" :key="index" class="star star-filled"> </span>
     </div>
 </template>
 

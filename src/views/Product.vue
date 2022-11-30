@@ -6,20 +6,20 @@
       </div>
       <div class="product__under">
         <div class="product__logo">
-          <img src="/img/products/5.png" alt="Prxduct Lxgx" />
+          <img class="product__logo-img" src="/img/products/5.png" alt="Prxduct Lxgx" />
         </div>
         <div class="product__info">
           <h4>Kaspersky Anti-Virus</h4>
           <div class="info__text">Лаборатория Касперского</div>
-            <StarRating />
-          <div class="product__raiting">  
+          <StarRating ></StarRating>
+          <!-- <div class="product__raiting">  
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star 14px"></span>
             <span class="icon-star 14px"></span>
             <p class="product__raiting-text">(12)</p>
-          </div>
+          </div> -->
         </div>
         <div class="product__btn">
           <a class="button" href="">Перейти</a>
@@ -181,9 +181,8 @@
 </template>
 
 <script>
-import StarRating from './components/StarRating';
+import StarRating from '../components/StarRating.vue';
 export default {
-  name: 'StarRating',
   components: {
     StarRating
   },
