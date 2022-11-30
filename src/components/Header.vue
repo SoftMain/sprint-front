@@ -9,7 +9,7 @@
           </router-link>
 
           <div class="nav__wrapper-categories">
-            <button @click="" class="btn btn-primary btnb2"
+            <button @click="" class="btn btn-primary btnb2" :class="isTop && this.$route.name == 'main' ? 'btnb2_transparent' : ''"
               >Категории
               <span class="icon-caret-down px20"></span>
           </button>
@@ -41,6 +41,12 @@
 </template>
 
 <script>
+import BtnCategory from "./Btncategory.vue";
+
+// components; {
+//   BtnCategory
+// }
+
 export default {
   data() {
     return {

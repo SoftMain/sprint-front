@@ -39,6 +39,7 @@
 }
 
 header {
+  max-width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -49,7 +50,7 @@ header {
   top: 0px;
   z-index: 1;
   background-color: $blue-3;
-  box-shadow: 0px 6px rgba(6, 20, 29, 0.2);
+  box-shadow: 0px 5px 18px 0px #00000033;
   -webkit-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
@@ -60,6 +61,21 @@ header.header_transparent {
   -webkit-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
+}
+
+.btn-primary.btnb2_transparent {
+  border: $border-size solid $blue-4;
+  background: $blue-4;
+}
+
+.btnb2 {
+  border: $border-size solid $blue-2;
+  background: $blue-2;
+  height: 40px;
+}
+
+.btnb2_transparent {
+  background: transparent;
 }
 
 .header_transparent {
@@ -85,7 +101,7 @@ header.header_transparent {
   height: 40px;
   padding: 0 20px;
   border: 1px solid $blue-4;
-  border-radius: 12px;
+  border-radius: 8px;
   outline: none;
 }
 
@@ -97,7 +113,7 @@ header.header_transparent {
 }
 
 .btnc2:hover {
-  color: $gray-2;
+  // color: $gray-2;
   border: 1px solid $gray-2;
 }
 
@@ -105,7 +121,20 @@ header.header_transparent {
   color: $gray-2;
 }
 
-.btnb2 {
-  border: $border-size solid $blue-2;
-  background: $blue-2;
+
+@media (max-width: 1024px) {
+  .search-area {
+    display: block;
+    width: 282px;
+    height: 40px;
+    padding: 0 20px;
+    border: 1px solid $blue-4;
+    border-radius: 8px;
+    outline: none;
+  }
+
+  .nav__wrapper-logo {
+    padding-left: 20px;
+  }
+  
 }
