@@ -16,7 +16,7 @@ const router = createRouter({
       component: Home,
       meta: {
         breadcrumb: [
-          { name: 'Home Page' }
+          { name: 'Главная' }
         ]
       }
     },
@@ -26,8 +26,8 @@ const router = createRouter({
       component: Catalog,
       meta: {
         breadcrumb: [
-          { name: 'Home Page', link: '/' },
-          { name: 'Catalog' }
+          { name: 'Главная', link: '/' },
+          { name: 'Каталог' }
         ]
       },
       children: [
@@ -36,8 +36,8 @@ const router = createRouter({
           component: Catalog,
           meta: {
             breadcrumb: [
-              { name: 'Home Page', link: '/' },
-              { name: 'Catalog', link: 'catalog:id' }
+              { name: 'Главная', link: '/' },
+              { name: 'Каталог', link: 'catalog:id' }
             ]
           }
         }
@@ -49,9 +49,9 @@ const router = createRouter({
       component: Product,
       meta: {
         breadcrumb: [
-          { name: 'Home Page', link: '/' },
-          { name: 'Catalog', link: 'catalog' },
-          { name: 'Product' }
+          { name: 'Главная', link: '/' },
+          { name: 'Каталог', link: 'catalog' },
+          { name: 'Продукт' }
         ]
       }
     },
@@ -61,8 +61,8 @@ const router = createRouter({
       component: Integrators,
       meta: {
         breadcrumb: [
-          { name: 'Home Page', link: '/' },
-          { name: 'Integrators' },
+          { name: 'Главная', link: '/' },
+          { name: 'Интеграторы' },
         ]
       }
     },
@@ -72,8 +72,8 @@ const router = createRouter({
       component: Contact,
       meta: {
         breadcrumb: [
-          { name: 'Home Page', link: '/' },
-          { name: 'Contact' },
+          { name: 'Главная', link: '/' },
+          { name: 'Компаниям' },
         ]
       }
     },
@@ -83,8 +83,8 @@ const router = createRouter({
       component: About,
       meta: {
         breadcrumb: [
-          { name: 'Home Page', link: '/' },
-          { name: 'About' },
+          { name: 'Главная', link: '/' },
+          { name: 'О нас', active: false },
         ]
       }
     },
@@ -94,8 +94,8 @@ const router = createRouter({
       component: Error404,
       meta: {
         breadcrumb: [
-          { name: 'Home Page', link: '/' },
-          { name: 'Error404' },
+          { name: 'Главная', link: '/' },
+          { name: 'Ошибка' },
         ]
       }
     }
