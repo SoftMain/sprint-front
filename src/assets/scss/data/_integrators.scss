@@ -13,11 +13,17 @@
 .hero__text_block_header {
     width: 550px;
     height: 80px;
+    font-weight: var(--medium);
 }
 .hero__text_block_text {
     width: 550px;
     height: 260px;
     margin-top: 24px;
+    color: #222222;
+    font-size: var(--sizeBase);
+    line-height: var(--heightBase);
+    font-style: normal;
+    font-weight: 300;
 }
 .hero__image {
     width: 550px;
@@ -30,8 +36,8 @@
     align-items: center;
     width: 1120px;
     height: 606px;
-    margin-left: 360px;
     padding-bottom: 40px;
+    margin-top: 48px;
 }
 .integrators_block_header{
     display: flex;
@@ -42,7 +48,7 @@
 }
 .integrator__block_cards{
     display: flex;
-    margin-top: 32px;
+    margin-top: 48px;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -56,8 +62,7 @@
     margin-top: 32px;
 }
 .integrator__block_cards_elem_image{
-    max-width: 231px;
-    max-height: 147px;
+    max-width: 230px;
     margin-top: 12px;
     margin-left: 12px;
 }
@@ -77,8 +82,6 @@
 }
 .integrator__block_cards_elem_text{
     color: $gray-3;
-    width: 241px;
-    height: 40px;
     margin-top: 4px;
     margin-left: 12px;
 }
@@ -106,15 +109,15 @@
         margin-top: 24px;
     }
     .hero__image {
-        width: 443px;
-        height: 291px;
+        width: 470px;
+        height: 379px;
         margin-left: 33px;
     }
     .integrators { 
         width: 1024px;
         height: 856px;
-        margin-top: 24px;
         margin-left: 32px;
+        margin-top: 128px;
     }
     .integrators_block_header{
         width: 960px;
@@ -128,18 +131,19 @@
         height: 229px;
     }
     .integrator__block_cards_elem_image{
-        width: 201px;
+        width: 200px;
         height: auto;
     }
     .integrator__block_cards_elem_header{
-        width: 144px;
-        height: 20px;
+        h5{
+            font-size: var(--sizeBase);
+            line-height: var(--heightBase);
+        }
     }
     .integrators_link{
         width: 15px;
-        height: 15px;
-        margin-top: 5px;
-        margin-left: 10.5px;
+        height: 15px;  
+        margin-top: 0; 
     }
     .integrator__block_cards_elem_text{
         color: $gray-3;
@@ -147,5 +151,9 @@
         height: 40px;
         margin-top: 4px;
         margin-left: 12px;
+        p{
+            font-size: var(--sizeSmall);
+            line-height: var(--heightSmall);
+        }
     }
 }

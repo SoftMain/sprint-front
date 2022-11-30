@@ -13,45 +13,96 @@ const router = createRouter({
     {
       path: '/',
       name: 'main',
-      component: Home
+      component: Home,
+      meta: {
+        breadcrumb: [
+          { name: 'Главная' }
+        ]
+      }
     },
     {
       path: '/catalog',
       name: 'catalog',
       component: Catalog,
+      meta: {
+        breadcrumb: [
+          { name: 'Главная', link: '/' },
+          { name: 'Каталог' }
+        ]
+      },
       children: [
         {
           path: ':id',
-          component: Catalog
+          component: Catalog,
+          meta: {
+            breadcrumb: [
+              { name: 'Главная', link: '/' },
+              { name: 'Каталог', link: 'catalog:id' }
+            ]
+          }
         }
       ]
     },
     {
       path: '/product/:id',
       name: 'product',
-      component: Product
+      component: Product,
+      meta: {
+        breadcrumb: [
+          { name: 'Главная', link: '/' },
+          { name: 'Каталог', link: 'catalog' },
+          { name: 'Продукт' }
+        ]
+      }
     },
     {
       path: '/integrators',
       name: 'integrators',
-      component: Integrators
+      component: Integrators,
+      meta: {
+        breadcrumb: [
+          { name: 'Главная', link: '/' },
+          { name: 'Интеграторы' },
+        ]
+      }
     },
     {
       path: '/contact',
       name: 'contact',
-      component: Contact
+      component: Contact,
+      meta: {
+        breadcrumb: [
+          { name: 'Главная', link: '/' },
+          { name: 'Компаниям' },
+        ]
+      }
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
+      meta: {
+        breadcrumb: [
+          { name: 'Главная', link: '/' },
+          { name: 'О нас', active: false },
+        ]
+      }
     },
     {
       path: '/:pathMatch(.*)*',
       name: 'error',
-      component: Error404
+      component: Error404,
+      meta: {
+        breadcrumb: [
+          { name: 'Главная', link: '/' },
+          { name: 'Ошибка' },
+        ]
+      }
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  },
 });
 
 export default router

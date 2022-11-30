@@ -19,3 +19,30 @@
   position: absolute;
   right: -52px;
 }
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px;
+}
+.breadcrumb__icon-home {
+  color: $blue-6;
+  margin-right: 4px;
+}
+
+.breadcrumb__icon {
+  color: $blue-6;
+  margin: 0px 8px;
+}
+
+.breadcrumb__page-current {
+  color: $gray-3;
+}
+
+.breadcrumb__page-link {
+  color: $black;
+  text-decoration: none;
+}
+
+.breadcrumb__page-link:hover {
+  color: $blue-6;
+}

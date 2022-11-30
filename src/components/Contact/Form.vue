@@ -2,7 +2,7 @@
     <section>
         <div class="form-callback">
             <form @submit.prevent="submit">
-                <div class=" form container">
+                <div class="form">
                     <div class="form-nameapp">
                         <input class="nameapp-area" type="text" v-model="form.product" name="nameapp"
                             placeholder="Наименование ПО" />

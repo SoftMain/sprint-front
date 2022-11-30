@@ -10,40 +10,38 @@
         color: white;
     }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 248px
-    }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 248px;
+  }
 
-    &__image {
-        display: flex;
-    }
+  &__image {
+    display: flex;
+  }
 
-    &__text {
-        font-size: 18px;
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    }
+  &__text {
+    font-size: 18px;
+    color: $white;
+  }
 
-    &__button {
-        width: 155px;
-        height: 54px;
-        box-sizing: border-box;
-        text-decoration: none;
-    }
+  &__button {
+    width: 155px;
+    height: 54px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
 
-    &__button a {
-        background: #3B82F6 !important;
-    }
+  &__button a {
+    background: $blue-4 !important;
+  }
 
-    &__button:hover a {
-        background: #2C68E7 !important;
-    }
+  &__button:hover a {
+    background: $blue-9 !important;
+  }
 
-    &__button:active a {
-        background: #1E3A8A !important;
-    }
+  &__button:active a {
+    background: $blue-4 !important;
+  }
 }
