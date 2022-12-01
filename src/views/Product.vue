@@ -161,6 +161,7 @@
               </div>
               <div class="user--title">
                 <div class="title-name">Персиваль Шуттенбах</div>
+                <StarRating ></StarRating>
               </div>
             </div>
             <div class="coment-text">Данным антивирусом пользуюсь давно, работает отлично, никогда не подводил.</div>
@@ -172,6 +173,7 @@
               </div>
               <div class="user--title">
                 <div class="title-name">Персиваль Шуттенбах</div>
+                <StarRating ></StarRating>
               </div>
             </div>
             <div class="coment-text">Касперский одна из лучших антивирусных программ, во-первых постоянно обновляется база, во-вторых как никто надежно защищает систему. Перепробовал ни одну, но больше всего мне понравился именно этот антивирус. Когда стояли другие, комп жутко тормозил, когда запущен касперский, то этого нет.</div>
@@ -183,7 +185,9 @@
               </div>
               <div class="user--title">
                 <div class="title-name">Персиваль Шуттенбах</div>
+                <StarRating ></StarRating>
               </div>
+              
             </div>
             <div class="coment-text">Хороший антивирус, с огромным функционалом, но жрет очень много оперативной памяти</div>
           </div>
@@ -194,7 +198,7 @@
             <div class="comment__left">
               <input  type="text" name="" placeholder="Имя" class="comment__input-left" />
               <input  type="text" name="" placeholder="Почта" class="comment__input-left" />
-              <input  type="text" name="" placeholder="Оценка:" class="comment__input-left" />
+              <input  type="text" name="" placeholder="Оценка: " class="comment__input-left" />
             </div>
             <div class="comment__right">
               <input type="text" name="" class="comment__input-right" />
