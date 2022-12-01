@@ -13,26 +13,6 @@
         </div>
 
         <CatalogProducts />
-
-        <div class="pagination">
-          <a class="btn">
-            <span class="icon-chevron-double-left px14"></span>
-          </a>
-          <a class="btn">
-            <span class="icon-chevron-l px14"></span>
-          </a>
-          <a class="btn btn-primary">1</a>
-          <a class="btn">2</a>
-          <a class="btn">3</a>
-          <a class="btn">4</a>
-          <a class="btn">5</a>
-          <a class="btn">
-            <span class="icon-chevron-r px14"></span>
-          </a>
-          <a class="btn">
-            <span class="icon-chevron-double-right px14"></span>
-          </a>
-        </div>
       </div>
     </section>
   </div>
