@@ -23,6 +23,7 @@
     //HOME
 
     .main{
+        padding-top: 77px;
         &__img{
             width: 470px;
             &-pic{
@@ -30,7 +31,7 @@
                 height: 401px;
             }
             &-bg{
-                width: 826px;
+                width: 175.74%;
                 height: 790px;
                 top: -270px;
                 left: -72px;
@@ -93,16 +94,16 @@
                 padding-bottom: 96px;
                 &__img{
                     padding-top: 44px;
-                    width: 271px;
+                    width: 35.29%;
                     height: auto;
                     &-pic{
-                        width: 271px;
-                        height: 232px;
+                        width: 100%;
+                        height: auto;
                         right: 0;
                     }
                     &-bg{
-                        width: 535.65px;
-                        height: 496.15px;
+                        width: 197.66%;
+                        height: auto;
                         top: -137px;
                         left: -110px;
                     }
@@ -174,6 +175,17 @@
         }
 }
 
+@media (max-width:576px){
+    main{
+        .main{
+            &__img-bg{
+                top: -19px;
+                left: -26px;
+            }
+        }
+    }
+}
+
 @media (max-width:375px){
     header{
         padding: 0 16px;
@@ -194,11 +206,11 @@
             padding-bottom: 32px;
             flex-direction: column;
             &__img{
-                width: 343px;
+                width: 100%;
                 height: 293px;
                 &-pic{
-                    width: 343px;
-                    height: 293px;
+                    width: 91.47%;
+                    height: auto;
                     margin-top: 24px;
                 }
                 &-bg{
