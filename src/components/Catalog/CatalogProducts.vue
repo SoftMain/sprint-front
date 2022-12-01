@@ -15,7 +15,7 @@ export default {
     };
   },
   async mounted() {
-    const resp = await this.$axios.get("http://localhost:5000/products");
+    const resp = await this.$axios.get("https://softmain.ru/api/products");
     this.products = resp.data;
     console.log(this.products);
   },
