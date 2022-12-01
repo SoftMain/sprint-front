@@ -8,11 +8,12 @@
             <h3 class="font-medium">SoftMain</h3>
           </router-link>
 
-          <div class="nav__wrapper-categories">
-            <button @click="" class="btn btn-primary btnb2" :class="isTop && this.$route.name == 'main' ? 'btnb2_transparent' : ''"
+          <div @click.self="outside" class="">
+            <button  @click="isOpen = !isOpen" class="btn btn-primary btnb2" :class="isTop && this.$route.name == 'main' ? 'btnb2_transparent' : ''"
               >Категории
-              <span class="icon-caret-down px20"></span>
+              <span class="icon-caret-down px20"></span>   
           </button>
+          <BtnCategory v-if="isOpen"/>
           </div>
         </div>
         <div class="nav__search proto__elem">       
@@ -41,15 +42,15 @@
 </template>
 
 <script>
-import BtnCategory from "./Btncategory.vue";
-
-// components; {
-//   BtnCategory
-// }
+import BtnCategory from "./BtnCategory.vue";
 
 export default {
+  components: {
+  BtnCategory
+},
   data() {
     return {
+      isOpen: false,
       isTop: true,
     };
   },
