@@ -1,6 +1,10 @@
 <template>
-    <div class="star-rating">
-        <span  v-for="index in starLimit" :key="index" class="star star-filled"> </span>
+    <div class="info__star-rating">
+        <span  v-for="index in starLimit" :key="index" class="icon-star px14"> </span>
+        <div class="star-filled">
+            <span  v-for="index in starLimit" :key="index" class="icon-star-filled px14"> </span>
+        </div>
+        <div class="product__raiting-text">(*)</div>
     </div>
 </template>
 
@@ -12,7 +16,7 @@
                 type: Number,
                 default: 0
             },
-            starRating: {
+            starLimit: {
                 type: Number,
                 default: 5 
             }
@@ -21,5 +25,24 @@
 </script>
 
 <style lang="scss" scoped>
+    .info__star-rating {
+    display: flex;
+    flex-direction: row;
+    // justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    width: 137px;
+    height: 20px;
+}
+.star-filled {
+    display: inline-flex;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
 
 </style>
