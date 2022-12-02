@@ -15,10 +15,9 @@ const router = createRouter({
       name: 'main',
       component: Home,
       meta: {
-        breadcrumb: [
-          { name: 'Главная' }
-        ]
-      }
+        breadcrumb: [{ name: "Главная" }],
+        bodyClass: "home-body",
+      },
     },
     {
       path: '/catalog',
@@ -28,7 +27,8 @@ const router = createRouter({
         breadcrumb: [
           { name: 'Главная', link: '/' },
           { name: 'Каталог' }
-        ]
+        ],
+        bodyClass: "catalog-body",
       },
       children: [
         {
@@ -52,7 +52,8 @@ const router = createRouter({
           { name: 'Главная', link: '/' },
           { name: 'Каталог', link: 'catalog' },
           { name: 'Продукт' }
-        ]
+        ],
+        bodyClass: "product-body",
       }
     },
     {
@@ -63,7 +64,8 @@ const router = createRouter({
         breadcrumb: [
           { name: 'Главная', link: '/' },
           { name: 'Интеграторы' },
-        ]
+        ],
+        bodyClass: "integrators-body",
       }
     },
     {
@@ -74,7 +76,8 @@ const router = createRouter({
         breadcrumb: [
           { name: 'Главная', link: '/' },
           { name: 'Компаниям' },
-        ]
+        ],
+        bodyClass: "contact-body",
       }
     },
     {
@@ -85,7 +88,8 @@ const router = createRouter({
         breadcrumb: [
           { name: 'Главная', link: '/' },
           { name: 'О нас', active: false },
-        ]
+        ],
+        bodyClass: "about-body",
       }
     },
     {
@@ -96,7 +100,8 @@ const router = createRouter({
         breadcrumb: [
           { name: 'Главная', link: '/' },
           { name: 'Ошибка' },
-        ]
+        ],
+        bodyClass: "error-body",
       }
     }
   ],
