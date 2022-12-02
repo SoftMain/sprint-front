@@ -9,7 +9,7 @@
 
 <script>
     export default {
-        name:'StarRatingReview',
+        name:'StarRatingReviewInput',
         props:{
             rating: {
                 type: Number,
@@ -25,13 +25,13 @@
 
 <style lang="scss" scoped>
     .comment__star-rating-rev {
-        display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 2px;
 
-
+   
     height: 20px;
 }
 .star-filled {

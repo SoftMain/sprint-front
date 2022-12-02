@@ -198,7 +198,7 @@
             <div class="comment__left">
               <input  type="text" name="" placeholder="Имя" class="comment__input-left" />
               <input  type="text" name="" placeholder="Почта" class="comment__input-left" />
-              <input  type="text" name="" placeholder="Оценка: " class="comment__input-left" />
+              <StarRatingReviewInput></StarRatingReviewInput>
             </div>
             <div class="comment__right">
               <input type="text" name="" class="comment__input-right" />
@@ -217,10 +217,12 @@
 <script>
 import StarRating from '../components/StarRating.vue';
 import StarRatingReview from '../components/StarRatingReview.vue';
+import StarRatingReviewInput from '../components/StarRatingReviewInput.vue';
 export default {
   components: {
     StarRating,
-    StarRatingReview
+    StarRatingReview,
+    StarRatingReviewInput
   },
 };
 </script>

@@ -28,11 +28,11 @@
     .info__star-rating {
     display: flex;
     flex-direction: row;
-    // justify-content: center;
     align-items: center;
-    gap: 4px;
+    padding: 0px;
+    gap: 2px;
 
-    width: 137px;
+    
     height: 20px;
 }
 .star-filled {

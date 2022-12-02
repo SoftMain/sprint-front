@@ -533,8 +533,8 @@ a.button {
   padding: 0px;
   gap: 12px;
 
-  width: 168px;
-  height: 48px;
+  // width: 168px;
+  // height: 48px;
   }
 .user--avatar {
   box-sizing: border-box;
@@ -555,16 +555,18 @@ a.button {
   border-radius: 24px;
 }
 .user--title {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
   gap: 4px;
 
-  width: 108px;
-  height: 48px;
+  // width: 108px;
+  // height: 48px;
 }
 .title-name {
+  
 }
 .coment-text {
 }
