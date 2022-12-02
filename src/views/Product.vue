@@ -11,7 +11,7 @@
         <div class="product__info">
           <h4>Kaspersky Anti-Virus</h4>
           <div class="info__text">Лаборатория Касперского</div>
-          <StarRating ></StarRating>
+          <StarRating :rating="4"></StarRating>   
           <!-- <div class="product__raiting">  
             <span class="icon-star-filled 14px"></span>
             <span class="icon-star-filled 14px"></span>
@@ -27,6 +27,7 @@
       </div>
     </div>
     <div class="product__content-main">
+      <ProductSidebar></ProductSidebar>
       <nav class="product__navbar">
         <ul class="navbar__list">
           <li class="navbar__item" >
@@ -198,7 +199,7 @@
             <div class="comment__left">
               <input  type="text" name="" placeholder="Имя" class="comment__input-left" />
               <input  type="text" name="" placeholder="Почта" class="comment__input-left" />
-              <input  type="text" name="" placeholder="Оценка: " class="comment__input-left" />
+              <StarRatingReviewInput></StarRatingReviewInput>
             </div>
             <div class="comment__right">
               <input type="text" name="" class="comment__input-right" />
@@ -215,12 +216,16 @@
 </template>
 
 <script>
+import ProductSidebar from '../components/Product/ProductSidebar.vue';
 import StarRating from '../components/StarRating.vue';
 import StarRatingReview from '../components/StarRatingReview.vue';
+import StarRatingReviewInput from '../components/StarRatingReviewInput.vue';
 export default {
   components: {
     StarRating,
-    StarRatingReview
+    StarRatingReview,
+    StarRatingReviewInput,
+    ProductSideBar
   },
 };
 </script>
