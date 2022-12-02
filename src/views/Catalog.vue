@@ -7,9 +7,8 @@
     <section>
       <div class="catalog">
         <div class="sort-button">
-          <a class="btn btn-primary btn-sm" v-click-outside="changeS" v-color="red">Высокий рейтинг<span class="icon-caret-down px20"></span></a>
+           <a class="btn btn-primary btn-sm">Высокий рейтинг<span class="icon-caret-down px20"></span></a>      <!--     v-click-outside="changeS" v-color="red" -->
         </div>
-
         <CatalogProducts />
       </div>
     </section>
