@@ -29,7 +29,7 @@
     <div class="product__content-main">
       <nav class="product__navbar">
         <ul class="navbar__list">
-          <li class="navbar__item">
+          <li class="navbar__item" >
             <span class="icon-file-text px20"></span>
             <a class="navbar-link" href="">Описание</a>
           </li>
@@ -57,7 +57,7 @@
       </nav>
 
       <div class="product">
-        <div class="product__main-description">
+        <div class="product__main-description" id="description">
           <h4>Описание</h4>
           <p>
             Наш надежный антивирус для Windows защитит вас от
@@ -65,7 +65,7 @@
             использовании и работает незаметно.
           </p>
         </div>
-        <div class="product__main-features">
+        <div class="product__main-features" id="features">
           <h4 class="">Особенности</h4>
           <div class="product__features-columns">
             <div class="feature-column">
@@ -94,9 +94,9 @@
           </div>
         </div>
 
-        <div class="product__main-tech-info">
+        <div class="product__main-tech-info" id="tech-info">
           <h4>Техническая информация</h4>
-          <div class="main__tech-info-col">
+          <div class="main__tech-info-wrap">
             <div class="line__tech-info">
               <div class="tech__category">Поддерживаемые <br>
                 платформы</div>
@@ -120,10 +120,10 @@
             </div>
           </div>
         </div>
-        <div class="product__main-media">
+        <div class="product__main-media" id="media">
           <h4>Медиа</h4>
           <div class="product__main-media-wrap">
-            <div class="product__main-vid-rev">
+            <div class="product__main-vid-rev" id="video_reviews">
               <div class="vid-rev-title">
                 Видеообзоры
               </div>
@@ -134,7 +134,7 @@
                 <div class="video">4</div>
               </div>
             </div>
-            <div class="product__main-screen">
+            <div class="product__main-screen" id="screenshots">
               <div class="screen-title">
                 Скриншоты
               </div>
@@ -147,12 +147,12 @@
             </div>
           </div>
         </div>
-        <div class="product__main-analog">
+        <div class="product__main-analog" id="analog">
           <h4>Зарубежные аналоги</h4>
           <p>ESET32, 360 Total Security, Malwarebytes</p>
         </div>
 
-        <div class="product__comments-wrap">
+        <div class="product__comments-wrap" id="comments">
           <h4>Отзывы</h4>
           <div class="product__comment">
             <div class="comment-user">
@@ -192,7 +192,7 @@
             <div class="coment-text">Хороший антивирус, с огромным функционалом, но жрет очень много оперативной памяти</div>
           </div>
         </div>
-        <form class="product__comments-form">
+        <form class="product__comments-form" id="input_rev" >
           <h4>Оставьте свой отзыв</h4>
           <div class="product__comm-inputs">
             <div class="comment__left">
