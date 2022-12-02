@@ -37,20 +37,12 @@ export default {
 .info__star-rating {
     display: flex;
     flex-direction: row;
-    // justify-content: center;
     align-items: center;
     gap: 4px;
-
     width: 137px;
     height: 20px;
 }
 .star-filled {
     display: inline-flex;
-    position: absolute;
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
 }
 </style>
