@@ -13,6 +13,7 @@
             <p>{{ product.company.name }}</p>
             <span v-if="product.company.verify" class="icon-verify px16"></span>
           </div>
+          <StarRating />
           <div class="products__rating">
             <span class="icon-star-filled px20"></span>
             <span class="icon-star-filled px20"></span>
@@ -44,8 +45,10 @@
 </template>
 
 <script>
+import StarRating from '../StarRating.vue';
 export default {
   props: ["product"],
+  components: { StarRating },
   data() {
     return {
       
