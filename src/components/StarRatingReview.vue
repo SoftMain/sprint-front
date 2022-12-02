@@ -1,7 +1,7 @@
 <template>
     <div class="comment__star-rating-rev">
         <span  v-for="index in starLimit" :key="index" class="icon-star px14"> </span>
-        <div class="star-filled">
+        <div class="star-filled"> 
             <span  v-for="index in starLimit" :key="index" class="icon-star-filled px14"> </span>
         </div>
     </div>

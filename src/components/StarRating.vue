@@ -1,7 +1,7 @@
 <template>
     <div class="info__star-rating">
         <span  v-for="index in starLimit" :key="index" class="icon-star px14"> </span>
-        <div class="star-filled">
+        <div class="star-filled" :style="ratingWidthStyle"> 
             <span  v-for="index in starLimit" :key="index" class="icon-star-filled px14"> </span>
         </div>
         <div class="product__raiting-text">(*)</div>
@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import { computed } from '@vue/reactivity';
+
     export default {
         name:'StarRating',
         props:{
@@ -20,8 +22,18 @@
                 type: Number,
                 default: 5 
             }
-        }   
+        },  
+        computed: {
+            ratingWith() {
+                return this.rating / this.starLimit * 100
+            },
+            ratingWidthStyle() {
+                return `width: ${this.ratingWidthStyle}%;`
+            }
+ 
+        }          
     }
+        
 </script>
 
 <style lang="scss" scoped>
