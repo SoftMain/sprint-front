@@ -161,7 +161,7 @@
               </div>
               <div class="user--title">
                 <div class="title-name">Персиваль Шуттенбах</div>
-                <StarRating ></StarRating>
+                <StarRatingReview></StarRatingReview>
               </div>
             </div>
             <div class="coment-text">Данным антивирусом пользуюсь давно, работает отлично, никогда не подводил.</div>
@@ -173,7 +173,7 @@
               </div>
               <div class="user--title">
                 <div class="title-name">Персиваль Шуттенбах</div>
-                <StarRating ></StarRating>
+                <StarRatingReview></StarRatingReview>
               </div>
             </div>
             <div class="coment-text">Касперский одна из лучших антивирусных программ, во-первых постоянно обновляется база, во-вторых как никто надежно защищает систему. Перепробовал ни одну, но больше всего мне понравился именно этот антивирус. Когда стояли другие, комп жутко тормозил, когда запущен касперский, то этого нет.</div>
@@ -185,7 +185,7 @@
               </div>
               <div class="user--title">
                 <div class="title-name">Персиваль Шуттенбах</div>
-                <StarRating ></StarRating>
+                <StarRatingReview></StarRatingReview>
               </div>
               
             </div>
@@ -216,9 +216,11 @@
 
 <script>
 import StarRating from '../components/StarRating.vue';
+import StarRatingReview from '../components/StarRatingReview.vue';
 export default {
   components: {
-    StarRating
+    StarRating,
+    StarRatingReview
   },
 };
 </script>

@@ -114,16 +114,16 @@
 .info__text {
   color: $gray-3;
 }
-.product__raiting {
-  display: flex;
-  flex-direction: row;
-  // justify-content: center;
-  align-items: center;
-  gap: 4px;
+// .product__raiting {
+//   display: flex;
+//   flex-direction: row;
+//   // justify-content: center;
+//   align-items: center;
+//   gap: 4px;
 
-  width: 137px;
-  height: 20px;
-}
+//   width: 137px;
+//   height: 20px;
+// }
 
 .icon-star-filled {
   color: $orange;
@@ -171,7 +171,7 @@
 
 .navbar-link {
   text-decoration: none;
-  color: $white;
+  color: $black;
 }
 
 .product__btn {
