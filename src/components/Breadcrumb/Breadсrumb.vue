@@ -1,8 +1,7 @@
 <template>
-  <div class="container">
+  <div v-if="this.$route.name != 'main'" class="container">
     <div class="breadcrumb">
       <BreadcrumbItem
-        v-if="this.$route.name != 'main'"
         v-for="(item, index) in items"
         :key="index"
         :item="item"

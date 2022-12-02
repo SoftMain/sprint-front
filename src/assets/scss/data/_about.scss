@@ -2,10 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 }
 
 .about__our-project>img {
-  max-width: 100%;
+  width: 100%;
   order: 2;
   height: 434px;
   width: 548px;
@@ -19,13 +20,12 @@
 }
 
 .about__our-project-text h2 {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .about__label {
   background: $gd-blue;
   height: 148px;
-  width: 100%;
   margin-top: 72px;
 
   &-card {
@@ -35,7 +35,7 @@
   }
 
   &-item {
-    max-width: 100%;
+    width: 100%;
     margin-top: 26px;
     border-bottom: 52px;
     width: 360px;
@@ -56,7 +56,7 @@
 
 .about__history>img {
   height: 532px;
-  max-width: 100%;
+  width: 100%;
   order: 1;
 }
 
@@ -70,7 +70,7 @@
 }
 
 .about__our-team {
-  max-width: 100%;
+  max-width: 1150px;
 
   &_img {
     width: 233px;
@@ -104,21 +104,15 @@
 }
 
 //noteboock
-@media screen and (max-width: 1024px) {
-  .container {
-    width: 100%;
-  }
+@media screen and (max-width: 768px) {
 
   .about__our-project {
-    width: 97%;
-  }
-
-  .about__our-project-text {
-    padding-left: 40px;
-  }
-
-  .about__label-card {
-    width: 97%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 952px;
+    height: 388px;
+    padding: 0 0 0 50px;
   }
 
   .about__label-item {
@@ -126,37 +120,23 @@
     height: 96px;
   }
 
-  .about__our-project>img {
-    width: 100%;
-    padding-left: 10px;
-  }
-
   .about__history {
-    width: 97%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 952px;
+    height: 388px;
+    padding: 0 0 0 50px;
   }
 
   .about__history>img {
     width: 486px;
     height: 382px;
-    padding-left: 20px;
   }
 
-  .about__history-text {
-    padding-left: 20px;
-  }
-
-  .about__history-text h3 {
-    margin-bottom: 16px;
-    padding-top: 50px;
-  }
-
-  .about__our-team {
-    width: 100%;
-    padding-top: 100px;
-  }
-
-  .about__our-team h3 {
-    padding-left: 30px;
+  .about__our-team-card {
+    width: 225px;
+    height: 272px;
   }
 
   .about__our-team-card>img {
@@ -164,51 +144,210 @@
     height: 184px;
   }
 
-  .about__our-team-card {
-    width: 193px;
-    height: 272px;
+  .about__our-team {
+    width: 50%;
+    width: 1024px;
   }
+
 }
 
 
-@media screen and (max-width: 768px) {
-
-  // .container {
-  //   width: 70%;  !!!
-  // }
+@media screen and (max-width: 1024px) {
 
   .about__our-project {
-    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 952px;
+    height: 388px;
+    width: 60%;
+    padding: 0 0 0 25px;
   }
 
   .about__our-project>img {
-    width: 385px;
+    width: 470px;
+    height: 369px;
+
+  }
+
+  .about__our-project p {
+    width: 470px;
   }
 
   .about__label-card {
-    width: 97%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
   }
 
   .about__label-item {
-    width: 80%;
+    width: 250.45px;
+    height: 88px;
 
+  }
+
+  .about__history {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 952px;
+    height: 388px;
+    padding: 0 0 0 0px;
+  }
+
+  .about__history p {
+    width: 454px;
+  }
+
+  .about__history>img {
+    width: 342px;
+    height: 295px;
   }
 
   .about__our-team {
-    width: 80%;
-  }
-
-}
-
-@media screen and (max-width: 375px) {
-
-
-
-  .about__our-project {
-    width: 60%;
+    width: 110%;
+    width: 980px;
   }
 
   .about__our-team-card {
-    width: 30%;
+    width: 221.33px;
+    height: 272px;
+  }
+
+  .about__our-team-card>img {
+
+    width: 189.33px;
+    height: 184px;
+
+  }
+
+
+}
+
+@media screen and (max-aspect-ratio:2/3) {
+  .about__our-project {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 343px;
+    min-height: 464px;
+    padding-bottom: 44px;
+    column-gap: 20px;
+    margin-top: 60px;
+  }
+
+  .about__our-project-text p {
+    width: 353px;
+    text-align: center;
+  }
+
+  .about__our-project-text h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: var(--sizeH3);
+    line-height: var(--heightH3);
+  }
+
+  .about__our-project>img {
+    width: 343px;
+    height: 268px;
+    padding-right: 25px;
+  }
+
+
+  .about__label {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 375.34px;
+    min-height: 336px;
+    column-gap: 20px;
+    margin-top: 120px;
+  }
+
+  .about__label-card {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 343px;
+    padding-bottom: 25px;
+    column-gap: 20px;
+
+  }
+
+  .about__label-item {
+    width: 343.34px;
+    height: 88px;
+  }
+
+  .about__history {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 343px;
+    min-height: 464px;
+    padding-bottom: 44px;
+    column-gap: 20px;
+    margin-top: 150px;
+  }
+
+  .about__history h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__history p {
+    width: 353px;
+    text-align: center;
+  }
+
+  .about__history>img {
+    width: 343px;
+    height: 295px;
+  }
+
+  .about__our-team {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 343px;
+    min-height: 464px;
+    padding-bottom: 44px;
+    width: 50%;
+    margin-top: 150px;
+  }
+
+  .about__our-team h3 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__our-team-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 16px;
+  }
+
+  .about__our-team-card {
+    width: 133.5px;
+    height: 272px;
+  }
+
+  .about__our-team-card>img {
+    width: 133.5px;
+    height: 184px;
+
   }
 }
