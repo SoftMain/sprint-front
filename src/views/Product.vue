@@ -28,14 +28,14 @@
     </div>
     <div class="product__content-main">
       <ProductSidebar></ProductSidebar>
-      <nav class="product__navbar">
+      <!-- <nav class="product__navbar">
         <ul class="navbar__list">
           <li class="navbar__item" >
             <span class="icon-file-text px20"></span>
             <a class="navbar-link" href="">Описание</a>
           </li>
           <li class="navbar__item">
-            <span class="icon-star px20"></span>
+            <span class="icon-star-bold px20"></span>
             <a class="navbar-link" href="">Особенности</a>
           </li>
           <li class="navbar__item">
@@ -55,7 +55,7 @@
             <a class="navbar-link" href="">Отзывы</a>
           </li>
         </ul>
-      </nav>
+      </nav> -->
 
       <div class="product">
         <div class="product__main-description" id="description">
@@ -222,10 +222,11 @@ import StarRatingReview from '../components/StarRatingReview.vue';
 import StarRatingReviewInput from '../components/StarRatingReviewInput.vue';
 export default {
   components: {
+    ProductSidebar,
     StarRating,
     StarRatingReview,
     StarRatingReviewInput,
-    ProductSideBar
+    
   },
 };
 </script>
