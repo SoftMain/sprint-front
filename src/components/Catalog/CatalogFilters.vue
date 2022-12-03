@@ -12,13 +12,27 @@ export default {
     };
   },
   async mounted() {
-    this.filters = ["Платформа", "Сертификация", "Язык интерфейса", "Аналоги"];
-    console.log(this.filters);
+    this.filters = [
+      {
+        name: "Платформа",
+        label: "platforms",
+      },
+      {
+        name: "Сертификация",
+        label: "certificates",
+      },
+      {
+        name: "Язык интерфейса",
+        label: "languages",
+      },
+      {
+        name: "Аналоги",
+        label: "analogs",
+      },
+    ];
   },
   components: { CatalogFilter },
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
