@@ -75,8 +75,9 @@ header.header_transparent {
   height: 40px;
 }
 
-.btnb2_transparent {
-  background: transparent;
+.btnb4:hover {
+  border: $border-size solid $blue-10;
+  background: $blue-10;
 }
 
 .header_transparent {

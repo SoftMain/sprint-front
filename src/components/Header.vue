@@ -20,9 +20,9 @@
             <button
               @click="isOpen = !isOpen"
               v-click-outside="disableMenu"
-              class="btn btn-primary btnb2 btnb4"
+              class="btn btn-primary btnb2"
               :class="
-                isTop && this.$route.name == 'main' ? 'btnb2_transparent' : ''
+                isTop && this.$route.name == 'main' ? 'btnb2_transparent' : 'btnb4'
               "
             >
               Категории
