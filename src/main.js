@@ -31,9 +31,6 @@ const app = createApp(App);
 
 app.directive('click-outside', {
   beforeMount: (el, binding, vnode) => {
-    console.log('element', el)
-    console.log('binding', binding)
-    console.log('vnode', vnode)
     el.clickOutsideEvent = (event) => {
       if(!(el === event.target || el.contains(event.target))) {
         binding.value();
