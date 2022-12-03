@@ -2,12 +2,15 @@
     <section>
         <div class="form-callback">
             <form @submit.prevent="submit" novalidate="true">
-                <p v-if="errors.length">
-                    <b>Пожалуйста исправьте указанные ошибки:</b>
-                <ul>
-                    <li v-for="error in errors">{{ error }}</li>
-                </ul>
-                </p>
+                <div class="error-input">
+                    <p v-if="errors.length">
+                        <b>Пожалуйста исправьте указанные ошибки:</b>
+                    <ul>
+                        <li v-for="error in errors">{{ error }}</li>
+                    </ul>
+                    </p>
+                </div>
+
                 <div class="form">
                     <div class="form-nameapp">
                         <input class="nameapp-area" type="text" v-model="product" name="nameapp"
@@ -23,7 +26,7 @@
                             class="form-infoproduct-textarea" cols="30" rows="10"></textarea>
                     </div>
                     <div class="btn-send">
-                        <button class="btn-primary btn btn-form" @click="showModal">Отправить</button>
+                        <button class="btn-primary btn btn-form">Отправить</button>
                         <Modal :show="isModalVisible" @close-modal="closeModal" />
 
                     </div>
@@ -65,9 +68,11 @@ export default {
         },
         showModal() {
             this.isModalVisible = true;
+            document.body.classList.add("modal-open");
         },
         closeModal() {
             this.isModalVisible = false;
+            document.body.classList.remove("modal-open");
         },
         checkForm() {
             this.errors = [];
@@ -83,9 +88,10 @@ export default {
             if (!this.infoproduct) {
                 this.errors.push("Укажите краткую информация о продукте.");
             }
-            if (!this.errors.length) {
-                return true;
+            if (this.errors.length > 0) {
+                return false;
             }
+            return true;
 
         }
     }

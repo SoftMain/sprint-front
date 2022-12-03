@@ -38,48 +38,48 @@ export default {
 }
 </script>
  
-<style scoped
-       lang="scss">
-       .modal-shadow {
-           position: fixed;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-           min-height: 100%;
-           z-index: 2;
-           width: 100%;
-           background: rgba(0, 0, 0, 0.39);
-           box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.2);
-       }
-       
-       .modal {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           background: #fff;
-           border-radius: 12px;
-           padding: 16px 30px;
-           align-items: center;
-           width: 440px;
-           max-height: 156px;
-           position: fixed;
-           z-index: 2;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-           box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.2);
-       }
-       
-       .modal-title {
-           padding-bottom: 8px;
-       }
-       
-       .modal-content {
-           padding-bottom: 24px;
-       }
-       
-       .btn-modal {
-           width: 126px;
-           height: 40px;
-       }
-       </style>
+<style scoped lang="scss">
+.modal-shadow {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100%;
+    z-index: 2;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 16px 30px;
+    align-items: center;
+    width: 440px;
+    max-height: 156px;
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.2);
+}
+
+.modal-title {
+    padding-bottom: 8px;
+}
+
+.modal-content {
+    padding-bottom: 24px;
+}
+
+.btn-modal {
+    width: 126px;
+    height: 40px;
+}
+</style>
