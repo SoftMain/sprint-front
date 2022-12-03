@@ -1,7 +1,7 @@
 <template>
   <div class="filter">
     <div @click="show = !show" class="sidebar__collapse btn">
-      <div class="sidebar__collapse-icon">
+      <div :class="{ 'sidebar__collapse-icon unrotated': show, 'sidebar__collapse-icon rotated': !show }">
         <span class="icon-caret-down px20"></span>
       </div>
       <div class="sidebar__collapse-header">
