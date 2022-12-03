@@ -148,12 +148,12 @@
             </div>
           </div>
         </div>
-        <div class="product__main-analog" id="analog">
+        <div class="product__main-analog" id="analogs">
           <h4>Зарубежные аналоги</h4>
           <p>ESET32, 360 Total Security, Malwarebytes</p>
         </div>
 
-        <div class="product__comments-wrap" id="comments">
+        <div class="product__comments-wrap" id="reviews">
           <h4>Отзывы</h4>
           <div class="product__comment">
             <div class="comment-user">

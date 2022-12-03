@@ -1,9 +1,9 @@
 <template>
     <nav class="product__navbar">
         <ul class="navbar__list">
-            <li v-for="(item, index) in items" @click="this.actvie = index" :class="{'navbar__link-active': active == index}" class="navbar__item">
-                <span :class="'icon-' + item.icon + 'px20'"></span>
-                <a class="navbar-link" href="">{{ item.name }}</a>
+            <li v-for="(item, index) in items" @click="active = index" :class="{'navbar__link-active': active == index}" class="navbar__item">
+                <span :class="'icon-' + item.icon + ' px20'"></span>
+                <a class="navbar-link" :href="'#' + item.id">{{ item.name }}</a>
             </li>
         </ul>
     </nav>
@@ -18,27 +18,33 @@ export default {
             items: [
                 {
                     name: 'Описание',
-                    icon: 'file-text'
+                    icon: 'file-text',
+                    id: 'description'
                 },
                 {
                     name: 'Особенности',
-                    icon: 'star-bold'
+                    icon: 'star-bold',
+                    id: 'features'
                 },
                 {
                     name: 'Тех. информация',
-                    icon: 'info'
+                    icon: 'info',
+                    id: 'tech-info'
                 },
                 {
                     name: 'Медиа',
-                    icon: 'video'
+                    icon: 'video',
+                    id: 'media'
                 },
                 {
                     name: 'Аналоги',
-                    icon: 'analog'
+                    icon: 'analog',
+                    id: 'analogs'
                 },
                 {
                     name: 'Отзывы',
-                    icon: 'message'
+                    icon: 'message',
+                    id: 'reviews'
                 }
             ]
         }
@@ -48,14 +54,40 @@ export default {
 
 <style lang="scss" scoped>
 .navbar-link {
-  color: black;
+  color:   black;
 }
 .navbar-link:hover {
-  background-color: #2C68E7;
+  color:  white;
 }
-.navbar-link-active {
+.navbar__link-active {
     background-color:  #2C68E7;
-    color: white    ;
+    color: white;
+}
+.navbar__item:hover {
+  background-color: #2C68E7;
+  color: white;
+}
+.navbar__item:hover a{
+  background-color: #2C68E7;
+  color: white;
+}
+
+.navbar__item:hover span{
+  
+  color: white    ;
+}
+.navbar__item-active  {
+    background-color:  #2C68E7;
+    color: white;
+}
+.navbar__item {
+   padding: 8px 4px;
+   color: white;
+
+}
+.navbar__item span {
+    color: #2755A1;
+
 }
 
 </style>
