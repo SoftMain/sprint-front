@@ -5,15 +5,14 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 12px;
-    margin-top: 20px;
+    margin-top: 10px;
     box-sizing: border-box;
     padding: 8px 8px 8px 8px;
-    z-index: -999;
+    z-index: 3;    
 }
 
 .btn_category_list {
     position: relative;
-    // top: 5px;
 }
 
 .btn_category_item {
@@ -24,18 +23,18 @@
     border-radius: 8px;
     width: 302px;
     height: 40px;
-    // padding: 4px 6px;
     gap: 9px;
+    text-decoration: none;
+    color: $black;
 }
 
 .btn_category_item:hover {
     background: $blue-4;
     border-radius: 8px;
-    text-decoration: none;
     color: $white;
 }
 
 .categ-icon {
-    padding-left: 8px;  
+    padding-left: 16px;  
     color: $blue-2;    
 }
