@@ -19,7 +19,7 @@
           <div @click.self="outside" class="">
             <button
               @click="isOpen = !isOpen"
-              class="btn btn-primary btnb2"
+              class="btn btn-primary btnb2 btnb4"
               :class="
                 isTop && this.$route.name == 'main' ? 'btnb2_transparent' : ''
               "
