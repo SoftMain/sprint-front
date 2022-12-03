@@ -19,7 +19,8 @@
           <div @click.self="outside" class="">
             <button
               @click="isOpen = !isOpen"
-              class="btn btn-primary btnb2"
+              v-click-outside="disableMenu"
+              class="btn btn-primary btnb2 btnb4"
               :class="
                 isTop && this.$route.name == 'main' ? 'btnb2_transparent' : ''
               "
@@ -27,7 +28,7 @@
               Категории
               <span class="icon-caret-down px20"></span>
             </button>
-            <BtnCategory v-if="isOpen" />
+            <BtnCategory v-if="isOpen"/>
           </div>
         </div>
         <div class="nav__search proto__elem">
@@ -79,6 +80,9 @@ export default {
       }
       this.isTop = true;
     },
+    disableMenu() {
+      if (this.isOpen) this.isOpen = false;
+    }
   },
   mounted() {
     this.handleDebouncedScroll = setTimeout.bind(null, this.handleScroll, 100);

@@ -40,12 +40,9 @@
 
 header {
   max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 72px;
   position: sticky;
+  padding-top: 16px;
+  padding-bottom: 16px;
   z-index: 1;
   top: 0px;
   z-index: 1;
@@ -66,6 +63,11 @@ header.header_transparent {
 .btn-primary.btnb2_transparent {
   border: $border-size solid $blue-4;
   background: $blue-4;
+}
+
+.btnb2_transparent:hover {
+  border: $border-size solid $blue-9;
+  background: $blue-9;
 }
 
 .btnb2 {
@@ -112,9 +114,13 @@ header.header_transparent {
   color: $blue-4;
 }
 
-.btnc2:hover {
+.btnc2:active {
   // color: $gray-2;
   border: 1px solid $gray-2;
+}
+
+.btnc2:hover {
+  color: $gray-2;
 }
 
 .btnc3:hover {
@@ -123,6 +129,11 @@ header.header_transparent {
 
 
 @media (max-width: 1024px) {
+  // header {
+  //   padding-top: 6px;
+  //   padding-bottom: 6px;
+  // }
+
   .search-area {
     display: block;
     width: 282px;
