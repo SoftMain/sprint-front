@@ -1,4 +1,5 @@
-![Last Build](https://github.com/softmain/sprint-front/actions/workflows/main.yaml/badge.svg?branch=build)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/softmain/sprint-front/vue-migrate?label=COMMITS&style=for-the-badge)
+![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/softmain/sprint-front/ci/build?logo=github&style=for-the-badge)
 
 Для начала работы:
 
