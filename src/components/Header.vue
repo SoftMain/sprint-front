@@ -43,13 +43,19 @@
         <div class="nav__links">
           <router-link
             to="/integrators"
-            class="btn text-base font-regular btnc2"
+            class="btn text-base font-regular btnc2" :class="
+                this.$route.name == 'integrators' ? 'zohan_1' : ''
+              "
             >Интеграторы</router-link
           >
-          <router-link to="/contact" class="btn text-base font-regular btnc2"
+          <router-link to="/contact" class="btn text-base font-regular btnc2" :class="
+                this.$route.name == 'contact' ? 'zohan_1' : ''
+              "
             >Компаниям</router-link
           >
-          <router-link to="/about" class="btn text-base font-regular btnc2"
+          <router-link to="/about" class="btn text-base font-regular btnc2" :class="
+                this.$route.name == 'about' ? 'zohan_1' : ''
+              "
             >О нас</router-link
           >
         </div>

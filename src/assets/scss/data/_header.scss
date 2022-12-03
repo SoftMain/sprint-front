@@ -113,9 +113,8 @@ header.header_transparent {
   color: $blue-4;
 }
 
-.btnc2:active {
-  // color: $gray-2;
-  border: 1px solid $gray-2;
+.zohan_1 {
+  border: 1px solid $gray-2; 
 }
 
 .btnc2:hover {
@@ -125,6 +124,7 @@ header.header_transparent {
 .btnc3:hover {
   color: $gray-2;
 }
+
 
 
 @media (max-width: 1024px) {

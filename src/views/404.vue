@@ -3,7 +3,7 @@
     <div class="errtext font-medium">
       <h1 class="errtext-h">Упс! Страница не существует.</h1>
     </div>
-    <button class="btn-primary btn sizea">Вернуться на главную</button>
+    <router-link to="/" class="btn-primary btn sizea">Вернуться на главную</router-link>
     <img class="err404" src="/img/background/err404.svg" />
   </div>
 </template>

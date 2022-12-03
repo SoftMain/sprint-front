@@ -28,10 +28,14 @@
     color: $black;
 }
 
+
 .btn_category_item:hover {
     background: $blue-4;
     border-radius: 8px;
     color: $white;
+  .categ-icon {
+    color: #FFFFFF;
+  }  
 }
 
 .categ-icon {
