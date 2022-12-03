@@ -20,7 +20,7 @@
             <button
               @click="isOpen = !isOpen"
               v-click-outside="disableMenu"
-              class="btn btn-primary btnb2"
+              class="btn btn-primary btnb2 btnb4"
               :class="
                 isTop && this.$route.name == 'main' ? 'btnb2_transparent' : ''
               "
