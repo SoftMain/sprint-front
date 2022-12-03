@@ -226,7 +226,7 @@ export default {
     StarRating,
     StarRatingReview,
     StarRatingReviewInput,
-    
+    ProductSidebar
   },
 };
 </script>

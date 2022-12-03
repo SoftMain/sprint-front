@@ -13,15 +13,11 @@
             <p>{{ product.company.name }}</p>
             <span v-if="product.company.verify" class="icon-verify px16"></span>
           </div>
-          <StarRating />
-          <div class="products__rating">
-            <span class="icon-star-filled px20"></span>
-            <span class="icon-star-filled px20"></span>
-            <span class="icon-star-filled px20"></span>
-            <span class="icon-star-filled px20"></span>
-            <span class="icon-star px20"></span>
-            <p class="text-sm">({{ product.product_reviews.length }})</p>
-          </div>
+          <Star
+            :value="productRating(product.product_reviews)"
+            :total="5"
+            :reviewsCount="product.product_reviews.length"
+          />
         </div>
       </div>
       <div v-if="false" class="products__lable">
@@ -38,22 +34,33 @@
     </div>
     <div class="products__under">
       <div class="products__button">
-        <router-link :to="'/product/'+ product.id" class="btn btn-primary btn-sm">Подробнее</router-link>
+        <router-link
+          :to="'/product/' + product.id"
+          class="btn btn-primary btn-sm"
+          >Подробнее</router-link
+        >
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import StarRating from '../StarRating.vue';
+import Star from "../Star.vue";
 export default {
   props: ["product"],
-  components: { StarRating },
+  components: { Star },
   data() {
-    return {
-      
-    }
-  }
+    return {};
+  },
+  methods: {
+    productRating(reviews) {
+      let count = 0;
+      if (reviews?.length > 0) {
+        reviews.map((o) => o.rating).reduce((a, c) => { return a + c; }) / lst.length;
+      }
+      return count;
+    },
+  },
 };
 </script>
 
