@@ -1,3 +1,5 @@
+![Last Build](https://github.com/softmain/sprint-front/actions/workflows/main.yaml/badge.svg?branch=build)
+
 Для начала работы:
 
 - Получить последние изменения
