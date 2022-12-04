@@ -13,6 +13,9 @@ import CatalogPagination from "./CatalogPagination.vue";
 export default {
   components: { CatalogProduct, CatalogPagination },
   data() {
+    props: {
+      filterSelect: Object
+    }
     return {
       products: [],
       page: 1,
@@ -22,7 +25,7 @@ export default {
   },
   methods: {
     async getProducts() {
-      const resp = await this.$axios.get(`${import.meta.env.VITE_SITE_URL}/products`, {
+      const resp = await this.$axios.get('/products', {
       params: {
         _page: Number(this.page),
         _limit: Number(this.limit),
