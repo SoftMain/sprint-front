@@ -1,15 +1,17 @@
 <template>
   <div class="container catalog-container">
     <section>
-      <CatalogSidebar />
+      <CatalogSidebar @filter-change="filterChange" :selected="selected"/>
     </section>
 
     <section>
       <div class="catalog">
         <div class="sort-button">
-           <a class="btn btn-primary btn-sm">Высокий рейтинг<span class="icon-caret-down px20"></span></a>      <!--     v-click-outside="changeS" v-color="red" -->
+          <a class="btn btn-primary btn-sm"
+            >Высокий рейтинг<span class="icon-caret-down px20"></span
+          ></a>
         </div>
-        <CatalogProducts />
+        <CatalogProducts :filterSelect="selected" />
       </div>
     </section>
   </div>
@@ -22,19 +24,20 @@ export default {
   components: { CatalogProducts, CatalogSidebar },
   data() {
     return {
-      show: true,
-      red: '#000'
-    }
+      selected: {
+        analogs: [],
+        languages: [],
+        platforms: [],
+        certificates: [],
+      },
+    };
   },
   methods: {
-    changeS() {
-
-      this.show = !this.show; 
-    }
-  }
+    filterChange() {
+      console.log("change filter", this.selected);
+    },
+  },
 };
 </script>
 
-<style>
-  
-</style>
+<style></style>

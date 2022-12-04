@@ -17,10 +17,10 @@
       </div>
     </div>
     <div class="sidebar__filters">
-      <CatalogFilters />
+      <CatalogFilters @filter-change="filterChange" :selected="selected" />
       <div class="sidebar__filters-actions">
-        <a class="btn btn-primary">Применить</a>
-        <a class="btn btn-outline-primary">Сбросить</a>
+        <a class="btn btn-primary" @click="filterChange">Применить</a>
+        <a class="btn btn-outline-primary" @click="filterClear">Сбросить</a>
       </div>
     </div>
   </div>
@@ -31,6 +31,23 @@ import CatalogFilters from "./CatalogFilters.vue";
 
 export default {
   components: { CatalogFilters },
+  props: {
+    selected: Object,
+  },
+  data() {
+    return {};
+  },
+  methods: {
+    filterChange() {
+      this.$emit("filter-change");
+    },
+    filterClear() {
+      this.selected.analogs = [];
+      this.selected.languages = [];
+      this.selected.platforms = [];
+      this.selected.certificates = [];
+    },
+  },
 };
 </script>
 

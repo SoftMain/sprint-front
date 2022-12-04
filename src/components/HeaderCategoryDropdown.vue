@@ -23,7 +23,7 @@ export default {
 },
   methods: {
     async getCategories () {
-      const resp = await this.$axios.get(`${import.meta.env.VITE_SITE_URL}/categories`);
+      const resp = await this.$axios.get('/categories');
       this.categories = resp.data
     }
   },
