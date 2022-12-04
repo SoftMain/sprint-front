@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <div class="mainproducts-infotext">
-        <h3>Самые популярные категории</h3>
+        <h3>Популярные категории</h3>
       </div>
 
       <div class="blockcategory">
@@ -38,7 +38,7 @@ export default {
               id: 1,
               link: "/product:id",
               text: "Бесплатный софт для дизайнеров с искусственным интеллектом и встроенной графикой",
-              title: "Lunacy",
+              title: "Supa",
             },
             {
               id: 2,
