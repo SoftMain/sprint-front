@@ -50,7 +50,7 @@ const router = createRouter({
       meta: {
         breadcrumb: [
           { name: 'Главная', link: '/' },
-          { name: 'Каталог', link: 'catalog' },
+          { name: 'Каталог', link: '/catalog' },
           { name: 'Продукт' }
         ],
         bodyClass: "product-body",

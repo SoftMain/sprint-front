@@ -2,24 +2,16 @@
   <div class="container">
     <div class="product__header">
       <div class="product__upper">
-        <img class="product__upper-img" src="/img/products/h5.png" alt="Kaspersky" />
+        <img class="product__upper-img" :src="'/img/products/h' + product.id + '.png'" alt="Kaspersky" />
       </div>
       <div class="product__under">
         <div class="product__logo">
-          <img class="product__logo-img" src="/img/products/5.png" alt="Prxduct Lxgx" />
+          <img class="product__logo-img" :src="'/img/products/' + product.id + '.png'" alt="Prxduct Lxgx" />
         </div>
         <div class="product__info">
-          <h4>Kaspersky Anti-Virus</h4>
-          <div class="info__text">Лаборатория Касперского</div>
-          <StarRating :rating="4"></StarRating>   
-          <!-- <div class="product__raiting">  
-            <span class="icon-star-filled 14px"></span>
-            <span class="icon-star-filled 14px"></span>
-            <span class="icon-star-filled 14px"></span>
-            <span class="icon-star 14px"></span>
-            <span class="icon-star 14px"></span>
-            <p class="product__raiting-text">(12)</p>
-          </div> -->
+          <h4>{{ product.name }}</h4>
+          <div class="info__text"> {{ product?.company?.name }}</div>
+          <StarRating :rating="4"></StarRating>
         </div>
         <div class="product__btn">
           <a class="button" href="">Перейти</a>
@@ -28,43 +20,10 @@
     </div>
     <div class="product__content-main">
       <ProductSidebar></ProductSidebar>
-      <!-- <nav class="product__navbar">
-        <ul class="navbar__list">
-          <li class="navbar__item" >
-            <span class="icon-file-text px20"></span>
-            <a class="navbar-link" href="">Описание</a>
-          </li>
-          <li class="navbar__item">
-            <span class="icon-star-bold px20"></span>
-            <a class="navbar-link" href="">Особенности</a>
-          </li>
-          <li class="navbar__item">
-            <span class="icon-info px20"></span>
-            <a class="navbar-link" href="">Тех. информация</a>
-          </li>
-          <li class="navbar__item">
-            <span class="icon-video px20"></span>
-            <a class="navbar-link" href="">Медиа</a>
-          </li>
-          <li class="navbar__item">
-            <span class="icon-analog px20"></span>
-            <a class="navbar-link" href="">Аналоги</a>
-          </li>
-          <li class="navbar__item">
-            <span class="icon-message px20"></span>
-            <a class="navbar-link" href="">Отзывы</a>
-          </li>
-        </ul>
-      </nav> -->
-
       <div class="product">
         <div class="product__main-description" id="description">
           <h4>Описание</h4>
-          <p>
-            Наш надежный антивирус для Windows защитит вас от
-            программ-вымогателей, шифровальщиков и атак хакеров. Он прост в
-            использовании и работает незаметно.
-          </p>
+          <p> {{ product?.description }}</p>
         </div>
         <div class="product__main-features" id="features">
           <h4 class="">Особенности</h4>
@@ -109,7 +68,7 @@
             </div>
             <div class="line__tech-info">
               <div class="tech__category">Мобильное приложение</div>
-              <div>Да</div>
+              <div>{{ product.mobile ? 'Да' : 'Нет' }}</div>
             </div>
             <div class="line__tech-info">
               <div class="tech__category">Сертификация</div>
@@ -228,6 +187,31 @@ export default {
     StarRatingReviewInput,
     ProductSidebar
   },
+  data() {
+    return {
+      product: {
+        id: 1,
+        name: '',
+        description: '',
+
+      },
+    }
+  },
+  methods: {
+    async getProduct() {
+      const resp = await this.$axios.get("/products/"+ this.$route.params.id);
+      this.product = resp.data;
+      if (!this.product) {
+        this.$router.push({
+          name: "error"
+        });
+      }
+      console.log(this.product)
+    },
+  },
+  mounted() {
+    this.getProduct();
+  }
 };
 </script>
 
