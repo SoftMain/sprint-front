@@ -89,6 +89,8 @@ export default {
   color: white;
 }
 .navbar__item span {
-  color: #2755a1;
+    color: #2755A1;
+
 }
+
 </style>
