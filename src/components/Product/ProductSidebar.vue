@@ -1,7 +1,7 @@
 <template>
     <nav class="product__navbar">
         <ul class="navbar__list">
-            <li v-for="(item, index) in items" @click="active = index" :class="{'navbar__link-active': active == index}" class="navbar__item">
+            <li v-for="(item, index) in items" @click="active = index" :class="{'navbar__item-active': active == index}" class="navbar__item">
                 <span :class="'icon-' + item.icon + ' px20'"></span>
                 <a class="navbar-link" :href="'#' + item.id">{{ item.name }}</a>
             </li>
@@ -90,4 +90,4 @@ export default {
 
 }
 
-</style>
+</style>           
