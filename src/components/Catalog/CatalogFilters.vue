@@ -1,24 +1,40 @@
 <template>
-  <CatalogFilter v-for="(filter, index) in filters" :filter="filter" />
+  <!-- <CatalogFilter v-for="(filterName, index) in filterNames" :filter="filterName" /> -->
+  <CatalogFilter />
 </template>
 
 <script>
-import CatalogFilter from "./CatalogFilter.vue";
+import CatalogFilter from "./CatFilters.vue";
 
 export default {
   data() {
     return {
-      filters: [],
+      filterNames: [],
+      filterSearches: [],
     };
   },
   async mounted() {
-    this.filters = ["Платформа", "Сертификация", "Язык интерфейса", "Аналоги"];
-    console.log(this.filters);
+    this.filterNames = [
+      {
+        name: "Платформа",
+        label: "platforms",
+      },
+      {
+        name: "Сертификация",
+        label: "certificates",
+      },
+      {
+        name: "Язык интерфейса",
+        label: "languages",
+      },
+      {
+        name: "Аналоги",
+        label: "analogs",
+      },
+    ];
   },
   components: { CatalogFilter },
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

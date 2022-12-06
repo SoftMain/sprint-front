@@ -19,15 +19,16 @@
           <div @click.self="outside" class="">
             <button
               @click="isOpen = !isOpen"
+              v-click-outside="disableMenu"
               class="btn btn-primary btnb2"
               :class="
-                isTop && this.$route.name == 'main' ? 'btnb2_transparent' : ''
+                isTop && this.$route.name == 'main' ? 'btnb2_transparent' : 'btnb4'
               "
             >
               Категории
               <span class="icon-caret-down px20"></span>
             </button>
-            <BtnCategory v-if="isOpen" />
+            <BtnCategory v-if="isOpen"/>
           </div>
         </div>
         <div class="nav__search proto__elem">
@@ -42,13 +43,19 @@
         <div class="nav__links">
           <router-link
             to="/integrators"
-            class="btn text-base font-regular btnc2"
+            class="btn text-base font-regular btnc2" :class="
+                this.$route.name == 'integrators' ? 'zohan_1' : ''
+              "
             >Интеграторы</router-link
           >
-          <router-link to="/contact" class="btn text-base font-regular btnc2"
+          <router-link to="/contact" class="btn text-base font-regular btnc2" :class="
+                this.$route.name == 'contact' ? 'zohan_1' : ''
+              "
             >Компаниям</router-link
           >
-          <router-link to="/about" class="btn text-base font-regular btnc2"
+          <router-link to="/about" class="btn text-base font-regular btnc2" :class="
+                this.$route.name == 'about' ? 'zohan_1' : ''
+              "
             >О нас</router-link
           >
         </div>
@@ -79,6 +86,9 @@ export default {
       }
       this.isTop = true;
     },
+    disableMenu() {
+      if (this.isOpen) this.isOpen = false;
+    }
   },
   mounted() {
     this.handleDebouncedScroll = setTimeout.bind(null, this.handleScroll, 100);

@@ -9,6 +9,7 @@
 </template>
 
 <script setup>
+
 import InfoBlock from '../components/Contact/InfoBlock.vue';
 import Form from '../components/Contact/Form.vue';
 import Copyright from '../components/Contact/Copyright.vue'

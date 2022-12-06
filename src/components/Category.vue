@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <div class="mainproducts-infotext">
-        <h3>Самые популярные категории</h3>
+        <h3>Популярные категории</h3>
       </div>
 
       <div class="blockcategory">
@@ -38,7 +38,7 @@ export default {
               id: 1,
               link: "/product:id",
               text: "Бесплатный софт для дизайнеров с искусственным интеллектом и встроенной графикой",
-              title: "Lunacy",
+              title: "Supa",
             },
             {
               id: 2,
@@ -69,7 +69,7 @@ export default {
               id: 1,
               link: "/product:id",
               text: "Описание",
-              title: "'Браузеры'",
+              title: "Kasper",
             },
           ],
         },
@@ -83,7 +83,7 @@ export default {
               id: 1,
               link: "/product:id",
               text: "Описание",
-              title: "'Видеоконференции'",
+              title: "Kasper0",
             },
           ],
         },
@@ -97,7 +97,7 @@ export default {
               id: 1,
               link: "/product:id",
               text: "Описание",
-              title: "'Графические редакторы'",
+              title: "Kasper1",
             },
           ],
         },
@@ -110,7 +110,7 @@ export default {
               id: 1,
               link: "/product:id",
               text: "Описание",
-              title: "'Мессенджеры'",
+              title: "Kasper2",
             },
           ],
         },
@@ -123,7 +123,7 @@ export default {
               id: 1,
               link: "/product:id",
               text: "Описание",
-              title: "'Операционые системы'",
+              title: "Kasper3",
             },
           ],
         },
@@ -137,7 +137,7 @@ export default {
               id: 1,
               link: "/product:id",
               text: "Описание",
-              title: "'Таск-трекеры'",
+              title: "Kasper4",
             },
           ],
         },

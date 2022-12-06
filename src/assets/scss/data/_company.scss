@@ -169,12 +169,18 @@
 .input-left-icon {
   float: left;
   margin-left: 15px;
-  margin-top: -31px;
+  margin-top: -29px;
   position: relative;
-  z-index: 2;
+  z-index: 0;
   color: $blue-7;
 }
 
+.error-input {
+  display: block;
+  width: 470px;
+  height: 100px;
+  margin: 0 auto;
+}
 
 
 //1024 
@@ -510,6 +516,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .error-input {
+    display: block;
+    width: 260px;
+    height: 100px;
+    margin: 0 auto;
   }
 
   .form-infoproduct-textarea {

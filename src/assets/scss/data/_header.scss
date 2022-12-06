@@ -40,15 +40,11 @@
 
 header {
   max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 72px;
   position: sticky;
-  z-index: 1;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  z-index: 5;
   top: 0px;
-  z-index: 1;
   background-color: $blue-3;
   box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.2);
   -webkit-transition: background-color 200ms linear;
@@ -68,14 +64,20 @@ header.header_transparent {
   background: $blue-4;
 }
 
+.btnb2_transparent:hover {
+  border: $border-size solid $blue-9;
+  background: $blue-9;
+}
+
 .btnb2 {
   border: $border-size solid $blue-2;
   background: $blue-2;
   height: 40px;
 }
 
-.btnb2_transparent {
-  background: transparent;
+.btnb4:hover {
+  border: $border-size solid $blue-10;
+  background: $blue-10;
 }
 
 .header_transparent {
@@ -112,9 +114,12 @@ header.header_transparent {
   color: $blue-4;
 }
 
+.zohan_1 {
+  border: 1px solid $gray-2; 
+}
+
 .btnc2:hover {
-  // color: $gray-2;
-  border: 1px solid $gray-2;
+  color: $gray-2;
 }
 
 .btnc3:hover {
@@ -122,7 +127,13 @@ header.header_transparent {
 }
 
 
+
 @media (max-width: 1024px) {
+  // header {
+  //   padding-top: 6px;
+  //   padding-bottom: 6px;
+  // }
+
   .search-area {
     display: block;
     width: 282px;
