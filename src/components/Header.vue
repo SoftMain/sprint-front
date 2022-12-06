@@ -31,15 +31,7 @@
             <BtnCategory v-if="isOpen"/>
           </div>
         </div>
-        <div class="nav__search proto__elem">
-          <input
-            class="search-area text-base font-regular"
-            type="search"
-            placeholder="Поиск по сайту"
-            required-placeholder=""
-          />
-          <span class="icon-search px20 search-img"></span>
-        </div>
+        <Search/>
         <div class="nav__links">
           <router-link
             to="/integrators"
@@ -66,10 +58,12 @@
 
 <script>
 import BtnCategory from "./HeaderCategoryDropdown.vue";
+import Search from "./Search/Search.vue";
 
 export default {
   components: {
     BtnCategory,
+    Search,
   },
   data() {
     return {
