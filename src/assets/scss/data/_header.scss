@@ -139,6 +139,7 @@ header.header_transparent {
 .search__dropdown{
   position: absolute;
   width: calc(100% - 10px);
+  border: 1px solid $blue-4;
   border-radius: 8px;
   background: #fff;
   display: flex;
@@ -150,6 +151,12 @@ header.header_transparent {
 
 .search__dropdown.active{
   display: block;
+}
+
+.search__dropdown-item{
+  display: block;
+  color: black;
+  text-decoration: none;
 }
 
 
@@ -174,10 +181,4 @@ header.header_transparent {
     padding-left: 20px;
   }
   
-}
-
-
-
-.pepe{
-
 }

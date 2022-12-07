@@ -6,9 +6,9 @@
         <span @click="SearchDeleteAll" class="icon-search px20 search-img"></span>
     </div>
     <div class="search__dropdown">
-        <div class="pepe" v-for="item in output">
+        <router-link to="/product" @click="SearchDeleteAll"  class="search__dropdown-item" v-for="item in output">
             {{ item.name }}
-        </div>
+        </router-link>
     </div>
     </div>
 </template>
@@ -94,9 +94,10 @@ export default {
         this.message='';
         document.querySelector('.search-img').classList.remove('icon-close');
         document.querySelector('.search-img').classList.add('icon-search');
+        document.querySelector('.search__dropdown').classList.remove('active');
     },
     DropDown(){
-        if(this.output.length>0){
+        if(this.message.length > 3){
             document.querySelector('.search__dropdown').classList.add('active'); 
         }
         else{
