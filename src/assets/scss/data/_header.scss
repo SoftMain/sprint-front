@@ -97,6 +97,12 @@ header.header_transparent {
   position: relative;
 }
 
+.nav__search-wrapper{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .search-area {
   display: block;
   width: 404px;
@@ -105,6 +111,10 @@ header.header_transparent {
   border: 1px solid $blue-4;
   border-radius: 8px;
   outline: none;
+}
+
+.nav__search .icon-close{
+  cursor: pointer;
 }
 
 .search-img {
@@ -124,6 +134,22 @@ header.header_transparent {
 
 .btnc3:hover {
   color: $gray-2;
+}
+
+.search__dropdown{
+  position: absolute;
+  width: calc(100% - 10px);
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  display: none;
+  top: 55px;
+  left: 10px;
+}
+
+.search__dropdown.active{
+  display: block;
 }
 
 
@@ -150,12 +176,7 @@ header.header_transparent {
   
 }
 
-.pupu{
-  width: 100px;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-}
+
 
 .pepe{
 
