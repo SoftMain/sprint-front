@@ -28,6 +28,7 @@ export default {
       name: "forward",
       counter: 0,
       activeCategory: 0,
+      timeout:false,
       switcher: [
         { id: 0 },
         { id: 1 },
@@ -43,6 +44,7 @@ export default {
       this.counter > id ? (this.name = "backward") : (this.name = "forward");
       this.activeCategory = id;
       this.counter = id;
+      this.timeout=true;
     },
     Timer() {
       this.name = "forward";
@@ -53,11 +55,20 @@ export default {
         this.counter++;
       }
       this.activeCategory = this.counter;
+      this.timeout=false;
     },
   },
   mounted() {
     setInterval(() => {
-      this.Timer();
+      if(this.timeout==true){
+        setTimeout(()=>{
+          this.Timer();
+          this.counter--;
+          this.activeCategory--;
+        },1500);
+      }else{
+        this.Timer();
+      }
     }, 3000);
   },
 };

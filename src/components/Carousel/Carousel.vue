@@ -24,16 +24,20 @@ export default {
       slides: [],
       visibleSlide: 0,
       direction: 'left',
+      focus:true
     }
   },
   methods: {
     slide() {
-      this.direction = this.directions[Math.floor(Math.random()*this.directions.length)];
-      if (this.visibleSlide == 8) {
-        this.visibleSlide = 0;
-        return;
+      this.focus=document.hasFocus();
+      if(this.focus==true){
+          this.direction = this.directions[Math.floor(Math.random()*this.directions.length)];
+        if (this.visibleSlide == 8) {
+          this.visibleSlide = 0;
+          return;
+        }
+        this.visibleSlide++;
       }
-      this.visibleSlide++;
     },
   },
   mounted() {
