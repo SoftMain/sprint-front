@@ -167,6 +167,7 @@
 }
 
 .navbar__item {
+  text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -186,6 +187,10 @@
 .navbar-link {
   text-decoration: none;
   color: $black;
+}
+
+.navbar__list li{
+  list-style: none;
 }
 
 .product__btn {
@@ -229,8 +234,7 @@ a.button {
   width: 100%;
   left: 273px;
 }
-.product > div{
-}
+
 .product__main-description {
   box-sizing: border-box;
 
@@ -585,11 +589,7 @@ a.button {
   // width: 108px;
   // height: 48px;
 }
-.title-name {
-  
-}
-.coment-text {
-}
+
 .product__comments-form {
   display: flex;
   flex-direction: column;

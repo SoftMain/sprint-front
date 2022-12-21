@@ -2,13 +2,15 @@
   <nav :class="{fixed: isTop}" class="product__navbar">
     <ul class="navbar__list">
       <li
-        v-for="(item, index) in items"
+      v-for="(item, index) in items"
+      >
+        <a :href="'#' + item.id"
         @click="active = index"
         :class="{ 'navbar__link-active': active == index }"
-        class="navbar__item"
-      >
-        <span :class="'icon-' + item.icon + ' px20'"></span>
-        <a class="navbar-link" :href="'#' + item.id">{{ item.name }}</a>
+        class="navbar__item">
+          <span :class="'icon-' + item.icon + ' px20'"></span>
+          <div class="navbar-link font-regular">{{ item.name }}</div>
+        </a>
       </li>
     </ul>
   </nav>
@@ -88,6 +90,7 @@ export default {
 <style lang="scss" scoped>
 .navbar-link {
   color: black;
+  font-size: 16px;
 }
 .navbar-link:hover {
   color: white;
@@ -100,7 +103,7 @@ export default {
   background-color: #2c68e7;
   color: white;
 }
-.navbar__item:hover a {
+.navbar__item:hover  div{
   background-color: #2c68e7;
   color: white;
 }
@@ -108,10 +111,15 @@ export default {
 .navbar__item:hover span {
   color: white;
 }
-.navbar__item-active {
+.navbar__item-active{
   background-color: #2c68e7;
   color: white;
 }
+
+.navbar__link-active > div{
+  color: #fff;
+}
+
 .navbar__item {
   padding: 8px 4px;
   color: white;
@@ -119,6 +127,10 @@ export default {
 .navbar__item span {
     color: #2755A1;
 
+}
+
+.navbar__link-active > span{
+  color: #fff;
 }
 
 </style>
