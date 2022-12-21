@@ -73,7 +73,7 @@ export default {
   },
   methods: {
     handleScroll(event) {
-      this.isUserScrolling = window.scrollY > 0;
+      // this.isUserScrolling = window.scrollY > 0;
       if (window.scrollY >= 100) {
         this.isTop = false;
         return;

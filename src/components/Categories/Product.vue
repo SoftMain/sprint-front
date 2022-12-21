@@ -1,5 +1,5 @@
 <template>
-  <router-link v-for="post in posts" :to="post.link" class="category-container">
+  <router-link v-for="post in posts" :to="'/product/' + post.id" class="category-container">
     <div class="category-container-logo">
       <img :src="`img/products/${post.id}.png`" alt="" />
     </div>

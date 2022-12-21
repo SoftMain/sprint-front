@@ -144,7 +144,6 @@
 .product__navbar {
   
   box-sizing: border-box; 
-  position: fixed;
   display: flex;
   // flex-direction: column;
   // align-items: flex-start;
@@ -160,6 +159,11 @@
   outline: 1px solid $gray-2;
   border-radius: 12px;
   background-color: #FFFFFF;
+}
+
+.product__navbar.fixed{
+  position: fixed;
+  top: 86px;
 }
 
 .navbar__item {
@@ -223,6 +227,7 @@ a.button {
   align-items: flex-end;
   flex-direction: column;
   width: 100%;
+  left: 273px;
 }
 .product > div{
 }

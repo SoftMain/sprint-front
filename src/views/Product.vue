@@ -193,7 +193,6 @@ export default {
         id: 1,
         name: '',
         description: '',
-
       },
     }
   },
@@ -206,8 +205,7 @@ export default {
           name: "error"
         });
       }
-      console.log(this.product)
-    },
+    }
   },
   mounted() {
     this.getProduct();

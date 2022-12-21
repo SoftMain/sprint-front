@@ -1,5 +1,5 @@
 <template>
-  <nav class="product__navbar">
+  <nav :class="{fixed: isTop}" class="product__navbar">
     <ul class="navbar__list">
       <li
         v-for="(item, index) in items"
@@ -52,7 +52,35 @@ export default {
           id: "reviews",
         },
       ],
+      scrollHeight:undefined,
+      isTop: false
     };
+  },
+  methods:{
+    getScrollHeight(){
+      this.scrollHeight= document.querySelector('header').clientHeight+document.querySelector('.breadcrumb').clientHeight+document.querySelector('.product__header').clientHeight-24;
+      console.log(this.scrollHeight);
+    },
+    handleScroll(event) {
+      if (window.scrollY >= this.scrollHeight) {
+        this.isTop = true; 
+        console.log(`${document.querySelector(".product__navbar").clientWidth}px`);
+        document.querySelector(".product").style.marginLeft = `${document.querySelector(".product__navbar").offsetWidth+20}px`;
+        return;
+      }
+      this.isTop = false;
+      document.querySelector(".product").style.marginLeft = "0px";
+    }
+  },
+  mounted(){
+    this.getScrollHeight();
+    this.handleDebouncedScroll = setTimeout.bind(null, this.handleScroll, 100);
+    window.addEventListener("scroll", this.handleDebouncedScroll, {
+      passive: true,
+    });
+  },
+  beforeUnmount() {
+    window.removeEventListener("scroll", this.handleDebouncedScroll);
   },
 };
 </script>
