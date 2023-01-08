@@ -19,14 +19,15 @@
       </div>
       <Transition name="slide-fade">
         <div v-if="show3" class="sidebar__variants">
-          <div v-for="(platform, index) in platforms">
+          <div class="sidebar__variants-item" v-for="(platform, index) in platforms">
             <input
               type="checkbox"
               :value="platform.id"
               :id="'platform' + index"
               v-model="selected.platforms"
+              @click="e => e.target.classList.toggle('active')"
             />
-            <label :for="'platform' + index">{{ platform.name }}</label>
+            <label class="text-base" :for="'platform' + index">{{ platform.name }}</label>
           </div>
         </div>
       </Transition>
@@ -50,14 +51,15 @@
       </div>
       <Transition name="slide-fade">
         <div v-if="show2" class="sidebar__variants">
-          <div v-for="(certificate, index) in certificates">
+          <div class="sidebar__variants-item" v-for="(certificate, index) in certificates">
             <input
               type="checkbox"
               :value="certificate.id"
               :id="'certificate' + index"
               v-model="selected.certificates"
+              @click="e => e.target.classList.toggle('active')"
             />
-            <label :for="'certificate' + index">{{ certificate.name }}</label>
+            <label class="text-base" :for="'certificate' + index">{{ certificate.name }}</label>
           </div>
         </div>
       </Transition>
@@ -79,14 +81,15 @@
       </div>
       <Transition name="slide-fade">
         <div v-if="show" class="sidebar__variants">
-          <div v-for="(analog, index) in analogs">
+          <div class="sidebar__variants-item" v-for="(analog, index) in analogs">
             <input
               type="checkbox"
               :value="analog.id"
               :id="'analog' + index"
               v-model="selected.analogs"
+              @click="e => e.target.classList.toggle('active')"
             />
-            <label :for="'analog' + index">{{ analog.name }}</label>
+            <label class="text-base" :for="'analog' + index">{{ analog.name }}</label>
           </div>
         </div>
       </Transition>
@@ -110,14 +113,15 @@
       </div>
       <Transition name="slide-fade">
         <div v-if="show1" class="sidebar__variants">
-          <div v-for="(language, index) in languages">
+          <div class="sidebar__variants-item" v-for="(language, index) in languages">
             <input
               type="checkbox"
               :value="language.id"
               :id="'language' + index"
               v-model="selected.languages"
+              @click="e => e.target.classList.toggle('active')"
             />
-            <label :for="'language' + index">{{ language.name }}</label>
+            <label class="text-base" :for="'language' + index">{{ language.name }}</label>
           </div>
         </div>
       </Transition>

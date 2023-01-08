@@ -48,6 +48,31 @@
     margin: 0;
     gap: 8px;
     text-decoration: none;
+
+    label {
+        color: $black;
+        font-weight: 300;
+    }
+
+    input{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+
+    input+label::before{
+        content: "";
+        background: url("/img/background/Icon-radio-unchecked.svg") center center/15px 15px no-repeat;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        transform: translateY(2px);
+        margin-right: 8px;
+    }
+
+    input.active+label::before{
+        background: url("/img/background/Icon-radio-checked.svg") center center/15px 15px no-repeat;
+    }
 }
 
 .sidebar {
@@ -165,12 +190,30 @@
             padding: 0px;
             gap: 8px;
 
-            &-text {
+            label {
+                color: $black;
                 font-weight: 300;
+                gap: 8px;
             }
 
-            &-icon {
-                display: flex;
+            input {
+                position: absolute;
+                z-index: -1;
+                opacity: 0;
+            }
+
+            input+label::before{
+                content: "";
+                background: url("/img/background/Icon-checkbox.svg") center center/15px 15px no-repeat;
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                transform: translateY(2px);
+                margin-right: 8px;
+            }
+
+            input.active+label::before{
+                background: url("/img/background/Icon-checkbox-fill.svg") center center/15px 15px no-repeat;
             }
         }
     }

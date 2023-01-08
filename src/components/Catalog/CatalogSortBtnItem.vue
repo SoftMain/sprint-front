@@ -1,9 +1,12 @@
 <template>
-    <div class="sort-btn__dropdown-content-item">
-        <input type="radio" name="" id="">
-            <a class="btn btn-sort ">
+    <div class="sort-btn__dropdown-content-item">  
+        <input type="radio"
+        :id="item"
+        @click="e => e.target.classList.toggle('active')">
+        <!-- для тех кто будет допиливать id в radio и for в label должны совпадать и конечно быть уникальными -->
+        <label :for="item" class="text-base">
             {{ item }}
-        </a>
+        </label>
     </div>
 
 </template>
@@ -18,13 +21,5 @@ export default {
 </script>
   
 <style lang="scss" scoped>
-.btn-sort{
-    filter: invert(1);
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
-    margin: 0;
-    padding: 0;
-}
 </style>
   
